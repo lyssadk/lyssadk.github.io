@@ -1,0 +1,28 @@
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#index-main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: olive;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    padding-left: 95px;
+}
+
+main {
+    padding:0 15px;
+}
+
+main h2 { 
+    border-bottom: 1px solid black;
+}
