@@ -4,7 +4,7 @@ body {
 }
 #index-main {
     max-width: 800px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 header, footer {
@@ -30,6 +30,7 @@ main h2 {
 img {
     float:right;
     box-shadow: 0 0 17px black;
+    max-width: 15%;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus{
     color: white;
