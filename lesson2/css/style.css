@@ -1,0 +1,8 @@
+body {
+    background-color: slategrey;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+}
