@@ -1,8 +1,6 @@
 body {
     background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
-}
-#index-main {
     max-width: 800px;
     margin:0 auto;
 }
@@ -30,7 +28,7 @@ main h2 {
 img {
     float:right;
     box-shadow: 0 0 17px black;
-    max-width: 15%;
+    max-width: 20%;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus{
     color: white;
