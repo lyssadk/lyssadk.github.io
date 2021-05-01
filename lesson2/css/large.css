@@ -1,11 +1,11 @@
 @media only screen and (min-width:62.5em) {
     body {
-        background-color: seagreen;
+        background-color: whitesmoke;
     }
     main{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    h1 {
-        margin: 0% 0% 0% 42%;
+    header, footer{
+        text-align: center;
     }
 }
