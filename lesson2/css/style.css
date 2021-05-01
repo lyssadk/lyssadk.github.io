@@ -44,18 +44,19 @@ section {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border: solid 1px gray;
+    border: solid 1px lightgray;
     margin: 20px;
+    box-shadow: 2px 2px 9px lightgray;
 }
 
 img {
-    border: solid 1px gray;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     max-width: 70%;
-    margin: 2%  15%  2% 15%;
+    margin: 2%  15%  6% 15%;
+    box-shadow: 5px 5px 10px slategray;
 }
 
 footer{
@@ -63,4 +64,36 @@ footer{
     padding: 1%  15%  1% 15%;
     margin:0%;
     color:white;
+}
+
+.company{
+    margin: 6%  .5%  4% .5%;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:rgb(44, 53, 59);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.description{
+    margin-bottom: 10%;
 }
