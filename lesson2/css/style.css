@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: white;
 }
 
 main{
@@ -10,7 +10,7 @@ main{
 
 header{
     margin: 0%;
-    padding: 2%  15%  2% 15%;
+    padding: 2%  19%  2% 19%;
     background-color:slategray;
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -34,12 +34,12 @@ h2 {
 }
 
 p{margin: 2%  15.5%  4% 15.5%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
 
 section {
-    background-color: #fff;
+    background-color: whitesmoke;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;

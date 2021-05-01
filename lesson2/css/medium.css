@@ -1,12 +1,10 @@
 @media only screen and (min-width:32.5em) {
-        body {
-            background-color: darkcyan;
-        }
+    
         main {
             grid-template-columns: 1fr 1fr;
         }
-        header{
-            padding: 2% 7.5% 2% 7.5%;
+        header, footer{
+            text-align: center;
             
         }
 }
