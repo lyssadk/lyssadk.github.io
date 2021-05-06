@@ -7,7 +7,7 @@ main {
 nav{
     margin: 0 auto;
     max-width: 360px;
-    background-color: rgb(70, 70, 5);
+    background-color:#0D0E0B;
 }
 
 #navigation {
@@ -29,13 +29,13 @@ nav{
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: #c2d3cd;
     font-weight: 700;
 }
 
 #navigation a:hover, #navigation a.active:hover{
     color:white;
-    background-color: black;
+    background-color:#0D3C45 ;
 }
 
 
@@ -47,6 +47,27 @@ nav{
 #navigation.responsive li {
     display:block;
 }
+
+.opal {
+    background-color: #c2d3cd;
+    color: black;
+}
+
+.ash-gray {
+    background-color: #AFBFC0;
+    color: black;
+}
+
+.midnight-green {
+    background-color: #0d3c45;
+    color: white;
+}
+
+.rich-black {
+    background-color: #0D0E0B;
+    color: white
+}
+
 
 @media only screen and (min-width:32.5em) {
     
