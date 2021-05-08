@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&display=swap" rel="stylesheet">
     <script src='scripts/script.js'></script>
     <title>Color Scheme</title>
 </head>
@@ -11,18 +13,22 @@
     <nav>
         <ul id= 'navigation'>
             <li><a class='ham' href="#">&#9776;</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a class='active' href="#">Colors</a></li>
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="target-audience.html">Target Audience</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class='active' href="#">COLORS</a></li>
+            <li><a href="typography.html">TYPOGRAPHY</a></li>
+            <li><a href="target-audience.html">TARGET AUDIENCE</a></li>
         </ul>
     </nav>
     <section>
-        <img src="images/color.png" alt="picture of Colors">
+        <img id = 'color-img' src="images/color.png" alt="picture of Colors">
         <p class='opal' >Opal</p>
         <p class = 'ash-gray'>Ash Gray</p>
         <p class = 'midnight-green'>Midnight Green Eagle Green</p>
         <p class = 'rich-black'>Rich Black Fogra 39</p>
     </section>
+    <footer>
+        <p class='legal'> &copy; <span id='copyright-year'></span>| Alyssa Kucharyski | California | <a href = 'https://wwww.byui.edu/online'>BYUI Online Learning</a></p>
+        <p class='highlight'> Last updated: <span id="datetime"></span></p>
+    </footer>
 </body>
 </html>
