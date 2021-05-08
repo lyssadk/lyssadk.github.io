@@ -1,36 +1,39 @@
 main {
     display:grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
+    margin: 0% 10%;
     text-align: left;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
 }
-header {
+body {
+    margin:0 auto;
+    text-align: left;
     font-family: 'Barlow Condensed', sans-serif;
 }
 h3{font-weight:300;}
 
 
-#purpose {
+.go-across {
     grid-column: 1/-1;
 }
 
 .icon{
-    max-width: 20%;
+    max-width: 24%;
 }
 
 
 nav{
     font-family: 'Barlow Condensed', sans-serif;
-    margin: 0 auto;
-    max-width: 360px;
+    margin:0%;
+    max-width: 516px;
     background-color:#0D0E0B;
 }
 
 #navigation {
+    padding-inline-start: 7.5%;
     list-style: none;
-    padding: 0;
+    margin:0%;
     grid-template-columns: auto;
     display: grid;
 }
@@ -85,23 +88,60 @@ nav{
     background-color: #0D0E0B;
     color: white
 }
+.sparkle-gray{
+    background-color: #4C5B61;
+    color:white;
+}
+.colors{
+    margin: 5% 2%;
+    padding: 5px;
+}
 
 #color-img {
     max-width: 70%;
     margin: 0 auto;
 }
+#typography{
+    display: flex;
+    flex-direction: column;
+}
 
+.body-sec{
+    padding: 7%;
+    margin: 20px;
+    box-shadow: 8px 8px 10px 2px grey;
+}
+
+.home-sec{
+    padding: 7%;
+    margin: 10px 0px;
+    box-shadow: 8px 8px 10px 2px grey;
+}
+
+footer{
+    padding: 1%  15%  1% 15%;
+    margin:0%;
+    background-color:#0d0e0b;
+    color:white;
+}
+
+header{
+    margin: 0% 10%;
+}
 @media only screen and (min-width:32.5em) {
     
     main {
         grid-template-columns: 1fr 1fr;
     }
-    header, footer{
+    footer{
         text-align: center;
         
     }
-    
+    header{
+        padding:2%;
+    }
     nav {
+        text-align: center;
         max-width: 100%;
     }
 
@@ -125,9 +165,26 @@ nav{
 @media only screen and (min-width:54.5em) {
     #navigation {
         width: 800px;
-        margin: 16px auto;
+        margin: 0px auto;
     }
     main{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .go-across-big{
+        grid-column:1/-1;
+    }
+
+    .child-sec{
+        padding: 1%;
+        margin: 5px;
+    }
+
+    .body-sec{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:2%;
+    }
+
+    
 }
