@@ -34,7 +34,8 @@ h2 {
     color: white;
 }
 
-p{margin: 2%  15.5%  4% 15.5%;
+p{
+    margin: 2%  15.5%  4% 15.5%;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }

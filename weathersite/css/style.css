@@ -3,19 +3,25 @@ main {
     grid-template-columns: 1fr;
     margin: 0% 10%;
     text-align: left;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
 }
 body {
     margin:0 auto;
     text-align: left;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
 }
-h3{font-weight:300;}
-
+h3{font-weight: 400;}
+h1{font-weight: 700;}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+#green-heading{
+    color:#0d3c45;
+}
 
 .go-across {
     grid-column: 1/-1;
+    margin-bottom: 10px;
 }
 
 .icon{
@@ -24,9 +30,9 @@ h3{font-weight:300;}
 
 
 nav{
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin:0%;
-    max-width: 516px;
+    max-width: 567px;
     background-color:#0D0E0B;
 }
 
@@ -93,7 +99,7 @@ nav{
     color:white;
 }
 .colors{
-    margin: 5% 2%;
+    margin: 5% 0%;
     padding: 5px;
 }
 
@@ -104,6 +110,7 @@ nav{
 #typography{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .body-sec{
@@ -114,7 +121,7 @@ nav{
 
 .home-sec{
     padding: 7%;
-    margin: 10px 0px;
+    margin: 10px 20px 10px 0px;
     box-shadow: 8px 8px 10px 2px grey;
 }
 
@@ -128,7 +135,7 @@ footer{
 header{
     margin: 0% 10%;
 }
-@media only screen and (min-width:32.5em) {
+@media only screen and (min-width:35.5em) {
     
     main {
         grid-template-columns: 1fr 1fr;
@@ -138,13 +145,15 @@ header{
         
     }
     header{
-        padding:2%;
+        padding:2% .7%;
     }
     nav {
         text-align: center;
         max-width: 100%;
     }
-
+    .colors{
+        margin:5% 2%;
+    }
     #navigation{
         grid-template-columns: repeat(7,auto);
     }
@@ -160,6 +169,24 @@ header{
     #navigation li:first-child{
         display: none;
     }
+  
+  .body-sec{
+      background-color: #AFBFC0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding:2%;
+      border-radius: 3px;
+      box-shadow: none;
+  }
+    .child-sec{
+        padding: 3%;
+        margin: 10px;
+        background-color: white;
+        box-shadow: 5px 5px 10px gray;
+    }
+    .go-across-big{
+        grid-column:1/-1;
+    }
 }
 
 @media only screen and (min-width:54.5em) {
@@ -169,21 +196,6 @@ header{
     }
     main{
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .go-across-big{
-        grid-column:1/-1;
-    }
-
-    .child-sec{
-        padding: 1%;
-        margin: 5px;
-    }
-
-    .body-sec{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding:2%;
     }
 
     
