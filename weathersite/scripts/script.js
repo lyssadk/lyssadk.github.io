@@ -7,4 +7,10 @@ window.addEventListener('load', () => {
    
     // To solve the mid resiszing issue with responsive class on
     //window.onresize = () => {}
+        const lu = document.querySelector('#datetime');
+        lu.textContent = document.lastModified;
+    
+        const cry = document.querySelector('#copyright-year');
+        cry.textContent = new Date().getFullYear();
+    
 });
