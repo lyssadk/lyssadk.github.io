@@ -135,6 +135,20 @@ footer{
 header{
     margin: 0% 10%;
 }
+#typography{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#typography section{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px whitesmoke;
+    margin: 50px 20px 50px 10px;
+}
+#typography div{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px whitesmoke;
+    margin: 50px 20px 50px 10px;
+}
 @media only screen and (min-width:35.5em) {
     
     main {
@@ -150,6 +164,10 @@ header{
     nav {
         text-align: center;
         max-width: 100%;
+    }
+    #typography{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .colors{
         margin:5% 2%;
@@ -195,6 +213,10 @@ header{
         margin: 0px auto;
     }
     main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #typography{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
