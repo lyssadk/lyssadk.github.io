@@ -51,36 +51,32 @@ font-family: 'Oswald', sans-serif;}
 
 .body-section{
     margin: 10px;
-    border: 1px solid black;
+    box-shadow: 5px 5px 10px gainsboro;
 }
 main{
     margin: 0 auto;
     max-width: 800px;
 }
 #contact{
-    margin: 20px;
+    margin-top: 10px;
     text-align: center;
     display:flex;
     flex-direction: column;
+    background-color: #afbfc0;
+    max-width: 800px;
 }
 
-#content img{
-    max-width: 200px;
-}
 .mg{
     padding: 10px;
     margin:0 auto;
 }
-.body-section h5{
-    border: 1px solid black;
+.body-section h5, .body-section h4, .body-section h3, header{
     background-color: #AFBFC0;
 }
-
-
 header{
     display: grid;
     grid-template-columns: .3fr 1fr .3fr;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 #top-ham{
     text-decoration: none;
@@ -88,6 +84,17 @@ header{
     font-size: 20px;
     color: black;
     margin: auto 0;
+}
+#ma{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+.mi{
+    max-width: 100%;
+    margin: 10px;
 }
 header h1{
     font-size: 20px;
@@ -125,6 +132,10 @@ footer{
 }
 #contact img{
     max-width: 300px;
+    margin: 10px auto;
+}
+#contact div{
+    margin: 0 auto;
 }
 @media only screen and (min-width:43em) {
     
@@ -135,6 +146,9 @@ footer{
     nav {
         text-align: center;
         max-width: 100%;
+    }
+    header{
+        grid-template-columns: .3fr 1fr;
     }
     header img{
         justify-self: right;
@@ -166,7 +180,8 @@ footer{
     }
    
     #contact{
-        max-width: 800px;
+        max-width: 100%;
+        flex-direction: row;
     }
     #num{
         margin-right: 10%;
@@ -175,12 +190,24 @@ footer{
     #contact img{
         max-width: 400px;
     }
-
+    .go-across{
+        grid-column: 1/-1;
+    }
+    
+    #main-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #mi-m{
+        display: grid;
+        grid-template-columns: repeat(5 ,auto);
+    }
 }
 @media only screen and (min-width:53em) {
 header{
     grid-template-columns: .7fr 1fr;
 }
+
 #hero-image{ max-width: 800px;}
 
 }
