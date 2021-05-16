@@ -60,7 +60,10 @@ main{
 #contact{
     margin: 20px;
     text-align: center;
+    display:flex;
+    flex-direction: column;
 }
+
 #content img{
     max-width: 200px;
 }
@@ -140,6 +143,8 @@ footer{
 
     #navigation{
         grid-template-columns: repeat(7,auto);
+        max-width: 1000px;
+        margin:0 auto;
     }
 
     #navigation li {
@@ -155,11 +160,12 @@ footer{
     #top-ham{
         display: none;
     }
-    #contact{
-        text-align: center;
-    }
+   
     #contact{
         max-width: 800px;
+    }
+    #num{
+        margin-right: 10%;
     }
 
 }
