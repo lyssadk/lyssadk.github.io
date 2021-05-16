@@ -123,6 +123,9 @@ footer{
 #num{
     text-align: left;
 }
+#contact img{
+    max-width: 300px;
+}
 @media only screen and (min-width:43em) {
     
     main {
@@ -136,6 +139,7 @@ footer{
     header img{
         justify-self: right;
         margin:0px;
+        max-width: 30%;
     }
     header h1{
         font-size:35px;
@@ -168,9 +172,15 @@ footer{
         margin-right: 10%;
     }
 
+    #contact img{
+        max-width: 400px;
+    }
+
 }
 @media only screen and (min-width:53em) {
 header{
     grid-template-columns: .7fr 1fr;
 }
+#hero-image{ max-width: 800px;}
+
 }
