@@ -194,6 +194,11 @@ footer{
 p{
     font-family:'Open Sans', sans-serif;
 }
+
+#mi-m{
+    display: grid;
+    grid-template-columns: repeat(5 ,auto);
+}
 @media only screen and (min-width:38em) {
     
 /* #pancake{
@@ -258,11 +263,10 @@ p{
         grid-column: 1/-1;
     }
     
+   #mi-mg{
+       grid-template-columns: repeat(3 ,auto);
+   }
    
-    #mi-m{
-        display: grid;
-        grid-template-columns: repeat(5 ,auto);
-    }
     header h1{
         font-size: 40px;
         margin:0px ;
