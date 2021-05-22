@@ -1,5 +1,5 @@
 nav{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Dosis', sans-serif;
     margin:0%;
     max-width: 100%;
     background-color:#0D0E0B;
@@ -47,7 +47,7 @@ nav{
 }
 
 body{ margin: 0 auto;
-font-family: 'Oswald', sans-serif;}
+font-family: 'Dosis', sans-serif;}
 
 .body-section{
     margin: 10px;
@@ -78,15 +78,15 @@ main{
 }
 header{
     display: grid;
-    grid-template-columns: .3fr 1fr .3fr;
+    grid-template-columns: .4fr 1fr .2fr;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 #top-ham{
     text-decoration: none;
-    justify-self: center;
     font-size: 20px;
     color: black;
-    margin: auto 0;
+    margin:10px auto;
 }
 #ma{
     margin-left: auto;
@@ -103,15 +103,20 @@ header h1{
     font-size: 20px;
     margin:0px;
 }
-header img{
-    grid-column: 1/2;
-    grid-row: 1/3;
-    margin: 5px 0px 0px 50%;
-    max-width: 30%;
-}
 header p{
     margin:0px;
-    grid-column: 2/3;
+    grid-column: 1/2;
+    font-size: 12px;
+}
+
+#logo{
+    margin:5px auto;
+    background-color: black;
+    width: 35px;
+    font-size: 25px;
+    border-radius: 9px;
+    text-align: center;
+    height:35px;
 }
 .text-img h1{
     padding: 290px 0px 10px 20px;
@@ -209,7 +214,7 @@ footer{
     color: white;
 }*/
 p{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Open Sans', sans-serif;
 }
 @media only screen and (min-width:43em) {
     
@@ -234,7 +239,16 @@ p{
     }
     header h1{
         font-size:35px;
-    }
+    }    
+    
+    #logo{
+    margin: 8px auto;
+    background-color: black;
+    width: 54px;
+    font-size: 40px;
+    border-radius: 10px;
+    text-align: center;
+    height: 53px;}
 
     #navigation{
         grid-template-columns: repeat(7,auto);
@@ -271,16 +285,22 @@ p{
         grid-column: 1/-1;
     }
     
-    #main-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+   
     #mi-m{
         display: grid;
-        grid-template-columns: repeat(5 ,auto);
+        grid-template-columns: repeat(3 ,auto);
     }
-
+    header h1{
+        font-size: 40px;
+        margin:0px;
+    }
+    header p{
+        margin:0px;
+        grid-column: 1/2;
+        font-size: 20px;
+    }
 }
+    
 @media only screen and (min-width:53em) {
 header{
     grid-template-columns: .7fr 1fr;
@@ -300,5 +320,7 @@ header img{
     max-width:800px;
 }*/
 #hero-image{ max-width: 800px;}
-
+#background-img{
+    background-attachment:scroll;
+}
 }
