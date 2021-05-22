@@ -6,7 +6,6 @@ nav{
 }
 
 #navigation {
-    padding-inline-start: 7.5%;
     list-style: none;
     margin:0%;
     grid-template-columns: auto;
