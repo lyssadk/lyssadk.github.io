@@ -216,7 +216,7 @@ footer{
 p{
     font-family:'Open Sans', sans-serif;
 }
-@media only screen and (min-width:43em) {
+@media only screen and (min-width:38em) {
     
 /* #pancake{
         margin-left: 10px;
@@ -232,17 +232,12 @@ p{
     header{
         grid-template-columns: .3fr 1fr;
     }
-    header img{
-        justify-self: right;
-        margin:0px;
-        max-width: 30%;
+    header div{
+        margin:0 50px;
     }
-    header h1{
-        font-size:35px;
-    }    
     
     #logo{
-    margin: 8px auto;
+    margin: 8px 0px 0px 100px;
     background-color: black;
     width: 54px;
     font-size: 40px;
@@ -292,7 +287,7 @@ p{
     }
     header h1{
         font-size: 40px;
-        margin:0px;
+        margin:0px ;
     }
     header p{
         margin:0px;
@@ -303,12 +298,13 @@ p{
     
 @media only screen and (min-width:53em) {
 header{
-    grid-template-columns: .7fr 1fr;
+    grid-template-columns: .62fr 1fr;
 }
-header img{
-    justify-self: right;
-    margin:5px;
-    max-width: 10%;
+header div{
+    margin: 0px 50px 0px 10px;
+}
+#logo{
+    margin: 8px 0px 0px 85%;
 }
 #alertBox{
     top: 30%;
