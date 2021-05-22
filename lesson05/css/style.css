@@ -165,7 +165,7 @@ footer{
     max-width: 800px;
     height: 350px;
     /* Location of the image */
-    background-image: url(../images/p-idaho.jpg);
+    background-image: url(../images/p-.jpg);
     
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
