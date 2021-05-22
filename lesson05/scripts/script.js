@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     week.textContent = weekday[date.getDay()];
-
+  //  if (date.getDay() == 6) { alert('PRESTON PANCAKES | Saturdays @  9:00am | Located: City Park Pavillion') };
     const dayNum = document.querySelector('#day');
     dayNum.textContent = date.getDate();
 
@@ -32,5 +32,27 @@ window.addEventListener('load', () => {
 
     const cry = document.querySelector("#current-year");
     cry.textContent = date.getFullYear();
-    
+    if (date.getDay() == 6) {
+        function closeAlertBox(){
+            alertBox = document.getElementById("alertBox");
+            alertClose = document.getElementById("alertClose");
+            alertBox.style.visibility = "hidden";
+            alertClose.style.visibility = "hidden";
+        }
+        window.alert = function(msg){
+            var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
+            alertBox = document.createElement("div");
+            document.body.appendChild(alertBox);
+            alertBox.id = id;
+            alertBox.innerHTML = "PRESTON PANCAKES | Saturdays @  9:00am | Located: City Park Pavillion";
+            alertClose = document.createElement("div");
+            alertClose.id = closeId;
+            alertClose.innerHTML = "x";
+            alertBox.appendChild(alertClose);
+            alertBox.style.visibility = "visible";
+            alertClose.style.visibility = "visible";
+            alertClose.onclick = closeAlertBox;
+        }
+        alert('')};
+        
 });

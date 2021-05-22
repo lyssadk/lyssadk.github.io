@@ -56,13 +56,15 @@ font-family: 'Oswald', sans-serif;}
 main{
     margin: 0 auto;
     max-width: 800px;
+    position: relative;
 }
 #contact{
     margin-top: 10px;
     text-align: center;
     display:flex;
     flex-direction: column;
-    background-color: #afbfc0;
+    background-color: #0D3C45;
+    color: white;
     max-width: 800px;
 }
 
@@ -71,7 +73,8 @@ main{
     margin:0 auto;
 }
 .body-section h5, .body-section h4, .body-section h3, header{
-    background-color: #AFBFC0;
+    background-color: #0D3C45;
+    color:white;
 }
 header{
     display: grid;
@@ -110,17 +113,11 @@ header p{
     margin:0px;
     grid-column: 2/3;
 }
-.text-img{
-    margin: 10px 0px;
-    position: relative;
-    text-align: center;
-}
 .text-img h1{
-    position: absolute;
-    bottom: 15px;
-    left: 40px;
+    padding: 290px 0px 10px 20px;
     color: white;
 }
+
 
 footer{
     text-align: center;
@@ -138,8 +135,58 @@ footer{
 #contact div{
     margin: 0 auto;
 }
+#alertBox {
+	position: absolute;
+	top: 30%;
+	bottom: 10%;
+	left: 20%;
+	width: 20%;
+	height: 10%;
+	background-color: #c2d3cd;
+	border-radius: 10px;
+    padding: 20px 10px 10px 20px;
+    max-width: 800px;
+	z-index: 2;
+	text-align: left;
+	color: whitesmoke;
+}
 
-#pancake{
+#alertClose {
+	position: absolute;
+	right: -7px;
+	top: 0;
+	width: 100%;
+    height: 100%;
+    text-align: left;
+}
+#background-img {
+    max-width: 800px;
+    height: 350px;
+    /* Location of the image */
+    background-image: url(../images/p-idaho.jpg);
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn’t tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+    background-attachment:fixed;
+    
+    /* This is what makes the background image rescale based
+    on the container’s size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+
+    position: relative;
+    }
+
+/*#pancake{
     box-shadow:5px 5px 10px grey;
     max-width: 400px;
     background-color: #0d3c45;
@@ -162,15 +209,15 @@ footer{
 }
 #pancake h3{
     color: white;
-}
+}*/
 p{
     font-family:Arial, Helvetica, sans-serif;
 }
 @media only screen and (min-width:43em) {
     
-    #pancake{
+/* #pancake{
         margin-left: 10px;
-    }
+    }*/
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -240,11 +287,16 @@ p{
 header{
     grid-template-columns: .7fr 1fr;
 }
+header img{
+    justify-self: right;
+    margin:5px;
+    max-width: 10%;
+}
 
-#pancake{
+/*#pancake{
     margin:10px auto;
     max-width:800px;
-}
+}*/
 #hero-image{ max-width: 800px;}
 
 }
