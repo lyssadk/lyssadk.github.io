@@ -34,6 +34,7 @@ nav{
 #navigation a.active {
     background-color: rgba(0, 0,0, .55);
     color: white;
+    text-decoration: underline;
 }
 
 #navigation.responsive li {
@@ -60,8 +61,8 @@ main{
 #contact{
     margin-top: 10px;
     text-align: center;
-    display:flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #0D3C45;
     color: white;
     max-width: 800px;
@@ -188,30 +189,7 @@ footer{
     position: relative;
     }
 
-/*#pancake{
-    box-shadow:5px 5px 10px grey;
-    max-width: 400px;
-    background-color: #0d3c45;
-    color: whitesmoke ;
-    position: sticky;
-    top:10px;
-    z-index:100;
-    margin:20px;
-    padding:5px;
-    border-radius: 2px;
-}
-#italic{
-    font-style: italic;
-    font-size: 15px;
-    padding-bottom: 10px ;
-    
-}
-#pancake h3, #pancake p{
-    margin:2px;
-}
-#pancake h3{
-    color: white;
-}*/
+
 p{
     font-family:'Open Sans', sans-serif;
 }
@@ -266,7 +244,7 @@ p{
    
     #contact{
         max-width: 100%;
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
     }
     #num{
         margin-right: 10%;
