@@ -98,6 +98,7 @@ header{
 .mi{
     max-width: 100%;
     margin: 10px;
+    text-align: center;
 }
 header h1{
     font-size: 20px;
@@ -260,7 +261,7 @@ p{
    
     #mi-m{
         display: grid;
-        grid-template-columns: repeat(3 ,auto);
+        grid-template-columns: repeat(5 ,auto);
     }
     header h1{
         font-size: 40px;
