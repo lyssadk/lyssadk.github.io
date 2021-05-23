@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 
     const cry = document.querySelector("#current-year");
     cry.textContent = date.getFullYear();
-    if (date.getDay() == 6) {
+    if (date.getDay() == 5) {
         function closeAlertBox(){
             alertBox = document.getElementById("alertBox");
             alertClose = document.getElementById("alertClose");

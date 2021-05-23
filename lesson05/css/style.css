@@ -91,6 +91,8 @@ header{
 #ma{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: block;
     padding-bottom: 20px;
     max-width: 80%;
@@ -133,14 +135,13 @@ footer{
 }
 #num{
     text-align: left;
+    margin: 0 auto;
 }
 #contact img{
     max-width: 300px;
     margin: 10px auto;
 }
-#contact div{
-    margin: 0 auto;
-}
+
 #alertBox {
 	position: absolute;
     top: 30%;
@@ -257,7 +258,9 @@ p{
     }
 
     #contact img{
-        max-width: 400px;
+        max-width: 300px;
+        margin-left: 10px;
+        margin-top: 20px;
     }
     .go-across{
         grid-column: 1/-1;
@@ -306,4 +309,7 @@ header div{
 #background-img{
     background-attachment:scroll;
 }
-}
+#num{
+    max-width: 400px;
+
+}}
