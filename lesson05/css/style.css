@@ -93,7 +93,7 @@ header{
     margin-right: auto;
     display: block;
     padding-bottom: 20px;
-    max-width: 100%;
+    max-width: 80%;
 }
 .mi{
     max-width: 100%;
@@ -275,6 +275,11 @@ p{
         margin:0px;
         grid-column: 1/2;
         font-size: 20px;
+    }
+    #ma{ 
+        max-width: 500px;
+        float: right;
+        margin:20px;
     }
 }
     
