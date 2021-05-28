@@ -1,0 +1,63 @@
+#images img{
+    max-width:70px;
+}
+#images{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#bk-img{
+    background-image: linear-gradient(to bottom, rgba(245, 249, 252, 0.144), rgba(35, 155, 211, 0.911)), url('app-card.jpg');
+
+    
+    /* Background image doesn’t tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+    background-attachment:scroll;
+    
+    /* This is what makes the background image rescale based
+    on the container’s size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+
+    position: relative;
+    height: 600px;
+}
+
+main{
+    max-width: 375px;
+    margin: 10px auto;
+
+}
+#left{
+    margin-right: 310px;
+    margin-left: 10px;}
+
+p, h1{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    margin-top:0px;
+}
+p {
+    font-weight: 300;
+}
+h1{
+    font-size: 35px;
+    margin-bottom: 0%;
+}
+.arrow{
+    max-width: 20px;
+    margin-top: 10px;
+}
+
+#main{
+    margin-top:270px;
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
