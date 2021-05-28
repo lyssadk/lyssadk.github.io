@@ -1,5 +1,6 @@
 #images img{
     max-width:70px;
+    margin-bottom: 20px;
 }
 #images{
     display:grid;
@@ -26,7 +27,7 @@
     background-color: #464646;
 
     position: relative;
-    height: 600px;
+    height: 100%;
 }
 
 main{
