@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');
 
@@ -71,4 +72,12 @@ window.addEventListener('load', () => {
         s= Number(speed);
         
         windchill(t, s)
+
+        WebFont.load({
+            google: {
+              families: [
+                 'Open Sans', 'Dosis'
+              ]
+            }});
 });
+
