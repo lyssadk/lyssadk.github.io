@@ -1,0 +1,37 @@
+p, h3, h1, h2, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    border: 1px solid rgb(214, 162, 162);
+    margin: 10px auto;
+}
+
+section:first-of-type{
+    background-color: seagreen;
+    color: white;
+}
+
+ section:last-of-type::first-letter{
+    font-size: 40px;
+    color: blueviolet;
+}
+
+h1:hover{
+    background-color: brown;
+    font-size: 40px;
+    color: white;
+}
+
+p::selection{
+    background-color: cadetblue;
+    color:white;
+}
+
+h1::after{
+    content: 'Hi';
+    background-color: chartreuse;
+    max-width: 40px;
+    height:100px;
+}
+
