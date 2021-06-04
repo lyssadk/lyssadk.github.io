@@ -27,7 +27,13 @@ body{
     grid-template-columns: 1fr;
 }
 
-.holder::before {
+.loading {
+    background-color: lightgray;
+    min-width: 400px;
+    min-height: 400px;
+    position: relative;
+}
+picture::before {
     content: "";
     display: block;
     position: absolute;
@@ -38,9 +44,18 @@ body{
     background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
     animation: load 3s;
     z-index: 50;
+}
+
+picture{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes load {
+    0% {
+        left: -400px;
     }
-    .holder{
-    background-color: lightgray;
-    min-width: 300px;
-    min-height: 400px;
-    position: relative;}
+    100% {
+        left: 100%;
+    }
