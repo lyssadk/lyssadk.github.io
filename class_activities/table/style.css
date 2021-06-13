@@ -1,5 +1,6 @@
 tr:nth-child(even){
-    background-color: rgb(216, 216, 216);
+    background-color:  #e7f0ed;
+
 }
 
 table{
@@ -13,14 +14,17 @@ table{
 td{
     border: 1px solid grey;
 }
-
+ tr{
+     background-color: #e7ffed;
+ }
 
 tr th{
-    background-color: cadetblue;
-    
+    background-color:  #628ca6;
+    color: white;
 }
-thead th, tfoot tr{
-    background-color: chocolate;
+thead th{
+    background-color: #7fb9c2;
+    color: black;
 }
 
 td{
