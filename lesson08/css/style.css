@@ -16,7 +16,7 @@ html, body {
     margin: 0;
     line-height: 55px;
     font-size: 55px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.788);
     z-index: 2;
     }
     .testbox {
@@ -31,7 +31,6 @@ html, body {
     padding: 20px;
     border-radius: 6px;
     background: #fff;
-    box-shadow: 0 0 30px 0 #a37547; 
     }
     .banner {
     position: relative;
@@ -133,6 +132,7 @@ html, body {
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    margin-bottom: 20px;
     }
     button:hover {
     box-shadow: 0 0 18px 0 #3d2914;
@@ -277,3 +277,9 @@ html, body {
             display: none;
         }
     }    
+
+    @media only screen and (min-width:43em) {
+        form{
+            width: 800px;
+        }
+    }
