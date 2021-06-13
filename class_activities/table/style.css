@@ -23,7 +23,7 @@ tr th{
     background-color:  #628ca6;
     color: white;
 }
-thead th{
+thead th, tfoot tr td{
     background-color: #7fb9c2;
     color: black;
 }
@@ -31,7 +31,9 @@ thead th{
 td{
     padding: 4px;
 }
-
+tfoot tr td{
+    font-size: 12px;
+}
 .dark:hover {
     background-color: #628ca6;
     color:white;
