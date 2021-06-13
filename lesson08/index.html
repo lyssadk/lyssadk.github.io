@@ -26,29 +26,31 @@
         </ul>
      </nav>
     <div class="testbox">
-        <form action="/">
+        <form action="../lesson08/thanks/thanks.html">
           <div class="banner">
             <h1>STORM REPORT</h1>
           </div>
           <div class="item">
-            <p>Contact name*</p>
+            <p>FULL NAME*</p>
             <div class="name-item">
-              <input type="text" name="name" placeholder="First" required />
-              <input type="text" name="name" placeholder="Last" required />
+              <input type="text" name="name" placeholder="First" pattern="^[a-zA-Z\s\.\-]{3,}$"required />
+              <input type="text" name="name" placeholder="Last" pattern="^[a-zA-Z\s\.\-]{4,}$" required />
             </div>
           </div>
           <div class="item">
-            <p>Email</p>
+            <p>EMAIL</p>
             <input type="email" name="email" placeholder="example@gmail.com"/>
           </div>
           <div class="item">
-            <p>Phone*</p>
-            <input type="tel" name="phone" placeholder="### ### ####" required/>
+            <p>PHONE*</p>
+            <input type="tel" name="phone" placeholder="###-###-####"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required/>
           </div>
 
           <div class="item">
             <div class="city-item">
+              <p>ZIP CODE</p>
               <input type="text" name="name" placeholder="Postal / Zip code" required/>
+              <p>REGION</p>
               <select required>
                 <option selected value="" disabled>Region</option>
                 <option value="1">Preston</option>
@@ -58,11 +60,12 @@
             </div>
           </div>
           <div class="item">
-            <p>Date <input name='First Name' type="date" required></p> 
+            <p>DATE <input name='First Name' type="date" required></p> 
           </div>
           <div class="item">
-            <p>Type of Storm</p>
+            <p>TYPE OF STORM</p>
             <select required>
+              <option selected value="" disabled>Storm Type</option>
               <option value="">Flash Flood</option>
               <option value="1">Hail</option>
               <option value="2">Hurricane</option>
@@ -73,7 +76,7 @@
           </div>
           <div class="item">
             <label for="rating">
-                Storm Severity: &nbsp;&nbsp;&nbsp; <span id="ratingvalue">5</span>
+                STORM SEVERITY: &nbsp;&nbsp;&nbsp; <span id="ratingvalue">5</span>
                   <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
               </label>
       
@@ -116,7 +119,7 @@
 
             </div>
             <div class="btn-block">
-              <button type="submit" href="/">Submit</button>
+              <button type="submit" value="submit" >Submit</button>
             </div>
         </form>
         </div>
