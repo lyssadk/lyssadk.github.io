@@ -31,7 +31,8 @@ td{
     padding: 4px;
 }
 
-#dark{
-    background-color: darkblue;
+.dark:hover {
+    background-color: #628ca6;
     color:white;
+    cursor: pointer;
 }
