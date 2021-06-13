@@ -1,0 +1,33 @@
+tr:nth-child(even){
+    background-color: rgb(216, 216, 216);
+}
+
+table{
+    box-shadow: 10px 0px 10px blanchedalmond;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    
+}
+td{
+    border: 1px solid grey;
+}
+
+
+tr th{
+    background-color: cadetblue;
+    
+}
+thead th, tfoot tr{
+    background-color: chocolate;
+}
+
+td{
+    padding: 4px;
+}
+
+#dark{
+    background-color: darkblue;
+    color:white;
+}
