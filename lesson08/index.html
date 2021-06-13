@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORM CENTER</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id='weather-company'>
+        <p id='logo'>F°</p>
+        <div>
+        <h1>CLEAR SKY WEATHER</h1>
+        <p>Clearing the confusion of the weather</p>
+        </div>
+        <a class='ham' id='top-ham' href="#">&#9776;</a>
+    </header>
+    <nav>
+        <ul id= 'navigation'>
+            <li><a  href="#">HOME</a></li>
+            <li><a class='active' href="#">PRESTON IDAHO</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="#">STORM CENTER</a></li>
+            <li><a href="#">GALLERY</a></li>
+        </ul>
+     </nav>
+    <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1>Storm Center Report</h1>
+          </div>
+          <div class="item">
+            <p>Contact name*</p>
+            <div class="name-item">
+              <input type="text" name="name" placeholder="First" required />
+              <input type="text" name="name" placeholder="Last" required />
+            </div>
+          </div>
+          <div class="item">
+            <p>Email</p>
+            <input type="email" name="email" placeholder="example@gmail.com"/>
+          </div>
+          <div class="item">
+            <p>Phone*</p>
+            <input type="tel" name="phone" placeholder="### ### ####" required/>
+          </div>
+
+          <div class="item">
+            <div class="city-item">
+              <input type="text" name="name" placeholder="Postal / Zip code" required/>
+              <select required>
+                <option selected value="" disabled>Region</option>
+                <option value="1">Preston</option>
+                <option value="2">Fish Haven</option>
+                <option value="3">Soda Springs</option>
+              </select>
+            </div>
+          </div>
+          <div class="item">
+            <p>Date <input name='First Name' type="date" required></p> 
+          </div>
+          <div class="item">
+            <p>Type of Storm</p>
+            <select required>
+              <option value="">Flash Flood</option>
+              <option value="1">Hail</option>
+              <option value="2">Hurricane</option>
+              <option value="3">Tornado</option>
+              <option value="4">Thunderstorm</option>
+  
+            </select>
+          </div>
+          <div class="item">
+            <label for="rating">
+                Storm Severity: &nbsp;&nbsp;&nbsp; <span id="ratingvalue">5</span>
+                  <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+              </label>
+      
+              <datalist id="tickmarks">
+                  <option value="0">
+                  <option value="1">
+                  <option value="2">
+                  <option value="3">
+                  <option value="4">
+                  <option value="5">
+                  <option value="6">
+                  <option value="7">
+                  <option value="8">
+                  <option value="9">
+                  <option value="10">
+              </datalist>
+          </div>
+          <div class="question">
+            <p>Are you in immediate danger?</p>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_1" name="question1"/>
+                <label for="radio_1" class="radio"><span>Yes</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_2" name="question1"/>
+                <label for="radio_2" class="radio"><span>Maybe</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_3" name="question1"/>
+                <label for="radio_2" class="radio"><span>No</span></label>
+              </div>
+            </div>
+          </div>
+    
+            <div class="item">
+              <p>Additional Information</p>
+              <textarea rows="3"></textarea>
+            </div>
+
+            </div>
+            <div class="btn-block">
+              <button type="submit" href="/">Submit</button>
+            </div>
+        </form>
+        </div>
+    <script src="style/script.js"></script>
+</body>
+</html>
