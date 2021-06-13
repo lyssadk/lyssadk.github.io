@@ -9,6 +9,7 @@ table{
     margin: 0 auto;
     border-collapse: collapse;
     border: 1px solid grey;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 td{
