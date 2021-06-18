@@ -1,0 +1,185 @@
+    body{ 
+        margin: 0 auto;
+        font-family: 'Oswald', sans-serif;
+    }
+
+/* NAVIGATION AND FOOTER STUFF*/
+    nav{
+        font-family: 'Oswald', sans-serif;
+        margin:0%;
+        max-width: 100%;
+        background-color:#0D0E0B;
+    }
+    
+    #navigation {
+        list-style: none;
+        margin:0%;
+        grid-template-columns: auto;
+        display: grid;
+    }
+    
+    
+    #navigation li{
+        display:none;
+    }
+    #navigation a{
+        display:block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #c2d3cd;
+        font-weight: 700;
+    }
+    
+    #navigation a:hover, #navigation a.active:hover{
+        color:white;
+        background-color:#AFBFC0 ;
+    }
+    
+    
+    #navigation a.active {
+        background-color: rgba(0, 0,0, .55);
+        color: white;
+        text-decoration: underline;
+    }
+    
+    #navigation.responsive li {
+        display:block;
+    }
+    header{
+        display: grid;
+        grid-template-columns: .4fr 1fr .2fr;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #0D3C45;
+        color:white;
+    }
+    #top-ham{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        margin:10px auto;
+    }
+    header h1{
+        font-size: 20px;
+        margin:0px;
+        color:white;
+    }
+    header p{
+        margin:0px;
+        grid-column: 1/2;
+        font-size: 12px;
+        color:white;
+    }
+
+#logo{
+margin:5px auto;
+background-color: black;
+width: 35px;
+font-size: 25px;
+border-radius: 9px;
+text-align: center;
+height:35px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+#num{
+    text-align: left;
+    margin: 0 auto;
+}
+#contact img{
+    max-width: 300px;
+    margin: 10px auto;
+}
+#contact{
+    margin-top: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #0D3C45;
+    color: white;
+    max-width: 800px;
+}
+
+.mg{
+    padding: 10px;
+    margin:0 auto;
+}
+/* FIRST SECTION */
+
+/* FEATURED REPORT */
+
+/* THREE SECTIONS */
+
+#town {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* 2 articles/ quick tips */
+
+
+
+/* MEDIA STUFFFFF AKA RESIZING STUFFS*/
+
+
+@media only screen and (min-width:38em) {
+    
+    /* #pancake{
+            margin-left: 10px;
+        }*/
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        nav {
+            text-align: center;
+            max-width: 100%;
+        }
+        header{
+            grid-template-columns: .3fr 1fr;
+        }
+        header div{
+            margin:0 50px;
+        }
+
+        header h1{
+            font-size: 40px;
+            margin-top: 15px ;
+            margin-bottom: 5px;
+        }
+        
+        #logo{
+        margin: 8px 0px 0px 100px;
+        background-color: black;
+        width: 54px;
+        font-size: 40px;
+        border-radius: 10px;
+        text-align: center;
+        height: 53px;
+        line-height: 1.4;
+        justify-self: end;}
+    
+        #navigation{
+            grid-template-columns: repeat(7,auto);
+            max-width: 800px;
+            margin:0 auto;
+        }
+    
+        #navigation li {
+            display: block;
+        }
+    
+        #navigation a {
+            text-align: center;
+        }
+        #top-ham{
+            display: none;
+        }
+    }    
