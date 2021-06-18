@@ -112,15 +112,43 @@ footer{
     margin:0 auto;
 }
 /* FIRST SECTION */
+div{
+    margin: 0 auto;
+    max-width: 800px;
+}
 
 /* FEATURED REPORT */
 
 /* THREE SECTIONS */
+@media only screen and (min-width:70em){
+#three{
+    max-width: 1200px;
+    height:550px;
 
-#town {
-    margin: 0 auto;
-    max-width: 800px;
 }
+#town {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 4px;
+}
+
+#town img{
+    max-width: 300px;
+}
+
+#town section{
+    left: 100px;
+    margin: 10px 40px;
+    box-shadow: 5px 5px 10px gainsboro;
+}
+
+#town section:first-of-type{
+    margin:10px 40px 10px 0px;
+}}
+
 
 /* 2 articles/ quick tips */
 

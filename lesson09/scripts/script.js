@@ -23,9 +23,9 @@ fetch(requestURL)
         image.setAttribute('src', towns[i].photo);
         name.textContent = towns[i].name;
         motto.textContent = towns[i].motto;
-        year.textContent = towns[i].yearFounded;
-        population.textContent = towns[i].currentPopulation;
-        rainfall.textContent = towns[i].averageRainfall;
+        year.textContent = 'Year Founded: '+ towns[i].yearFounded;
+        population.textContent = 'Current Population: '+ towns[i].currentPopulation;
+        rainfall.textContent = 'Average Rainfall: '+ towns[i].averageRainfall;
         
 
         card.appendChild(image);
