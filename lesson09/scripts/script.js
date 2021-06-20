@@ -11,6 +11,7 @@ fetch(requestURL)
         if (towns[i].name == 'Fish Haven' || towns[i].name == 'Preston' || towns[i].name =='Soda Springs'){
         
         let card = document.createElement('section');
+        let content = document.createElement('div')
         let name = document.createElement('h2'); 
         let motto = document.createElement('p');
         let year = document.createElement('p');
@@ -28,11 +29,12 @@ fetch(requestURL)
         
 
         card.appendChild(image);
-        card.appendChild(name);
-        card.appendChild(motto);
-        card.appendChild(year);
-        card.appendChild(population);
-        card.appendChild(rainfall);
+        card.appendChild(content);
+        content.appendChild(name);
+        content.appendChild(motto);
+        content.appendChild(year);
+        content.appendChild(population);
+        content.appendChild(rainfall);
         
 
 
@@ -81,5 +83,20 @@ window.addEventListener('load', () => {
              'Oswald'
           ]
         }}); 
-
+    function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+        }
+      myBtn.addEventListener('click', () => {myFunction()})
     });

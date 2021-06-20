@@ -53,6 +53,7 @@
         padding-bottom: 5px;
         background-color: #0D3C45;
         color:white;
+        line-height: 22px;
     }
     #top-ham{
         text-decoration: none;
@@ -116,11 +117,88 @@ div{
     margin: 0 auto;
     max-width: 800px;
 }
+#more {display: none;}
 
 /* FEATURED REPORT */
 
+
+.article{
+    box-shadow: 4px 4px 10px gainsboro;
+}
+#back-img1{
+    position: relative;
+    height: 230px;
+    background-image: url("../images/water.jpg");  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
 /* THREE SECTIONS */
-@media only screen and (min-width:70em){
+
+#three {
+    max-width: 100%;
+}
+#town img{
+    max-width: 100%;
+}
+
+@media only screen and (min-width:38em){
+    #three{
+        max-width: 100%;
+    
+    }
+    #town  {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    #town img{
+        max-width: 300px;
+    }
+    
+    #town section{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin-top: 20px;
+        box-shadow: 5px 5px 10px gainsboro;
+    }
+    #town section:hover{
+        box-shadow: 7px 7px 11px grey;
+    
+    }
+    
+    #town section{
+        cursor: pointer;
+    }
+    #town section:first-of-type{
+        flex-direction: row-reverse;
+    }
+    #town section:last-of-type{
+        flex-direction: row-reverse;
+    }
+    
+    #town section p, #town section h2{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #town section p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        max-width: 250px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+@media only screen and (min-width:67em){
+
 #three{
     max-width: 1200px;
     height:550px;
@@ -129,7 +207,7 @@ div{
 #town {
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
+    max-width: 1060px;
     height: 500px;
     margin: 20px auto;
     padding: 4px;
@@ -143,11 +221,53 @@ div{
     left: 100px;
     margin: 10px 40px;
     box-shadow: 5px 5px 10px gainsboro;
+    flex-direction: column;
+}
+#town section:hover{
+    box-shadow: 7px 7px 11px grey;
+
 }
 
+#town section{
+    cursor: pointer;
+}
 #town section:first-of-type{
     margin:10px 40px 10px 0px;
+}
+#town section:last-of-type{
+    margin:10px 0px 10px 40px;
+}
+
+#town section p, #town section h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#town section p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    max-width: 250px;
+    font-size: 20px;
+    font-weight: 200;
+}
+#town section p:nth-of-type(2){
+    margin-top: 15px;
+
+}
+#town section:first-of-type{
+    flex-direction: column;
+}
+#town section:last-of-type{
+    flex-direction: column;
 }}
+#town section h2{
+    text-transform: uppercase;
+}
+
+
+#town section p:first-of-type{
+    color: gray;
+}
 
 
 /* 2 articles/ quick tips */
@@ -171,10 +291,12 @@ div{
             max-width: 100%;
         }
         header{
-            grid-template-columns: .3fr 1fr;
+            grid-template-columns: .41fr 1fr;
         }
         header div{
             margin:0 50px;
+            position: absolute;
+            left: 30%;
         }
 
         header h1{
