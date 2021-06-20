@@ -157,6 +157,60 @@ div{
     max-width: 100%;
 }
 
+#three{
+    max-width: 100%;
+
+}
+#town  {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#town img{
+    max-width: 50%;
+}
+
+#town section{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px gainsboro;
+}
+#town section:hover{
+    box-shadow: 7px 7px 11px grey;
+
+}
+
+#town section{
+    cursor: pointer;
+}
+#town section:first-of-type{
+    flex-direction: row-reverse;
+}
+#town section:last-of-type{
+    flex-direction: row-reverse;
+}
+
+#town section p, #town section h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#town section p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    max-width: 250px;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+#town section h2{
+    margin-top: 20px;
+}
+
+
 @media only screen and (min-width:38em){
     #contact{
         max-width: 100%;
@@ -171,53 +225,9 @@ div{
         margin-left: 10px;
         margin-top: 20px;
     } 
-    #three{
-        max-width: 100%;
-    
-    }
-    #town  {
-        display: flex;
-        flex-direction: column;
-    
-    }
     
     #town img{
         max-width: 300px;
-    }
-    
-    #town section{
-        display: flex;
-        flex-direction: row;
-        width:100%;
-        margin-top: 20px;
-        box-shadow: 5px 5px 10px gainsboro;
-    }
-    #town section:hover{
-        box-shadow: 7px 7px 11px grey;
-    
-    }
-    
-    #town section{
-        cursor: pointer;
-    }
-    #town section:first-of-type{
-        flex-direction: row-reverse;
-    }
-    #town section:last-of-type{
-        flex-direction: row-reverse;
-    }
-    
-    #town section p, #town section h2{
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-    #town section p{
-        margin-bottom: 0px;
-        margin-top: 0px;
-        max-width: 250px;
-        font-size: 20px;
-        font-weight: 200;
     }
 }
 @media only screen and (min-width:67em){
