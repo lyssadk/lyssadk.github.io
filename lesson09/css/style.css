@@ -146,7 +146,10 @@ div{
 }
 
 /* THREE SECTIONS */
-
+#town section p:first-of-type{
+    font-style: italic;
+    font-size: 15px;
+}
 #three {
     max-width: 100%;
 }
@@ -219,11 +222,6 @@ div{
 }
 @media only screen and (min-width:67em){
 
-#three{
-    max-width: 1200px;
-    height:550px;
-
-}
 #town {
     display: flex;
     flex-direction: row;
