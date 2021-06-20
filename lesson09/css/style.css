@@ -150,66 +150,25 @@ div{
     font-style: italic;
     font-size: 15px;
 }
-#three {
-    max-width: 100%;
-}
-#town img{
-    max-width: 100%;
-}
 
-#three{
-    max-width: 100%;
 
-}
 #town  {
     display: flex;
     flex-direction: column;
-
+    margin: 0 auto;
 }
 
 #town img{
-    max-width: 50%;
+    max-width: 300px;
+    margin:0 auto;
 }
 
 #town section{
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    margin-top: 20px;
-    box-shadow: 5px 5px 10px gainsboro;
-}
-#town section:hover{
-    box-shadow: 7px 7px 11px grey;
+    margin: 10px auto;
+    max-width: 100%;
+    box-shadow: 2px 2px 5px gainsboro;
 
 }
-
-#town section{
-    cursor: pointer;
-}
-#town section:first-of-type{
-    flex-direction: row-reverse;
-}
-#town section:last-of-type{
-    flex-direction: row-reverse;
-}
-
-#town section p, #town section h2{
-    margin: 0 auto;
-    text-align: center;
-}
-
-#town section p{
-    margin-bottom: 0px;
-    margin-top: 0px;
-    max-width: 250px;
-    font-size: 17px;
-    font-weight: 200;
-}
-
-#town section h2{
-    margin-top: 20px;
-}
-
 
 @media only screen and (min-width:38em){
     #contact{
@@ -218,6 +177,44 @@ div{
     }
     #num{
         margin-right: 10%;
+    }
+    #town section{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin-top: 20px;
+        box-shadow: 5px 5px 10px gainsboro;
+    }
+    #town section:hover{
+        box-shadow: 7px 7px 11px grey;
+
+    }
+
+    #town section{
+        cursor: pointer;
+    }
+    #town section:first-of-type{
+        flex-direction: row-reverse;
+    }
+    #town section:last-of-type{
+        flex-direction: row-reverse;
+    }
+
+    #town section p, #town section h2{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #town section p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        max-width: 250px;
+        font-size: 17px;
+        font-weight: 200;
+    }
+
+    #town section h2{
+        margin-top: 20px;
     }
 
     #contact img{
@@ -228,6 +225,7 @@ div{
     
     #town img{
         max-width: 300px;
+        margin: 0px;
     }
 }
 @media only screen and (min-width:67em){
