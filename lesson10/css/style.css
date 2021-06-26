@@ -1,0 +1,297 @@
+body{ 
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* NAVIGATION AND FOOTER STUFF*/
+.body-section{
+    margin: 10px;
+    box-shadow: 5px 5px 10px gainsboro;
+}
+main{
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+} 
+
+nav{
+    font-family: 'Oswald', sans-serif;
+    margin:0%;
+    max-width: 100%;
+    background-color:#0D0E0B;
+}
+
+#navigation {
+    list-style: none;
+    margin:0%;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+
+#navigation li{
+    display:none;
+}
+#navigation a{
+    display:block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #c2d3cd;
+    font-weight: 700;
+}
+
+#navigation a:hover, #navigation a.active:hover{
+    color:white;
+    background-color:#AFBFC0 ;
+}
+
+
+#navigation a.active {
+    background-color: rgba(0, 0,0, .55);
+    color: white;
+    text-decoration: underline;
+}
+
+#navigation.responsive li {
+    display:block;
+}
+header{
+    display: grid;
+    grid-template-columns: .4fr 1fr .2fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #0D3C45;
+    color:white;
+    line-height: 22px;
+}
+#top-ham{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin:10px auto;
+}
+header h1{
+    font-size: 20px;
+    margin:0px;
+    color:white;
+}
+header p{
+    margin:0px;
+    grid-column: 1/2;
+    font-size: 12px;
+    color:white;
+}
+
+#logo{
+margin:5px auto;
+background-color: black;
+width: 35px;
+font-size: 25px;
+border-radius: 9px;
+text-align: center;
+height:35px;
+}
+
+
+footer{
+text-align: center;
+background-color: black;
+color: white;
+padding: 10px;
+}
+#num{
+text-align: left;
+margin: 0 auto;
+}
+#contact img{
+max-width: 300px;
+margin: 10px auto;
+}
+#contact{
+margin-top: 10px;
+text-align: center;
+display: grid;
+grid-template-columns: 1fr;
+background-color: #0D3C45;
+color: white;
+max-width: 800px;
+}
+
+.mg{
+padding: 10px;
+margin:0 auto;
+}
+
+/* FIRST LITTLE PART WITH IMG*/
+#background-img {
+    max-width: 800px;
+    height: 350px;
+    /* Location of the image */
+    background-image: url(../images/p-.jpg);
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn’t tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+    background-attachment:scroll;
+    
+    /* This is what makes the background image rescale based
+    on the container’s size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+
+    position: relative;
+    }
+
+    #mi-m{
+        display: grid;
+        grid-template-columns: repeat(5 ,auto);
+    }
+    @media only screen and (min-width:38em) {
+        
+    /* #pancake{
+            margin-left: 10px;
+        }*/
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        nav {
+            text-align: center;
+            max-width: 100%;
+        }
+        header{
+            grid-template-columns: .3fr 1fr;
+        }
+        header div{
+            margin:0 50px;
+        }
+        
+        #logo{
+        margin: 8px 0px 0px 100px;
+        background-color: black;
+        width: 54px;
+        font-size: 40px;
+        border-radius: 10px;
+        text-align: center;
+        height: 53px;}
+    
+        #navigation{
+            grid-template-columns: repeat(7,auto);
+            max-width: 1000px;
+            margin:0 auto;
+        }
+    
+        #navigation li {
+            display: block;
+        }
+    
+        #navigation a {
+            text-align: center;
+        }
+      
+        #top-ham{
+            display: none;
+        }
+       
+        #contact{
+            max-width: 100%;
+            grid-template-columns: 1fr 1fr;
+        }
+        #num{
+            margin-right: 10%;
+        }
+    
+        #contact img{
+            max-width: 300px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .go-across{
+            grid-column: 1/-1;
+        }
+        
+       #mi-mg{
+           grid-template-columns: repeat(3 ,auto);
+       }
+       
+        header h1{
+            font-size: 40px;
+            margin:0px ;
+        }
+        header p{
+            margin:0px;
+            grid-column: 1/2;
+            font-size: 20px;
+        }
+        #ma{ 
+            max-width: 500px;
+            float: right;
+            margin:20px;
+        }
+    }
+        
+    @media only screen and (min-width:53em) {
+    header{
+        grid-template-columns: .62fr 1fr;
+    }
+    header div{
+        margin: 0px 50px 0px 10px;
+    }
+    #logo{
+        margin: 8px 0px 0px 85%;
+    }
+    #alertBox{
+        top: 30%;
+        left:23%;
+        height: 70px;
+    }
+    /*#pancake{
+        margin:10px auto;
+        max-width:800px;
+    }*/
+    #hero-image{ max-width: 800px;}
+    #background-img{
+        background-attachment:scroll;
+    }
+    #num{
+        max-width: 400px;
+    
+    }}
+
+    #alertBox {
+        position: absolute;
+        top: 30%;
+        left:10px;
+        height: 70px;
+        background-color:#AFBFC0 ;
+        border-radius: 10px;
+        padding: 20px 10px 10px 20px;
+        max-width: 300px;
+        z-index: 2;
+        text-align: left;
+        color: whitesmoke;
+    }
+    
+    #alertClose {
+        position: absolute;
+        right: -7px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .text-img h1{
+        padding: 290px 0px 10px 20px;
+        color: white;
+    }
+    
