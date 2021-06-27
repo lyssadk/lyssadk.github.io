@@ -16,24 +16,30 @@ function Weather(){
   const w = getWeather()
   .then(function(info){
       console.log(info)
-
+/////////////////////////////
 /*five day forecast stuff */
-      for (let i = 0 ; i < 5 ; i++){
+////////////////////////////
+// filtering the array for temps at 6:00pm
+okey = info.list 
+filter = okey.filter(day => day.dt_txt.includes('18:00:00'))
 
+      for (let i = 0 ; i < filter.length ; i++){
+       
+        // creating html elements / adding classes/srcs
         let card = document.createElement('div'); 
         card.classList.add('mi')
         
         let day = document.createElement('h3');
 
         let icon  = document.createElement('img');
-        let iconsrc = document.createAttribute('src')
-        iconsrc.value = info.list[i].weather.icon;
-        icon.setAttributeNode(iconsrc)
-
+        let iconsrc = filter[i].weather[0].icon;
+        icon.src = `http://openweathermap.org/img/wn/${iconsrc}.png`
         let temp = document.createElement('p');
 
-        temp.textContent = Math.round( info.list[i+1].main.temp) + '°';
+        // content from api
+        temp.textContent = Math.round( filter[i].main.temp) + '°';
          
+        // the day stuff, im sure there is an easier way to do this, just ran out of time to figure it out so i did this haha
           var result = new Date();
           var weekdays = new Array(12);
           weekdays[0] = "Sunday";
@@ -59,40 +65,80 @@ function Weather(){
               day.textContent = weekdays[ok +(i + 1)]
               break;
           }
+          // 
+
+          // adding stuff to page
           card.appendChild(day);
           card.appendChild(icon);
           card.appendChild(temp);
           document.querySelector('#mi-m').appendChild(card);
       }
+      /////////////////////////////////////////////////
+    /*Current day temperature Information from API */
+    //////////////////////////////////////////////////
+        const todaySum = 'https://api.openweathermap.org/data/2.5/weather?zip=83263&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
 
-        /*Current day temperature Information from API */
+    fetch(todaySum)
+    .then((response) => {
+      if (response.status == 200){
+        return response.json();
+    }
+    else {
+        throw new Error('Not found' + response.status)};
+    })
+    .then((infor) =>{
+      console.log(infor)
+
+      //creating more p's
         let currently = document.createElement('p');
-        let ctemp = document.createElement('p');
         let humidity = document.createElement('p');
         let high = document.createElement('p');
         let low = document.createElement('p');
         let wind= document.createElement('p');
+        let chill = document.createElement('p')
 
+        // adding the classes to customize in css
         high.classList.add('mgs');
         low.classList.add('mgs');
         humidity.classList.add('mgs');
         currently.classList.add('mgs');
-        ctemp.classList.add('mgs');
         wind.classList.add('mgs');
-
-        high.textContent = 'High: ' +Math.round(info.list[0].main.temp_max)+'°';
-        low.textContent = 'Low: ' +Math.round(info.list[0].main.temp_min)+'°';
-        humidity.textContent = 'Humidity: ' +info.list[0].main.humidity;
-        currently.textContent = 'Sky: ' +(info.list[0].weather[0].description).replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));;
-        ctemp.textContent = 'Temperature: ' +Math.round(info.list[0].main.temp)+'°';
-        wind.textContent = 'Wind Speed: ' +Math.round(info.list[0].wind.speed)+'mph';
         
-        document.querySelector('#mi-mg1').appendChild(currently);
-        document.querySelector('#mi-mg1').appendChild(ctemp);
+        // all the text content stuff yay
+        high.textContent = 'High: ' +Math.round(infor.main.temp_max)+'°';
+        low.textContent = 'Low: ' +Math.round(infor.main.temp_min)+'°';
+        humidity.textContent = 'Humidity: ' +infor.main.humidity +'%';
+        currently.textContent = 'Sky: ' +(infor.weather[0].main).replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));;
+        let t = Math.round(infor.main.temp);
+        let s = Math.round(infor.wind.speed)
+        wind.textContent = 'Wind Speed: ' +s+'mph';
+
         document.querySelector('#mi-mg1').appendChild(high);
+        document.querySelector('#mi-mg1').appendChild(currently);
         document.querySelector('#mi-mg1').appendChild(low);
         document.querySelector('#mi-mg1').appendChild(humidity);
         document.querySelector('#mi-mg1').appendChild(wind);
+
+        //calculate windchill and add proper text depending on temp
+        
+        function windchill(t, s){
+          if (t>50){
+              chill.textContent = 'Wind Chill: n/a';
+              document.querySelector('#mi-mg1').appendChild(chill);
+          }
+          else if (t<=50){
+              chill = (35.74 +(.6215 * t) - (35.75 * (s ** .16))+ (0.4275 * t * (s ** .16)));
+              chill.textContent = 'Wind Chill:' + chill;
+              document.querySelector('#mi-mg1').appendChild(chill);
+          }
+          chill.classList.add('mgs');
+      }
+      
+      
+      
+      windchill(t, s)
+    });
+   
       
   });
 
