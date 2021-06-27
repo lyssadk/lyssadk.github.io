@@ -17,7 +17,7 @@ function Weather(){
   .then(function(info){
       console.log(info)
 
-
+/*five day forecast stuff */
       for (let i = 0 ; i < 5 ; i++){
 
         let card = document.createElement('div'); 
@@ -32,7 +32,7 @@ function Weather(){
 
         let temp = document.createElement('p');
 
-        temp.textContent = Math.round( info.list[i].main.temp) + '°';
+        temp.textContent = Math.round( info.list[i+1].main.temp) + '°';
          
           var result = new Date();
           var weekdays = new Array(12);
@@ -59,15 +59,41 @@ function Weather(){
               day.textContent = weekdays[ok +(i + 1)]
               break;
           }
-         
-          
-
-        card.appendChild(day);
-        card.appendChild(icon);
-        card.appendChild(temp);
-
-        document.querySelector('#mi-m').appendChild(card)
+          card.appendChild(day);
+          card.appendChild(icon);
+          card.appendChild(temp);
+          document.querySelector('#mi-m').appendChild(card);
       }
+
+        /*Current day temperature Information from API */
+        let currently = document.createElement('p');
+        let ctemp = document.createElement('p');
+        let humidity = document.createElement('p');
+        let high = document.createElement('p');
+        let low = document.createElement('p');
+        let wind= document.createElement('p');
+
+        high.classList.add('mgs');
+        low.classList.add('mgs');
+        humidity.classList.add('mgs');
+        currently.classList.add('mgs');
+        ctemp.classList.add('mgs');
+        wind.classList.add('mgs');
+
+        high.textContent = 'High: ' +Math.round(info.list[0].main.temp_max)+'°';
+        low.textContent = 'Low: ' +Math.round(info.list[0].main.temp_min)+'°';
+        humidity.textContent = 'Humidity: ' +info.list[0].main.humidity;
+        currently.textContent = 'Sky: ' +(info.list[0].weather[0].description).replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));;
+        ctemp.textContent = 'Temperature: ' +Math.round(info.list[0].main.temp)+'°';
+        wind.textContent = 'Wind Speed: ' +Math.round(info.list[0].wind.speed)+'mph';
+        
+        document.querySelector('#mi-mg1').appendChild(currently);
+        document.querySelector('#mi-mg1').appendChild(ctemp);
+        document.querySelector('#mi-mg1').appendChild(high);
+        document.querySelector('#mi-mg1').appendChild(low);
+        document.querySelector('#mi-mg1').appendChild(humidity);
+        document.querySelector('#mi-mg1').appendChild(wind);
+      
   });
 
 };
