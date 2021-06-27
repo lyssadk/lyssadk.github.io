@@ -151,9 +151,21 @@ margin:0 auto;
     position: relative;
     }
 
+    #weather-sum{
+        display: none;
+    }
+
+    
+
     #mi-m{
         display: grid;
         grid-template-columns: repeat(5 ,auto);
+    }
+
+    .mi{
+        max-width: 100%;
+        margin: 10px;
+        text-align: center;
     }
     @media only screen and (min-width:38em) {
         
@@ -240,6 +252,16 @@ margin:0 auto;
     }
         
     @media only screen and (min-width:53em) {
+        #sm-w-sum{
+            display: none;
+        }
+        #weather-sum{
+            display: block;
+            position: absolute;
+            top:50px;
+            background-color: rgba(248, 248, 255, 0.63);
+            left: 20px;
+        }
     header{
         grid-template-columns: .62fr 1fr;
     }
