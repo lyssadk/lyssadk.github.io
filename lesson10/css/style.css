@@ -56,6 +56,11 @@ nav{
 #navigation.responsive li {
     display:block;
 }
+
+.body-section h5, .body-section h4, .body-section h3, header, #weather-sum h3{
+    background-color: #0D3C45;
+    color:white;
+}
 header{
     display: grid;
     grid-template-columns: .4fr 1fr .2fr;
@@ -152,10 +157,21 @@ margin:0 auto;
     }
 
     #weather-sum{
-        display: none;
+        background-color: white;
+        max-width: 800px;
+        margin: 10px;
+        box-shadow: 5px 5px 10px gainsboro;
     }
 
-    
+    #ma{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: block;
+        padding-bottom: 20px;
+        max-width: 80%;
+    }
 
     #mi-m{
         display: grid;
@@ -167,10 +183,12 @@ margin:0 auto;
         margin: 10px;
         text-align: center;
     }
-
-    .mgs{
-        margin: 0 10px;
-        padding: 2px
+    .mgs{margin: 0 10px;
+        padding: 2px;}
+    #mi-m .mi h3{
+        
+        background-color: white;
+        color: black;
     }
     #mi-mg2, #mi-mg1{
         display: grid;
@@ -270,10 +288,15 @@ margin:0 auto;
         #weather-sum{
             display: block;
             position: absolute;
+            box-shadow: none;
             top:50px;
             background-color: rgba(248, 248, 255, 0.63);
             left: 20px;
             padding-bottom: 15px;
+           
+        } #weather-sum h3{
+            background-color:rgba(248, 248, 255, 0) ;
+            color: black;
         }
     header{
         grid-template-columns: .62fr 1fr;

@@ -57,6 +57,7 @@ filter = okey.filter(day => day.dt_txt.includes('18:00:00'))
           weekdays[12] = "Friday";
           ok = result.getDay();
 
+          // literally don't ask me. this is really rough js i used that def could've been simplified. again, it works but it ain't the most efficient
           switch (ok) {
             case 6:
               day.textContent = weekdays[ok + (i - 6)]
@@ -80,6 +81,8 @@ filter = okey.filter(day => day.dt_txt.includes('18:00:00'))
 
     fetch(todaySum)
     .then((response) => {
+
+      // making sure it is fetching the stuff 
       if (response.status == 200){
         return response.json();
     }
