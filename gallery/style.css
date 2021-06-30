@@ -9,6 +9,9 @@ main{
     max-width: 900px;
     position: relative;
 }
+body h1{
+    padding-left: 20px;
+}
 
 .gallery-img{
     width: 100%;

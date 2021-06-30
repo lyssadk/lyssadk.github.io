@@ -1,0 +1,13 @@
+#temples{
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#temples section{
+    box-shadow: 5px 5px 10px gainsboro;
+}
+
+#temples section img{
+    max-width: 800px;
+}
