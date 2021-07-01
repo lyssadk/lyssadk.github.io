@@ -298,6 +298,7 @@ div{
         }
     
         nav {
+            font-size: 14px;
             text-align: center;
             max-width: 100%;
         }

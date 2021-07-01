@@ -33,35 +33,12 @@ picture img{
     display: none;
 }
 
-header h1{
-    font-size: 20px;
-    margin:0px;
-}
-header p{
-    margin:0px;
-    grid-column: 1/2;
-    font-size: 12px;
-}
-header{
-    display: grid;
-    grid-template-columns: .4fr 1fr .2fr;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #0D3C45;
-    color:white;
-}
-#top-ham{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    margin:10px auto;
-}
-
 nav{
     font-family: 'Oswald', sans-serif;
     margin:0%;
     max-width: 100%;
     background-color:#0D0E0B;
+    font-size: 14px;
 }
 
 #navigation {
@@ -98,6 +75,41 @@ nav{
 
 #navigation.responsive li {
     display:block;
+}
+header{
+    display: grid;
+    grid-template-columns: .4fr 1fr .2fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #0D3C45;
+    color:white;
+}
+#top-ham{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin:10px auto;
+}
+header h1{
+    font-size: 20px;
+    margin:0px;
+    color:white;
+}
+header p{
+    margin:0px;
+    grid-column: 1/2;
+    font-size: 12px;
+    color:white;
+}
+
+#logo{
+margin:5px auto;
+background-color: black;
+width: 35px;
+font-size: 25px;
+border-radius: 9px;
+text-align: center;
+height:35px;
 }
 
 footer{
@@ -152,7 +164,7 @@ footer{
 
     #navigation{
         grid-template-columns: repeat(7,auto);
-        max-width: 1000px;
+        max-width: 800px;
         margin:0 auto;
     }
 
