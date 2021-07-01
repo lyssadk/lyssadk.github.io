@@ -151,6 +151,7 @@ footer{
     }
     header div{
         margin:0 50px;
+        line-height: 22px;
     }
     
     #logo{
@@ -178,6 +179,13 @@ footer{
     #top-ham{
         display: none;
     }
+    header h1{
+        margin-top: 10px;
+    }
+    header div p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
 }
 @media only screen and (min-width:50em) {
     main{
@@ -187,13 +195,10 @@ footer{
     picture:hover{
         box-shadow: 5px 5px 10px gainsboro;
     }
-
-    header{
-        grid-template-columns: .62fr 1fr;
-    }
     header div{
         margin: 0px 50px 0px 10px;
     }
+  
     #logo{
         margin: 8px 0px 0px 85%;
     }
@@ -204,4 +209,5 @@ footer{
         margin: 20px auto;
         max-width: 900px;
     }
+    
 }

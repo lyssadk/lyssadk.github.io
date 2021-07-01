@@ -8,8 +8,9 @@ fetch(requestURL)
     const towns = jsonObject['towns'];  
     // temporary checking for valid response and data parsing
     for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name == 'Fish Haven' || towns[i].name == 'Preston' || towns[i].name =='Soda Springs'){
+        if (towns[i].name == 'Fish Haven' || towns[i].name =='Soda Springs'){
         
+         
         let card = document.createElement('section');
         let content = document.createElement('div')
         let name = document.createElement('h2'); 
@@ -35,10 +36,42 @@ fetch(requestURL)
         content.appendChild(year);
         content.appendChild(population);
         content.appendChild(rainfall);
+
         
 
 
-        document.querySelector('div#town').appendChild(card);}}
+        document.querySelector('div#town').appendChild(card);}
+        
+        if(towns[i].name == 'Preston'){
+            let link = document.createElement('a')
+            link.setAttribute('href', '../lesson10/index.html')
+            let card = document.createElement('section');
+            let content = document.createElement('div')
+            let name = document.createElement('h2'); 
+            let motto = document.createElement('p');
+            let year = document.createElement('p');
+            let population = document.createElement('p');
+            let rainfall = document.createElement('p');
+            let image= document.createElement('img');
+            
+            link.classList.add('preston')
+            image.setAttribute('src', towns[i].photo);
+            name.textContent = towns[i].name;
+            motto.textContent = towns[i].motto;
+            year.textContent = 'Year Founded: '+ towns[i].yearFounded;
+            population.textContent = 'Current Population: '+ towns[i].currentPopulation;
+            rainfall.textContent = 'Average Rainfall: '+ towns[i].averageRainfall;
+            link.appendChild(card)
+            card.appendChild(image);
+            card.appendChild(content);
+            content.appendChild(name);
+            content.appendChild(motto);
+            content.appendChild(year);
+            content.appendChild(population);
+            content.appendChild(rainfall);
+            
+            document.querySelector('div#town').appendChild(link)
+          }}
 });
 
 window.addEventListener('load', () => {

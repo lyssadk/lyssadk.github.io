@@ -68,12 +68,12 @@ html, body {
     padding: 5px;
     }
     .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
-    color: #a37547;
+    color: #96aeaf ;
     }
     .item input:hover, .item select:hover, .item textarea:hover {
     border: 1px solid transparent;
-    box-shadow: 0 0 6px 0 #a37547;
-    color: #a37547;
+    box-shadow: 0 0 6px 0 #AFBFC0 ;
+    color: #AFBFC0 ;
     }
     .item {
     position: relative;
@@ -101,7 +101,7 @@ html, body {
     border: 2px solid #ccc;
     }
     input[type=radio]:checked + label:before, label.radio:hover:before {
-    border: 2px solid #a37547;
+    border: 2px solid #AFBFC0 ;
     }
     label.radio:after {
     content: "";
@@ -110,7 +110,7 @@ html, body {
     left: 5px;
     width: 8px;
     height: 4px;
-    border: 3px solid #a37547;
+    border: 3px solid #AFBFC0 ;
     border-top: none;
     border-right: none;
     transform: rotate(-45deg);
@@ -128,14 +128,14 @@ html, body {
     padding: 10px;
     border: none;
     border-radius: 5px; 
-    background: #6b4724;
+    background: #AFBFC0 ;
     font-size: 16px;
     color: #fff;
     cursor: pointer;
     margin-bottom: 20px;
     }
     button:hover {
-    box-shadow: 0 0 18px 0 #3d2914;
+    box-shadow: 0 0 18px 0 #AFBFC0 ;
     }
     @media only screen and (min-width: 568px) {
     .name-item, .city-item {
@@ -151,7 +151,12 @@ html, body {
 
     body{ margin: 0 auto;
         font-family: 'Oswald', sans-serif;}
-
+        
+    #logo-home, #logo-home:active, #logo-home:hover, #logo-home:link, #logo-home:visited {
+            text-decoration:none ;
+            color: white;
+            
+        }
         nav{
             font-family: 'Oswald', sans-serif;
             margin:0%;
