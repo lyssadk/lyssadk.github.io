@@ -26,6 +26,9 @@ html, body {
     height: inherit;
     padding: 20px;
     }
+    .banner h1{
+        font-size: 40px;
+    }
     form {
     width: 100%;
     padding: 20px;

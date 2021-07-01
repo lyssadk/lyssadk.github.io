@@ -147,8 +147,14 @@ div{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
     color: white;
+
+}
+
+#back-img1 h1{
+  color:  rgba(255, 255, 255, 0.788);
+  font-size: 40px;
 }
 
 /* THREE SECTIONS */
