@@ -5,7 +5,7 @@ body{
 
 /* NAVIGATION AND FOOTER STUFF*/
 .body-section{
-    margin: 10px;
+    margin-top: 39px;
     box-shadow: 5px 5px 10px gainsboro;
 }
 main{
@@ -164,7 +164,7 @@ margin:0 auto;
     #weather-sum{
         background-color: white;
         max-width: 800px;
-        margin: 10px;
+        margin-top: 30px;
         box-shadow: 5px 5px 10px gainsboro;
     }
 
