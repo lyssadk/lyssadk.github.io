@@ -280,9 +280,7 @@ html, body {
         #navigation a {
             text-align: center;
         }
-        #navigation li:first-child{
-            display: none;
-        }
+        
         #top-ham{
             display: none;
         }

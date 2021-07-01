@@ -1,6 +1,6 @@
 
 body{ margin: 0 auto;
-    font-family: 'Dosis', sans-serif;}
+    font-family: 'Oswald', sans-serif;}
 main{
     display:grid;
     grid-template-columns: 1fr;
@@ -9,13 +9,20 @@ main{
     max-width: 900px;
     position: relative;
 }
-body h1{
-    padding-left: 20px;
+#logo-home, #logo-home:active, #logo-home:hover, #logo-home:link, #logo-home:visited {
+    text-decoration:none ;
+    color: white;
+    
 }
 
+
+#title {
+    text-align: center;
+}
 .gallery-img{
-    width: 100%;
+    width: 70%;
     height: 80%;
+    margin-left: 15%;
 }
 picture img{
     object-fit: cover;
@@ -51,7 +58,7 @@ header{
 }
 
 nav{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin:0%;
     max-width: 100%;
     background-color:#0D0E0B;
@@ -99,13 +106,21 @@ footer{
     color: white;
     padding: 10px;
 }
-@media only screen and (min-width:40em) {
-
-   main{ 
+@media only screen and (min-width:33em) {
+     main{ 
        grid-template-columns: 1fr 1fr;
        max-width: 600px;
        margin: 10px auto;
     }
+    .gallery-img{
+        width: 100%;
+        height: 80%;
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width:40em) {
+
+  
     header h1{
         font-size: 40px;
         margin:0px ;
@@ -148,9 +163,6 @@ footer{
     #navigation a {
         text-align: center;
     }
-    #navigation li:first-child{
-        display: none;
-    }
     #top-ham{
         display: none;
     }
@@ -175,5 +187,9 @@ footer{
     }
     .text{
         display: inline;
+    }
+    #title{
+        margin: 20px auto;
+        max-width: 900px;
     }
 }
