@@ -11,15 +11,44 @@ body{
     margin: 0 auto;
 }
 #content{
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
+}
+main{
+    border: 1px solid black;
+}
+#content section:nth-child(1){
+    background-color: #FFD382;
+}
+#content section:nth-child(2){
+    background-color: #99E09C;
+}
+#content section:nth-child(3){
+    background-color: #5ECAA6;
+}
+#content section:nth-child(4){
+    background-color: #22AAF8;
+}
+#content section:nth-child(5){
+    background-color: #348CD9;
+}
+h1{
+    margin: 0px;
 }
 .tagDiv{
     display: flex;
-    margin: 0 auto;
-    color: white;
+    margin: 0px;
+    
 }
-
+.tagDiv p{
+    color: white;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 .EventOver{
     background-color:#F99090;
 }
@@ -34,4 +63,14 @@ body{
 }
 .Featured{
     background-color:#FFCC56;
+}
+main section{
+    display: grid;
+    grid-template-columns: .23fr 1fr;
+}
+main section div{
+    padding-bottom:10px ;
+}
+.date{
+    margin: auto;
 }
