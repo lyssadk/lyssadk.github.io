@@ -1,0 +1,37 @@
+h1, h2, p{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* colors
+#66D2D6
+#FBC740
+#BD97CB
+#E56997 */
+body{
+    margin: 0 auto;
+}
+#content{
+    width: 1000px;
+    margin: 0 auto;
+}
+.tagDiv{
+    display: flex;
+    margin: 0 auto;
+    color: white;
+}
+
+.EventOver{
+    background-color:#F99090;
+}
+.VirtualEvent{
+    background-color:#F69396;
+}
+.Rescheduled{
+    background-color:#68EF79;
+}
+.MovedOnline{
+    background-color:#8ADDCF;
+}
+.Featured{
+    background-color:#FFCC56;
+}
