@@ -24,6 +24,7 @@ fetch(apiURL)
 
         eventName.textContent = events[i].properties.name
         organizer.textContent = "Organized by: " + events[i].properties.organized_by;
+        organizer.setAttribute('class', "eventOrganizer");
         
         for (let tagCount = 0; tagCount < events[i].tags.length; tagCount++){
             let tag = document.createElement('p');
@@ -51,6 +52,7 @@ fetch(apiURL)
         
         
         type.textContent = "Event Type: " + events[i].type;
+        type.setAttribute('class', "eventType");
         
         eventSection.appendChild(dateDiv);
         eventSection.appendChild(eventDiv);

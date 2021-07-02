@@ -89,3 +89,7 @@ main section div{
 .date h1 {
     font-size: 40px;
 }
+
+.eventOrganizer, .eventType{
+    font-style: italic;
+}
