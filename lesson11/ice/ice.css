@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 h1, h2, p{
     font-family: 'Raleway', sans-serif;
 }
-
+h1, p{
+    font-family: 'Roboto', sans-serif;
+}
 /* colors
 #66D2D6
 #FBC740
@@ -36,6 +40,7 @@ main{
 h1{
     margin: 0px;
     font-weight: 2000;
+    font-size: 40px;
 }
 .tagDiv{
     display: flex;
