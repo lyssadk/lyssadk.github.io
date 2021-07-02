@@ -21,21 +21,21 @@ fetch(apiURL)
         let month = document.createElement('p');
         let year = document.createElement('p');
         let organizer = document.createElement('p');
+
         eventName.textContent = events[i].properties.name
+        organizer.textContent = "Organized by: " + events[i].properties.organized_by;
+        
         for (let tagCount = 0; tagCount < events[i].tags.length; tagCount++){
             let tag = document.createElement('p');
             tag.textContent = events[i].tags[tagCount];
             tagDiv.appendChild(tag);
             tag.setAttribute('class', events[i].tags[tagCount].split(" ").join(""));
-        }
-        organizer.textContent = "Organized by: " + events[i].properties.organized_by;
-        for (let k = 0; k < tagDiv.length; k++){
-            if(tag[k].textContent == "Event Over"){
+
+            if(events[i].tags[tagCount] == "Event Over"){
                 organizer.textContent = "";
-                
             }
-            console.log(tag[k].textContent);
         }
+
 
         //Start Time and End Time
         let startdate = new Date(events[i].properties.start);
@@ -59,9 +59,9 @@ fetch(apiURL)
         eventDiv.appendChild(time);
         eventDiv.appendChild(type);
         eventDiv.appendChild(organizer);
-        dateDiv.appendChild(month)
+        dateDiv.appendChild(year)
         dateDiv.appendChild(day);
-        dateDiv.appendChild(year);
+        dateDiv.appendChild(month);
         
         
         document.querySelector("#content").appendChild(eventSection);
