@@ -8,43 +8,21 @@ fetch(requestURL)
     const towns = jsonObject['towns'];  
     // temporary checking for valid response and data parsing
     for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name == 'Fish Haven' || towns[i].name =='Soda Springs'){
-        
-         
-        let card = document.createElement('section');
-        let content = document.createElement('div')
-        let name = document.createElement('h2'); 
-        let motto = document.createElement('p');
-        let year = document.createElement('p');
-        let population = document.createElement('p');
-        let rainfall = document.createElement('p');
-        let image= document.createElement('img');
-        
-        
-        image.setAttribute('src', towns[i].photo);
-        name.textContent = towns[i].name;
-        motto.textContent = towns[i].motto;
-        year.textContent = 'Year Founded: '+ towns[i].yearFounded;
-        population.textContent = 'Current Population: '+ towns[i].currentPopulation;
-        rainfall.textContent = 'Average Rainfall: '+ towns[i].averageRainfall;
-        
-
-        card.appendChild(image);
-        card.appendChild(content);
-        content.appendChild(name);
-        content.appendChild(motto);
-        content.appendChild(year);
-        content.appendChild(population);
-        content.appendChild(rainfall);
 
         
-
-
-        document.querySelector('div#town').appendChild(card);}
-        
-        if(towns[i].name == 'Preston'){
+        if(towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name =='Soda Springs'){
             let link = document.createElement('a')
-            link.setAttribute('href', '../lesson10/index.html')
+            if (towns[i].name =='Preston'){
+              link.setAttribute('href', '../lesson10/index.html')
+            }
+            else if (towns[i].name =='Soda Springs'){
+              link.setAttribute('href', '../lesson11/soda-springs.html')
+            }
+            else {
+              link.setAttribute('href', '../lesson11/fish-haven.html')
+            }
+            
+            
             let card = document.createElement('section');
             let content = document.createElement('div')
             let name = document.createElement('h2'); 
