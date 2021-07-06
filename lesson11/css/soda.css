@@ -8,6 +8,18 @@ body{
     margin-top: 39px;
     box-shadow: 5px 5px 10px gainsboro;
 }
+.body-section{
+    margin-top: 39px;
+    margin-bottom: 39px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 10px gainsboro;
+}
+.body-section section p, .body-section section a{
+    margin: 20px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
 main{
     margin: 0 auto;
     max-width: 800px;

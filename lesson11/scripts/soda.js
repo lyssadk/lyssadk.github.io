@@ -186,7 +186,7 @@ async function getWeather(){
       WebFont.load({
           google: {
             families: [
-               'Oswald'
+               'Oswald', 'Roboto'
             ]
           }})})
           
