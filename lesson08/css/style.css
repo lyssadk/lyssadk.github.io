@@ -8,7 +8,7 @@ html, body {
     outline: none;
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
-    color: #666;
+    color: black;
     line-height: 22px;
     }
     form h1 {
@@ -299,3 +299,32 @@ html, body {
             width: 800px;
         }
     }
+
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        }
+        #num{
+        text-align: left;
+        margin: 0 auto;
+        }
+        #contact img{
+        max-width: 300px;
+        margin: 10px auto;
+        }
+        #contact{
+        margin-top: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #0D3C45;
+        color: white;
+        max-width: 800px;
+        }
+        
+        .mg{
+        padding: 10px;
+        margin:0 auto;
+        }
