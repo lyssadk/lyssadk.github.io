@@ -20,5 +20,83 @@
         <li><a href="services.html">SERVICES</a></li>
     </ul>
     </nav>
+    <main>
+        <form>
+            <div class="item">
+                <p>LOCATION</p>
+                <select required>
+                    <option selected value="" disabled>Temple</option>
+                    <option value="1">Draper, UT</option>
+                    <option value="2">Mt. Timpanagos, UT</option>
+                    <option value="3">San Diego, CA</option>
+                    <option value="4">Redlands, CA</option>
+                </select>
+            </div>
+            <div class="item">
+                <p>START DATE</p>
+                <input type="date">
+                <p>END DATE</p>
+                <input type="date">
+            </div>
+            <div class = 'item'>
+                <p># OF ROOMS</p>
+                <input type="number">
+                <p>TYPE OF ROOMS</p>
+                <select required>
+                    <option value="1">Queen</option>
+                    <option value="2">King</option>
+                    <option value="3">Twin</option>
+                    <option value="4">Suite</option>
+                </select>
+            </div>
+            <div class="item">
+                <p>FULL NAME*</p>
+                <div class="name-item">
+                <input type="text" name="First" placeholder="First" pattern="^[a-zA-Z\s\.\-]{3,}$"required />
+                <input type="text" name="lname" placeholder="Last" pattern="^[a-zA-Z\s\.\-]{4,}$" required />
+                </div>
+            </div>
+            <div class="item">
+                <p>EMAIL</p>
+                <input type="email" name="email" placeholder="example@gmail.com"/>
+            </div>
+            <div class="item">
+                <p>PHONE*</p>
+                <input type="tel" name="phone" placeholder="###-###-####"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required/>
+          </div>
+          <div class="item">
+              <p>HOME STATE/COUNTRY</p>
+              <input type="text">
+          </div>
+        </form>
+    </main>
+    <!-- FOOTER & CONTACT -->
+    <div>
+        <h4>CONTACT INFORMATION</h4>
+        <p><script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com//zzcjjxew.json"
+                colors="primary:black,secondary:black"
+                style="width:32px;height:32px">
+            </lord-icon> 123 N 2nd E, Preston ID </p>
+        <p>
+            <lord-icon
+                src="https://cdn.lordicon.com//zpxybbhl.json"
+                trigger="hover"
+                colors="primary:black,secondary:black"
+                style="width:32px;height:32px">
+            </lord-icon> (888)-888-888</p>
+        <p>
+            <lord-icon
+                src="https://cdn.lordicon.com//rhvddzym.json"
+                trigger="hover"
+                colors="primary:black,secondary:black"
+                style="width:32px;height:32px">
+            </lord-icon> clearskyweather@gmail.com</p>
+        </div>
+
+    <footer>
+       <p> © <span id="current-year"></span> | Temple Inns and Suites |</p>
+    </footer>
 </body>
 </html>
