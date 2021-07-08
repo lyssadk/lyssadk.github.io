@@ -41,15 +41,63 @@ main div {
      object-position: center;
 }
 
+header {
+  background-image: url(../images/temple-2.jpg);
+  margin: 0%;
+  max-width: 100%;
+  height: 150px;
+  /* Location of the image */
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn’t tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+  background-attachment: scroll;
+  /* This is what makes the background image rescale based
+    on the container’s size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+    while the background image is loading */
+  background-color: #464646;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  bottom: 15%;
+  left: 1%;
+  font-size: 40px;
+}
+
 @media only screen and (min-width: 53em) {
   main {
     max-width: 1000px;
   }
-  #reserve-div {
+  #two-img {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  #two-img div {
+    display: -ms-grid;
+    display: grid;
+  }
+  #two-img div img, #two-img div p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #reserve-div {
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr .7fr;
+        grid-template-columns: 1fr .7fr;
+  }
+  #reserve-div p {
+    margin-left: 70px;
   }
   #reserve-div button {
     width: 200px;
@@ -59,27 +107,8 @@ main div {
         justify-self: center;
     margin-top: 16px;
   }
-  header {
-    background-image: url(../images/temple-2.jpg);
-    margin: 0%;
-    max-width: 100%;
-    height: 150px;
-    /* Location of the image */
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    /* Background image doesn’t tile */
-    background-repeat: no-repeat;
-    /* Background image is fixed in the viewport so that it doesn’t move when
-    the content’s height is greater than the image’s height */
-    background-attachment: scroll;
-    /* This is what makes the background image rescale based
-    on the container’s size */
-    background-size: cover;
-    /* Set a background color that will be displayed
-    while the background image is loading */
-    background-color: #464646;
-    color: white;
-    position: relative;
+  #gilbert {
+    width: 100%;
   }
   ul {
     display: -ms-grid;
