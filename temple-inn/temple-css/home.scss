@@ -1,19 +1,91 @@
+$darkrose : #8B575C;
+$lightrose: #C98986;
+
 body{
     margin: 0;
+    
+    h1, h2, h3, h4, h5, h6{
+         font-family: 'Oswald', sans-serif;
+     }
 }
+
 main{
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     div{
-       margin-top: 40px;
+        margin-top: 40px;
+     }
+}
+#gilbert{
+    box-shadow: 3px 3px 15px gainsboro;
+    width: 90%;
+    margin: 0 auto;
+    h2 {
+        margin:20px
+    }
+    p{
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+}}
+
+@media only screen and (min-width:53em){
+main{
+    max-width: 1000px;
+}
+#reserve-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    button{
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        justify-self: center;
+        margin-top: 16px;
     }
 }
 
+header{
+    background-image: url(../images/temple-2.jpg);
+     
+    margin: 0%;
+    max-width: 100%;
+    height: 150px;
+    /* Location of the image */
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn’t tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+    background-attachment:scroll;
+    
+    /* This is what makes the background image rescale based
+    on the container’s size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+    color:white;
+    
+
+    position: relative;
+}
 ul {     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
-    background-color: goldenrod;
+    background-color: $darkrose;
     padding: 10px;
     margin: 0 auto;
     
@@ -33,7 +105,4 @@ ul {
         text-decoration: underline;
     }
 }
-
-.active{
-    background-color: #fff;
 }

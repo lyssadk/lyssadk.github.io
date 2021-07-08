@@ -1,9 +1,14 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
 
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
 main {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -11,35 +16,94 @@ main div {
   margin-top: 40px;
 }
 
-ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  list-style: none;
-  background-color: goldenrod;
-  padding: 10px;
+#gilbert {
+  -webkit-box-shadow: 3px 3px 15px gainsboro;
+          box-shadow: 3px 3px 15px gainsboro;
+  width: 90%;
   margin: 0 auto;
 }
 
-ul li {
-  -ms-grid-column-align: center;
-      justify-self: center;
+#gilbert h2 {
+  margin: 20px;
 }
 
-ul li a {
-  display: inline-block;
-  max-width: 100px;
-  color: rgba(255, 255, 255, 0.74);
-  text-decoration: none;
+#gilbert p {
+  margin: 20px;
+  padding-bottom: 20px;
 }
 
-ul li a:hover {
-  color: whitesmoke;
-  text-decoration: underline;
+#gilbert img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-.active {
-  background-color: #fff;
+@media only screen and (min-width: 53em) {
+  main {
+    max-width: 1000px;
+  }
+  #reserve-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #reserve-div button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 16px;
+  }
+  header {
+    background-image: url(../images/temple-2.jpg);
+    margin: 0%;
+    max-width: 100%;
+    height: 150px;
+    /* Location of the image */
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn’t tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+    background-attachment: scroll;
+    /* This is what makes the background image rescale based
+    on the container’s size */
+    background-size: cover;
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+    color: white;
+    position: relative;
+  }
+  ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    background-color: #8B575C;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  ul li {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  ul li a {
+    display: inline-block;
+    max-width: 100px;
+    color: rgba(255, 255, 255, 0.74);
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
 }
 /*# sourceMappingURL=home.css.map */
