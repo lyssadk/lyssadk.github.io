@@ -81,9 +81,14 @@ main{
     div{
         display: grid; 
         
-        img, p{
+        img{
         justify-self: center;
-    }
+        position: relative;
+        }
+        p{
+            position: absolute;
+        }
+
     }
    
 }

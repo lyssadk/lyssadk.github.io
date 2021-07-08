@@ -85,9 +85,13 @@ header h1 {
     display: -ms-grid;
     display: grid;
   }
-  #two-img div img, #two-img div p {
+  #two-img div img {
     -ms-grid-column-align: center;
         justify-self: center;
+    position: relative;
+  }
+  #two-img div p {
+    position: absolute;
   }
   #reserve-div {
     margin-top: 50px;
