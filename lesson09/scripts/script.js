@@ -91,7 +91,7 @@ window.addEventListener('load', () => {
     WebFont.load({
         google: {
           families: [
-             'Oswald'
+             'Oswald', 'Roboto'
           ]
         }}); 
     function myFunction() {

@@ -9,6 +9,9 @@ main{
     max-width: 900px;
     position: relative;
 }
+picture p {
+    font-family: 'Roboto', sans-serif;
+}
 #logo-home, #logo-home:active, #logo-home:hover, #logo-home:link, #logo-home:visited {
     text-decoration:none ;
     color: white;

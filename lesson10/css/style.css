@@ -134,6 +134,9 @@ margin:0 auto;
 }
 
 /* FIRST LITTLE PART WITH IMG*/
+main p {
+    font-family: 'Roboto', sans-serif;
+}
 #background-img {
     
     margin-top:40px;

@@ -53,11 +53,13 @@ html, body {
     height: 100%;
     }
     input, select, textarea {
+    font-family: 'Roboto',sans-serif;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     }
     input {
+    
     width: calc(100% - 10px);
     padding: 5px;
     }
@@ -139,6 +141,9 @@ html, body {
     }
     button:hover {
     box-shadow: 0 0 18px 0 #AFBFC0 ;
+    }
+    label span{
+        font-family: 'Roboto', sans-serif;
     }
     @media only screen and (min-width: 568px) {
     .name-item, .city-item {

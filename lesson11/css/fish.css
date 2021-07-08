@@ -1,4 +1,5 @@
 body{ 
+    padding: 0;
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
 }
@@ -83,13 +84,13 @@ nav{
     
 }
 header{
+    font-family: 'Oswald', sans-serif;
     display: grid;
     grid-template-columns: .4fr 1fr .2fr;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #0D3C45;
     color:white;
-    line-height: 22px;
 }
 #top-ham{
     text-decoration: none;
@@ -107,6 +108,7 @@ header p{
     grid-column: 1/2;
     font-size: 12px;
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 
 #logo{
@@ -232,7 +234,6 @@ margin:0 auto;
         }
     
         nav {
-            font-size: 14px;
             text-align: center;
             max-width: 100%;
         }
@@ -241,16 +242,27 @@ margin:0 auto;
         }
         header div{
             margin:0 50px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        header h1{
+            font-size: 40px;
+            margin-top: 15px ;
+            margin-bottom: 5px;
         }
         
         #logo{
-        margin: 8px 0px 0px 100px;
-        background-color: black;
-        width: 54px;
-        font-size: 40px;
-        border-radius: 10px;
-        text-align: center;
-        height: 53px;}
+            margin: 8px 0px 0px 250px;
+            background-color: black;
+            width: 54px;
+            font-size: 40px;
+            border-radius: 10px;
+            text-align: center;
+            height: 53px;
+            line-height: 1.4;
+            position: absolute;}
     
         #navigation{
             grid-template-columns: repeat(7,auto);
@@ -291,20 +303,16 @@ margin:0 auto;
            grid-template-columns: repeat(3 ,auto);
        }
        
-        header h1{
-            font-size: 40px;
-            margin:0px ;
-        }
-        header p{
-            margin:0px;
-            grid-column: 1/2;
-            font-size: 20px;
-        }
+        
         #ma{ 
             max-width: 500px;
             float: right;
             margin:20px;
-        }
+        }  
+        header div{
+            width:100%;
+        margin: 0px 50px 0px 361px;
+    }
     }
         
     @media only screen and (min-width:53em) {
@@ -328,12 +336,8 @@ margin:0 auto;
     header{
         grid-template-columns: .62fr 1fr;
     }
-    header div{
-        margin: 0px 50px 0px 10px;
-    }
-    #logo{
-        margin: 8px 0px 0px 85%;
-    }
+  
+
     #alertBox{
         top: 30%;
         left:23%;
