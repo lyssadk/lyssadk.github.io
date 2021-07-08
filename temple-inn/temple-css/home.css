@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main div {
+  margin-top: 40px;
+}
+
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  background-color: goldenrod;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+ul li {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+ul li a {
+  display: inline-block;
+  max-width: 100px;
+  color: rgba(255, 255, 255, 0.74);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #fff;
+}
+/*# sourceMappingURL=home.css.map */

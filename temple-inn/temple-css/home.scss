@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    div{
+       margin-top: 40px;
+    }
+}
+
+ul {     
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    background-color: goldenrod;
+    padding: 10px;
+    margin: 0 auto;
+    
+
+    li{
+        justify-self: center;
+       
+    }
+    li a{
+        display: inline-block;
+        max-width: 100px;
+        color: rgba(255, 255, 255, 0.74);
+        text-decoration: none;
+    }
+    li a:hover{
+        color: whitesmoke;
+        text-decoration: underline;
+    }
+}
+
+.active{
+    background-color: #fff;
+}
