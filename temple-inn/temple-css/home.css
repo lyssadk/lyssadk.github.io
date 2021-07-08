@@ -16,6 +16,34 @@ main div {
   margin-top: 40px;
 }
 
+#temple-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.temple:hover {
+  -webkit-box-shadow: 5px 5px 15px grey;
+          box-shadow: 5px 5px 15px grey;
+}
+
+.temple {
+  margin: 20px;
+  max-width: 90%;
+  -webkit-box-shadow: 3px 3px 15px gainsboro;
+          box-shadow: 3px 3px 15px gainsboro;
+}
+
+.temple img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 #gilbert {
   -webkit-box-shadow: 3px 3px 15px gainsboro;
           box-shadow: 3px 3px 15px gainsboro;
@@ -129,14 +157,24 @@ header h1 {
         justify-self: center;
   }
   ul li a {
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     max-width: 100px;
-    color: rgba(255, 255, 255, 0.74);
+    color: white;
     text-decoration: none;
   }
   ul li a:hover {
-    color: whitesmoke;
+    color: #ffffffde;
     text-decoration: underline;
+  }
+  footer {
+    background-color: #8B575C;
+    margin: 0;
+    padding: 10px;
+  }
+  #contact {
+    padding: 20px;
+    background-color: #C98986;
   }
 }
 /*# sourceMappingURL=home.css.map */
