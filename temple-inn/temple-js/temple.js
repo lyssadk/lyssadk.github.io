@@ -27,8 +27,8 @@ function buildTempleCard(temple){
   card.innerHTML = `
                     <img src = "${temple.imageurl}" alt="${temple.name}">
                     <h2>${temple.name}</h2>  
-                    <p>First President: <b>${temple.presidents[0]}</b></p>
-                    <p>Current President: <b>${temple.presidents[temple.presidents.length-1]}</b></p>`;
+                    <p>Closures: <b>${temple.closures[0].startdate}</b></p>
+                    <p>Services: <b>${temple.services.available[0]}</b></p>`;
   document.querySelector("#temple-card").appendChild(card);
 
 }

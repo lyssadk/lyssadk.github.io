@@ -99,6 +99,10 @@ header h1 {
   font-size: 40px;
 }
 
+.first {
+  margin-bottom: 40px;
+}
+
 @media only screen and (min-width: 53em) {
   main {
     max-width: 1000px;
@@ -108,6 +112,8 @@ header h1 {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    margin-bottom: 125px;
+    margin-top: 20px;
   }
   #two-img div {
     display: -ms-grid;
@@ -119,6 +125,9 @@ header h1 {
     position: relative;
   }
   #two-img div p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    top: 1300px;
     position: absolute;
   }
   #reserve-div {

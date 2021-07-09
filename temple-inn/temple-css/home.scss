@@ -89,6 +89,10 @@ header{
         font-size: 40px;
     }
 }
+
+.first{
+    margin-bottom: 40px;
+}
 @media only screen and (min-width:53em){
 main{
     max-width: 1000px;
@@ -97,6 +101,8 @@ main{
 #two-img{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 125px;
+    margin-top: 20px;
     div{
         display: grid; 
         
@@ -105,6 +111,8 @@ main{
         position: relative;
         }
         p{
+            justify-self: center;
+            top: 1300px;
             position: absolute;
         }
 

@@ -9,44 +9,169 @@
         "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/gilbert-arizona/800x500/gilbert-arizona-temple-evening-1172169-wallpaper.jpg",
         "presidents":[
             "David E. LeSueur", "Alyn M. McClure", "Gordon J. Hall"
-        ]
+        ],
+        "services":{
+            "available": ["Clothing rental", "Distribution center nearby"],
+            "unavailable" : ["Cafeteria", "Patron Housing"]
+        },
+        "closures":[{
+            "startday": "Saturday",
+            "startdate": "October 2nd"
+        },
+        {
+            "startday" : "Monday",
+            "startdate": "October 4th",
+            "endday": "Monday",
+            "enddate": "November 22nd"
+        },
+        {
+            "startday": "Wednesday",
+            "startdate": "November 24th",
+            "endday": "Thursday",
+            "enddate": "November 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 24th",
+            "endday": "Saturday",
+            "enddate": "December 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 31st"
+        }]
     },
 
     {
-        "name":"Rexburg Idaho Temple",
-        "phone":"208-656-0880",
-        "address1":"750 S 2nd E",
-        "city":"Rexburg",
-        "state":"ID",
-        "zip":83440,
-        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
-        "presidents":[
-            "Val Christensen","Clair Thueson","Philip Wightman","Fenton Broadhead","Max Checketts"
-        ]
+        "name":"Jordan River Utah Temple",
+        "phone":"801-254-3003",
+        "address1":"10200 S Temple Drive",
+        "city":"South Jordan",
+        "state":"UT",
+        "zip":84095,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/800x500/jordan-river-temple-lds-941302-wallpaper.jpg",
+        "services":{
+            "available": ["Clothing rental", "Distribution center nearby"],
+            "unavailable" : [ "Cafeteria", "Patron Housing"]
+        },
+        "closures":[{
+            "startday": "Saturday",
+            "startdate": "July 24th"
+        },
+        {
+            "startday" : "Monday",
+            "startdate": "September 6th"
+        },
+        {
+            "startday": "Saturday",
+            "startdate": "October 2nd"
+        },
+        {
+            "startday": "Wednesday",
+            "startdate": "November 24th",
+            "endday": "Thursday",
+            "enddate": "November 25th"
+        },
+        {
+            "startday": "Tuesday",
+            "startdate": "November 30",
+            "endday": "Monday",
+            "enddate": "December 13th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 24th",
+            "endday": "Saturday",
+            "enddate": "December 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 31st"
+        }]
     } ,   
     {
-        "name":"Kansas City Missouri Temple",
-        "phone":"816-413-1430",
-        "address1":"7001 Searcy Creek Pkwy",
-        "city":"Kansas City",
-        "state":"MO",
-        "zip":64119,
-        "imageurl":"https://assets.ldscdn.org/62/5e/625e0629b625e2596ad1c160a45f567f207560cc/kansas_city_temple_lds.jpg",
-        "presidents":[
-            "John Hardy","Dennis Karpowitz","Wayne Miller","R. Scott Holman"
-        ]
+        "name":"San Diego California Temple",
+        "phone":"858-622-0991",
+        "address1":"7474 Charmant Dr",
+        "city":"San Diego",
+        "state":"CA",
+        "zip": 92122,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/800x500/san-diego-mormon-temple-1164678-wallpaper.jpg",
+        "services":{
+            "available": ["Distribution center nearby"],
+            "unavailable" : ["Clothing rental", "Cafeteria", "Patron Housing"]
+        },
+        "closures":[{
+            "startday": "Monday",
+            "startdate": "September 13th",
+            "endday": "Monday",
+            "enddate": "September 27th"
+        },
+        {
+            "startday" : "Saturday",
+            "startdate": "October 2nd",
+            "endday": "Sunday",
+            "enddate": "October 3rd"
+        },
+        {
+            "startday": "Wednesday",
+            "startdate": "November 24th",
+            "endday": "Thursday",
+            "enddate": "November 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 24th",
+            "endday": "Saturday",
+            "enddate": "December 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 31st"
+        }]
     },
 
     {
-        "name":"Oklahoma City Oklahoma Temple",
-        "phone":"405-373-2309",
-        "address1":"12030 N Mustang Rd",
-        "city":"Yukon",
-        "state":"OK",
-        "zip":73099,
-        "imageurl":"https://assets.ldscdn.org/75/2c/752cf0dcfabe1870442460d13a2eeb8bda6267a2/oklahoma_city_temple_exterior.jpeg",
-        "presidents":[
-            "Henry Chesney","H. Aldridge Gillespie","Michael Southward","Don Hansen","Travis Campbell","Kent Bowman"
-        ]
+        "name":"Mount Timpanogos Utah Temple",
+        "phone":"801-763-4540",
+        "address1":"742 N 900 E",
+        "city":"American Fork",
+        "state":"UT",
+        "zip":840003,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mount-timpanogos-utah/800x500/mount-timpanogos-temple-lds-885508-wallpaper.jpg",
+        "services":{
+            "available": ["Clothing rental", "Distribution center nearby"],
+            "unavailable" : [ "Cafeteria", "Patron Housing"]
+        },
+        "closures":[{
+            "startday": "Saturday",
+            "startdate": "July 24th"
+        },
+        {
+            "startday" : "Monday",
+            "startdate": "August 2nd",
+            "endday": "Monday",
+            "enddate": "September 6th"
+        },
+        {
+            "startday": "Saturday",
+            "startdate": "October 2nd"
+        },
+        {
+            "startday": "Saturday",
+            "startdate": "November 24th",
+            "endday": "Thursday",
+            "enddate": "November 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 24th",
+            "endday": "Saturday",
+            "enddate": "December 25th"
+        },
+        {
+            "startday": "Friday",
+            "startdate": "December 31st"
+        }]
     } 
 ]
