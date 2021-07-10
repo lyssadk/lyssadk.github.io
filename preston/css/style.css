@@ -364,3 +364,29 @@ main p {
         color: white;
     }
     
+
+/*EVENTS*/
+
+.events{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.events h3{
+    grid-column: 1/-1;
+}
+
+.events p:first-of-type{
+    grid-column: 1/-1;
+}
+.event-list{
+    justify-self: center;
+}
+
+.day {
+    font-size: 30px;
+}
+
+.month {
+    font-size: 20px;
+}

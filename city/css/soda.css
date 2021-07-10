@@ -215,9 +215,39 @@ margin:0 auto;
         text-align: left;
     }
 
-
+    .events{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .events h3{
+        grid-column: 1/-1;
+    }
+    
+    .events p:first-of-type{
+        grid-column: 1/-1;
+    }
+    .event-list{
+        justify-self: center;
+    }
+    
+    .day {
+        font-size: 30px;
+    }
+    
+    .month {
+        font-size: 20px;
+    }
+    .event-list{
+            margin-top: 40px;
+        }
     @media only screen and (min-width:38em) {
         
+        .events{
+            grid-template-columns: .5fr .5fr;
+        }
+
+       
     /* #pancake{
             margin-left: 10px;
         }*/
@@ -343,7 +373,19 @@ margin:0 auto;
     #num{
         max-width: 400px;
     
-    }}
+    }
+    
+    .events{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .event-list{
+        margin-top: 0;
+        justify-self: center;
+        width: 250px;
+    }
+
+}
 
     #alertBox {
         position: absolute;

@@ -13,13 +13,13 @@ fetch(requestURL)
         if(towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name =='Soda Springs'){
             let link = document.createElement('a')
             if (towns[i].name =='Preston'){
-              link.setAttribute('href', '../lesson10/index.html')
+              link.setAttribute('href', '../preston/preston.html')
             }
             else if (towns[i].name =='Soda Springs'){
-              link.setAttribute('href', '../lesson11/soda-springs.html')
+              link.setAttribute('href', '../city/soda-springs.html')
             }
             else {
-              link.setAttribute('href', '../lesson11/fish-haven.html')
+              link.setAttribute('href', '../city/fish-haven.html')
             }
             
             
