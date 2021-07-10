@@ -239,7 +239,10 @@ margin:0 auto;
         font-size: 20px;
     }
     .event-list{
-            margin-top: 40px;
+        text-align: center;
+        margin-top: 40px;
+        max-width: 200px;
+        border: 1px solid gainsboro
         }
     @media only screen and (min-width:38em) {
         

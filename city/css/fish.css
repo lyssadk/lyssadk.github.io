@@ -237,9 +237,10 @@ margin:0 auto;
         grid-column: 1/-1;
     }
     .event-list{
-        
+        text-align: center;
         justify-self: center;
         margin-top: 40px;
+        border: 1px solid gainsboro;
     }
     
     .day {
@@ -384,7 +385,7 @@ margin:0 auto;
     }
 
     .events{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
        
        
     }
@@ -394,7 +395,7 @@ margin:0 auto;
     }
 
     .event-list{ 
-        
+        height:179.5px;
         margin-top: 0;
         width: 200px;
 

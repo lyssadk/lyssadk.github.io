@@ -204,7 +204,38 @@ main p {
         grid-template-columns: 1fr 1fr;
         text-align: left;
     }
+/*EVENTS*/
 
+.events{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.events h3{
+    grid-column: 1/-1;
+}
+
+.events p:first-of-type{
+    grid-column: 1/-1;
+}
+.event-list{
+    justify-self: center;
+    text-align: center;
+    border: 1px solid gainsboro;
+    width: 200px;
+}
+
+.event-list p {
+    margin: 20px;
+}
+
+.day {
+    font-size: 30px;
+}
+
+.month {
+    font-size: 20px;
+}
 
     @media only screen and (min-width:38em) {
         
@@ -357,28 +388,3 @@ main p {
     }
     
 
-/*EVENTS*/
-
-.events{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.events h3{
-    grid-column: 1/-1;
-}
-
-.events p:first-of-type{
-    grid-column: 1/-1;
-}
-.event-list{
-    justify-self: center;
-}
-
-.day {
-    font-size: 30px;
-}
-
-.month {
-    font-size: 20px;
-}
