@@ -231,6 +231,8 @@ margin:0 auto;
     
     .events h3{
         grid-column: 1/-1;
+        padding: 10px;
+        margin: 0;
     }
     
     .events p:first-of-type{
