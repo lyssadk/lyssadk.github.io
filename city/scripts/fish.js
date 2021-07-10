@@ -2,7 +2,7 @@
 
 
 async function getWeather(){
-    const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83230,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial';
+    const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83287,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial';
     const response = await fetch(requestURL)
   
     if (response.status == 200){
@@ -41,19 +41,19 @@ async function getWeather(){
           // the day stuff, im sure there is an easier way to do this, just ran out of time to figure it out so i did this haha
             var result = new Date();
             var weekdays = new Array(12);
-            weekdays[0] = "Sunday";
-            weekdays[1] = "Monday";
-            weekdays[2] = "Tuesday";
-            weekdays[3] = "Wednesday";
-            weekdays[4] = "Thursday";
-            weekdays[5] = "Friday";
-            weekdays[6] = "Saturday";
-            weekdays[7] = "Sunday";
-            weekdays[8] = "Monday";
-            weekdays[9] = "Tuesday";
-            weekdays[10] = "Wednesday";
-            weekdays[11] = "Thursday";
-            weekdays[12] = "Friday";
+            weekdays[0] = "Sun";
+            weekdays[1] = "Mon";
+            weekdays[2] = "Tues";
+            weekdays[3] = "Wed";
+            weekdays[4] = "Thurs";
+            weekdays[5] = "Fri";
+            weekdays[6] = "Sat";
+            weekdays[7] = "Sun";
+            weekdays[8] = "Mon";
+            weekdays[9] = "Tues";
+            weekdays[10] = "Wed";
+            weekdays[11] = "Thurs";
+            weekdays[12] = "Fri";
             ok = result.getDay();
   
             // literally don't ask me. this is really rough js i used that def could've been simplified. again, it works but it ain't the most efficient
@@ -76,7 +76,7 @@ async function getWeather(){
         /////////////////////////////////////////////////
       /*Current day temperature Information from API */
       //////////////////////////////////////////////////
-          const todaySum = 'https://api.openweathermap.org/data/2.5/weather?zip=83230&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
+          const todaySum = 'https://api.openweathermap.org/data/2.5/weather?zip=83287&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
   
       fetch(todaySum)
       .then((response) => {
