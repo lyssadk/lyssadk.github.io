@@ -333,12 +333,10 @@ div{
             max-width: 100%;
         }
         header{
-            grid-template-columns: .41fr 1fr;
+            grid-template-columns: .3fr 1fr;
         }
         header div{
             margin:0 50px;
-            position: absolute;
-            left: 30%;
         }
 
         header h1{

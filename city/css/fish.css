@@ -341,6 +341,7 @@ margin:0 auto;
         }  
         header div{
             width:100%;
+            line-height: 22px;
         margin: 0px 50px 0px 361px;
     }
     }
@@ -363,10 +364,6 @@ margin:0 auto;
             background-color:rgba(248, 248, 255, 0) ;
             color: black;
         }
-    header{
-        grid-template-columns: .62fr 1fr;
-    }
-  
 
     #alertBox{
         top: 30%;

@@ -73,7 +73,6 @@ header{
     padding-bottom: 5px;
     background-color: #0D3C45;
     color:white;
-    line-height: 22px;
 }
 #top-ham{
     text-decoration: none;
@@ -226,6 +225,12 @@ main p {
         }
         header div{
             margin:0 50px;
+            line-height: 15px;
+        }
+        header h1{
+            font-size: 40px;
+            margin-top: 5px ;
+            line-height: 40px;
         }
         
         #logo{
@@ -235,7 +240,9 @@ main p {
         font-size: 40px;
         border-radius: 10px;
         text-align: center;
-        height: 53px;}
+        height: 53px;
+        line-height: 1.4;
+        justify-self: end;}
     
         #navigation{
             grid-template-columns: repeat(7,auto);
@@ -276,15 +283,8 @@ main p {
            grid-template-columns: repeat(3 ,auto);
        }
        
-        header h1{
-            font-size: 40px;
-            margin:0px ;
-        }
-        header p{
-            margin:0px;
-            grid-column: 1/2;
-            font-size: 20px;
-        }
+
+    
         #ma{ 
             max-width: 500px;
             float: right;
@@ -309,15 +309,7 @@ main p {
             background-color:rgba(248, 248, 255, 0) ;
             color: black;
         }
-    header{
-        grid-template-columns: .62fr 1fr;
-    }
-    header div{
-        margin: 0px 50px 0px 10px;
-    }
-    #logo{
-        margin: 8px 0px 0px 85%;
-    }
+  
     #alertBox{
         top: 30%;
         left:23%;
