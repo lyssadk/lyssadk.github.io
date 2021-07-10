@@ -66,6 +66,10 @@ nav{
     background-color: #0D3C45;
     color:white;
 }
+
+.body-section h5, .body-section h4, .body-section h3{
+    font-family: 'Roboto', sans-serif;
+}
 header{
     display: grid;
     grid-template-columns: .4fr 1fr .2fr;
@@ -137,7 +141,7 @@ main p {
     font-family: 'Roboto', sans-serif;
 }
 #background-img {
-    
+    margin-bottom: 50px;
     margin-top:40px;
     max-width: 800px;
     height: 350px;
@@ -223,21 +227,22 @@ main p {
 .event-list{
     justify-self: center;
     text-align: center;
-    border: 1px solid gainsboro;
+    box-shadow: .5px .5px 2px gainsboro;
     width: 200px;
     height: 179.5px;
 }
 
-.event-list p {
-    margin: 20px;
-}
+
 
 .day {
     font-size: 30px;
 }
 
 .month {
+    background-color: #c2d3cd;
     font-size: 20px;
+    padding: 10px;
+    margin-top: 0;
 }
 
     @media only screen and (min-width:38em) {

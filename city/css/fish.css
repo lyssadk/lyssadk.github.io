@@ -1,4 +1,5 @@
 body{ 
+   overflow-x: hidden;
     padding: 0;
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
@@ -18,17 +19,26 @@ a:hover{
     padding-bottom: 20px;
     box-shadow: 5px 5px 10px gainsboro;
 }
+
+.body-section h5, .body-section h4, .body-section h3{
+    font-family: 'Roboto', sans-serif;
+}
 .body-section section p, .body-section section a{
     margin: 20px;
 }
 p{
     font-family: 'Roboto', sans-serif;
 }
+
 main{
-    margin: 0 auto;
-    max-width: 800px;
     position: relative;
-} 
+    max-width: 800px;
+    margin: 0 auto;
+}
+main div, main section{ 
+    max-width: 800px;
+    margin: 0 auto;
+    }
 #logo-home, #logo-home:active, #logo-home:hover, #logo-home:link, #logo-home:visited {
     text-decoration:none ;
     color: white;
@@ -154,8 +164,8 @@ margin:0 auto;
 
 /* FIRST LITTLE PART WITH IMG*/
 #background-img {
-    
-    margin-top:40px;
+    margin-bottom: 50px;
+    margin-top:0px;
     max-width: 800px;
     height: 350px;
     /* Location of the image */
@@ -241,8 +251,10 @@ margin:0 auto;
     .event-list{
         text-align: center;
         justify-self: center;
-        margin-top: 40px;
         border: 1px solid gainsboro;
+        height: 179.5px;
+        margin:20px;
+        width: 200px;
     }
     
     .day {
@@ -250,12 +262,18 @@ margin:0 auto;
     }
     
     .month {
+        background-color: #c2d3cd;
         font-size: 20px;
+        padding: 10px;
+        margin-top: 0;
     }
 
 
     @media only screen and (min-width:38em) {
 
+        #background-img {
+    
+            margin-top:40px;}
         .events{
             grid-template-columns: .5fr .5fr;
         }
@@ -387,21 +405,15 @@ margin:0 auto;
     }
 
     .events{
-        grid-template-columns: 1fr 1fr 1fr;
-       
-       
+        grid-template-columns: .5fr .5fr .5fr .5fr;
+        width: 900px;
+        overflow-x: scroll;
+    }
+    .events section:first-of-type{
+        margin-left: 0;
     }
 
-    .events p:first-of-type{
-        max-width: 800px;
-    }
 
-    .event-list{ 
-        height: 179.5px;
-        margin-top: 0;
-        width: 200px;
-
-    }
 }
 
     #alertBox {

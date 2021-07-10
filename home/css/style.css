@@ -271,8 +271,7 @@ div{
 
 
 #town section, #town a section{
-    left: 100px;
-    margin: 10px 40px;
+    margin:10px 20px;
     box-shadow: 5px 5px 10px gainsboro;
     flex-direction: column;
 }
@@ -283,12 +282,6 @@ div{
 
 #town section{
     cursor: pointer;
-}
-#town section:first-of-type{
-    margin:10px 40px 10px 0px;
-}
-#town section:last-of-type{
-    margin:10px 40px 10px 40px;
 }
 
 #town section p:nth-of-type(2){
@@ -311,6 +304,11 @@ div{
 }
 
 
+@media only screen and (min-width:100em){
+    #town {
+        overflow-x: visible;
+    }
+}
 /* 2 articles/ quick tips */
 
 
