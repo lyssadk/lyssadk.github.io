@@ -6,8 +6,18 @@ body{
 /* NAVIGATION AND FOOTER STUFF*/
 .body-section{
     margin-top: 39px;
+    margin-bottom: 70px;
     box-shadow: 5px 5px 10px gainsboro;
 }
+
+.body-section:last-of-type p:last-of-type{
+    padding-bottom: 40px;
+}
+.body-section p {
+    margin: 20px;
+}
+
+
 main{
     margin: 0 auto;
     max-width: 800px;
@@ -18,7 +28,9 @@ main{
     color: white;
     
 }
-
+footer a, footer a:active {
+    color: #AFBFC0;
+}
 nav{
     font-family: 'Oswald', sans-serif;
     margin:0%;
@@ -212,7 +224,8 @@ main p {
 
 .events{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 70px auto;
 }
 
 .events h3{
@@ -230,6 +243,7 @@ main p {
     box-shadow: .5px .5px 2px gainsboro;
     width: 200px;
     height: 179.5px;
+    margin: 20px;
 }
 
 
@@ -329,6 +343,10 @@ main p {
             float: right;
             margin:20px;
         }
+        .events{
+            grid-template-columns: .5fr .5fr;
+            
+        }
     }
         
     @media only screen and (min-width:53em) {
@@ -365,6 +383,10 @@ main p {
     #num{
         max-width: 400px;
     
+    }
+
+    .events{
+        grid-template-columns: 1fr 1fr 1fr;
     }}
 
     #alertBox {

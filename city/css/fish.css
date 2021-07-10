@@ -15,7 +15,7 @@ a:hover{
 /* NAVIGATION AND FOOTER STUFF*/
 .body-section{
     margin-top: 39px;
-    margin-bottom: 39px;
+    margin-bottom: 100px;
     padding-bottom: 20px;
     box-shadow: 5px 5px 10px gainsboro;
 }
@@ -39,6 +39,7 @@ main div, main section{
     max-width: 800px;
     margin: 0 auto;
     }
+
 #logo-home, #logo-home:active, #logo-home:hover, #logo-home:link, #logo-home:visited {
     text-decoration:none ;
     color: white;
@@ -139,6 +140,9 @@ background-color: black;
 color: white;
 padding: 10px;
 }
+footer a, footer a:active {
+    color: #AFBFC0;
+}
 #num{
 text-align: left;
 margin: 0 auto;
@@ -237,6 +241,7 @@ margin:0 auto;
    .events{
         display: grid;
         grid-template-columns: 1fr;
+        margin: 70px auto;
     }
     
     .events h3{

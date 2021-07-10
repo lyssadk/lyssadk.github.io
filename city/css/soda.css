@@ -10,12 +10,15 @@ body{
 }
 .body-section{
     margin-top: 39px;
-    margin-bottom: 39px;
+    margin-bottom: 70px;
     padding-bottom: 20px;
     box-shadow: 5px 5px 10px gainsboro;
 }
 .body-section section p, .body-section section a{
     margin: 20px;
+}
+footer a, footer a:active {
+    color: #AFBFC0;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -222,6 +225,7 @@ margin:0 auto;
     .events{
         display: grid;
         grid-template-columns: 1fr;
+        margin: 70px auto;
     }
     
     .events h3{
