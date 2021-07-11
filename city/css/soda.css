@@ -259,6 +259,10 @@ margin:0 auto;
         border: 1px solid gainsboro;
         height: 179.5px;
         }
+
+    iframe {
+        margin: 20px auto;
+    }
     @media only screen and (min-width:38em) {
         
         .events{
@@ -345,7 +349,8 @@ margin:0 auto;
             max-width: 500px;
             float: right;
             margin:20px;
-        }
+        } 
+    
     }
         
     @media only screen and (min-width:53em) {
@@ -425,7 +430,4 @@ margin:0 auto;
         color: white;
     }
     
-    iframe{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  

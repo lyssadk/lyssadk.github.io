@@ -197,6 +197,9 @@ div{
 .article p {
     font-family: 'Roboto', sans-serif;
 }
+iframe {
+    margin: 20px auto;
+}
 @media only screen and (min-width:38em){
     #contact{
         max-width: 100%;
@@ -379,7 +382,3 @@ div{
             display: none;
         }
     }    
-    iframe{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }

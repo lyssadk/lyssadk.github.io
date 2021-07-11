@@ -259,6 +259,10 @@ main p {
     margin-top: 0;
 }
 
+iframe{
+    margin: 20px auto;
+}
+
     @media only screen and (min-width:38em) {
         
     /* #pancake{
@@ -417,8 +421,3 @@ main p {
         color: white;
     }
     
-
-    iframe{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
