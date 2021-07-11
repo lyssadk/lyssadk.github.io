@@ -96,6 +96,12 @@ footer{
     color: white;
     padding: 10px;
 }
+a{
+    color: #0D3C45;
+}
+footer a, footer a:active{
+    color: #c2d3cd;
+}
 #num{
     text-align: left;
     margin: 0 auto;
@@ -130,13 +136,15 @@ div{
 
 .article{
     box-shadow: 4px 4px 10px gainsboro;
+    padding-bottom: 20px;
+
 }
-.article p, .article button{
+.article p{
     margin: 20px 50px;
 }
 
 .article h3{
-    margin-left: 10px;
+    margin-left: 50px;
 }
 #back-img1{
     position: relative;
