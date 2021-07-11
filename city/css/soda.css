@@ -255,7 +255,7 @@ margin:0 auto;
     .event-list{
         text-align: center;
         margin-top: 40px;
-        max-width: 200px;
+        width: 200px;
         border: 1px solid gainsboro;
         height: 179.5px;
         }
