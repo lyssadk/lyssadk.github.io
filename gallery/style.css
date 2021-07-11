@@ -17,6 +17,9 @@ picture p {
     color: white;
     
 }
+a, a:active{
+    color:#c2d3cd;
+}
 
 
 #title {

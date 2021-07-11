@@ -329,7 +329,14 @@ html, body {
         max-width: 800px;
         }
         
+        footer p, footer span{
+            color: white;
+        }
         .mg{
         padding: 10px;
         margin:0 auto;
         }
+
+    a, a:active{
+        color: #c2d3cd;
+    }
