@@ -115,20 +115,32 @@ header h1 {
     margin-bottom: 125px;
     margin-top: 20px;
   }
-  #two-img div {
+  #two-img a {
     display: -ms-grid;
     display: grid;
+    color: white;
+    max-width: 400px;
+    margin: 50px auto 40px auto;
   }
-  #two-img div img {
+  #two-img a img {
     -ms-grid-column-align: center;
         justify-self: center;
     position: relative;
+    width: 400px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  #two-img div p {
+  #two-img a div {
+    max-width: 200px;
     -ms-grid-column-align: center;
         justify-self: center;
-    top: 1300px;
+    top: 1160px;
     position: absolute;
+  }
+  #two-img a:hover {
+    -webkit-box-shadow: 1px 1px 10px gainsboro;
+            box-shadow: 1px 1px 10px gainsboro;
   }
   #reserve-div {
     margin-top: 50px;
@@ -151,7 +163,7 @@ header h1 {
   #gilbert {
     width: 100%;
   }
-  ul {
+  nav ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -161,18 +173,18 @@ header h1 {
     padding: 10px;
     margin: 0 auto;
   }
-  ul li {
+  nav ul li {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  ul li a {
+  nav ul li a {
     font-family: 'Oswald', sans-serif;
     display: inline-block;
     max-width: 100px;
     color: white;
     text-decoration: none;
   }
-  ul li a:hover {
+  nav ul li a:hover {
     color: #ffffffde;
     text-decoration: underline;
   }

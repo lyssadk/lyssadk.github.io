@@ -103,19 +103,29 @@ main{
     grid-template-columns: 1fr 1fr;
     margin-bottom: 125px;
     margin-top: 20px;
-    div{
+    a{
         display: grid; 
-        
+        color:white;
+        max-width: 400px;
+        margin: 50px auto 40px auto;
         img{
         justify-self: center;
         position: relative;
+        width:400px;
+        height: 400px;
+        object-fit: cover;
         }
-        p{
+
+        div{
+            max-width: 200px;
             justify-self: center;
-            top: 1300px;
+            top: 1160px;
             position: absolute;
         }
 
+    }
+    a:hover{
+        box-shadow: 1px 1px 10px gainsboro;
     }
    
 }
@@ -138,7 +148,7 @@ main{
     width: 100%;
 }
 
-ul {
+nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
