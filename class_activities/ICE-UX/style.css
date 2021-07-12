@@ -1,0 +1,74 @@
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 600px 350px;
+      grid-template-columns: 600px 350px;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 950px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2e3a52;
+}
+
+main div img {
+  max-width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main div .caps, main div h1, main div p {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+main div:first-of-type {
+  max-width: 80%;
+}
+
+main div {
+  margin: auto;
+}
+
+main div .two {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 350px;
+}
+
+main div .button {
+  background-color: #f0780a;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  border: none;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+main div .button:hover {
+  background-color: #d86d0a;
+  cursor: pointer;
+}
+
+main div p {
+  font-size: 13px;
+  color: #c3e2ff;
+}
+
+main div h1 {
+  color: white;
+  font-size: 40px;
+  line-height: 42px;
+}
+/*# sourceMappingURL=style.css.map */
