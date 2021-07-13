@@ -7,8 +7,88 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: 'Oswald', sans-serif;
 }
 
-main {
+header {
+  background-image: url(../images/temple-2.jpg);
+  margin: 0%;
   max-width: 100%;
+  height: 150px;
+  /* Location of the image */
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn’t tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn’t move when
+    the content’s height is greater than the image’s height */
+  background-attachment: scroll;
+  /* This is what makes the background image rescale based
+    on the container’s size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+    while the background image is loading */
+  background-color: #464646;
+  color: white;
+  position: relative;
+}
+
+header .ham {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  position: absolute;
+  right: 10px;
+  top: 57px;
+}
+
+header h1 {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-size: 25px;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+#navigation li {
+  display: none;
+}
+
+#navigation a {
+  display: block;
+  text-align: left;
+  background-color: #8B575C;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  padding: 10px 20px;
+}
+
+#navigation a:hover, #navigation a.active:hover {
+  color: white;
+  background-color: #C98986;
+}
+
+#navigation a.active {
+  background-color: #C98986;
+  color: white;
+  text-decoration: underline;
+}
+
+#navigation.responsive li {
+  display: block;
+}
+
+nav {
+  background-color: #8B575C;
+}
+
+main {
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -16,16 +96,29 @@ main div {
   margin-top: 40px;
 }
 
-#temple-card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+.services {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.services img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .temple:hover {
   -webkit-box-shadow: 5px 5px 15px grey;
           box-shadow: 5px 5px 15px grey;
+}
+
+#temple-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .temple {
@@ -42,6 +135,10 @@ main div {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.first {
+  margin-bottom: 40px;
 }
 
 #gilbert {
@@ -69,40 +166,6 @@ main div {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-
-header {
-  background-image: url(../images/temple-2.jpg);
-  margin: 0%;
-  max-width: 100%;
-  height: 150px;
-  /* Location of the image */
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  /* Background image doesn’t tile */
-  background-repeat: no-repeat;
-  /* Background image is fixed in the viewport so that it doesn’t move when
-    the content’s height is greater than the image’s height */
-  background-attachment: scroll;
-  /* This is what makes the background image rescale based
-    on the container’s size */
-  background-size: cover;
-  /* Set a background color that will be displayed
-    while the background image is loading */
-  background-color: #464646;
-  color: white;
-  position: relative;
-}
-
-header h1 {
-  position: absolute;
-  bottom: 15%;
-  left: 1%;
-  font-size: 40px;
-}
-
-.first {
-  margin-bottom: 40px;
 }
 
 #two-img {
@@ -154,9 +217,57 @@ header h1 {
           box-shadow: 1px 1px 10px gainsboro;
 }
 
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form .item {
+  margin: 0 auto;
+  width: 200px;
+}
+
+@media only screen and (min-width: 38em) {
+  #navigation {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    max-width: 800px;
+    padding: 0;
+  }
+  #navigation li {
+    display: block;
+  }
+  form {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  form .item {
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
 @media only screen and (min-width: 53em) {
   main {
     max-width: 1000px;
+  }
+  #navigation a {
+    text-align: center;
+  }
+  header .ham {
+    display: none;
+  }
+  header h1 {
+    position: absolute;
+    bottom: 15%;
+    left: 1%;
+    font-size: 40px;
   }
   #two-img {
     -ms-grid-columns: 1fr 1fr;
