@@ -105,6 +105,29 @@ main div {
   margin-top: 40px;
 }
 
+.service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 50px;
+}
+
+.service div {
+  width: 250px;
+  margin: 10px auto;
+}
+
+.service div h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.service div p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 .services {
   margin: 0 auto;
   width: 100%;
@@ -128,6 +151,7 @@ main div {
 
 .material-icons-outlined.md-48 {
   font-size: 30px;
+  color: #C98986;
 }
 
 .amenities {
@@ -169,15 +193,35 @@ main div {
   max-width: 90%;
   -webkit-box-shadow: 3px 3px 15px gainsboro;
           box-shadow: 3px 3px 15px gainsboro;
+  border-radius: 30px;
 }
 
 .temple img {
+  border-radius: 30px 30px 0 0;
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.temple h2, .temple h4, .temple p {
+  margin-left: 20px;
+}
+
+.temple div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+}
+
+.temple div p {
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .first {
@@ -287,8 +331,8 @@ main div {
 }
 
 #two-img a:hover {
-  -webkit-box-shadow: 1px 1px 10px gainsboro;
-          box-shadow: 1px 1px 10px gainsboro;
+  -webkit-box-shadow: 5px 5px 10px #b3b1b1;
+          box-shadow: 5px 5px 10px #b3b1b1;
 }
 
 form {
@@ -311,6 +355,9 @@ form .item {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
+  }
+  #contact h4 {
+    grid-column: 1/-1;
   }
   header {
     background-image: url(../images/temple-2.jpg);
@@ -370,6 +417,10 @@ form .item {
   .material-icons-outlined.md-48 {
     font-size: 35px;
   }
+  .service {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
   .amenities {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -426,8 +477,8 @@ form .item {
     top: 90px;
   }
   #two-img a:hover {
-    -webkit-box-shadow: 1px 1px 10px gainsboro;
-            box-shadow: 1px 1px 10px gainsboro;
+    -webkit-box-shadow: 2px 2px 8px #9c9c9c;
+            box-shadow: 2px 2px 8px #9c9c9c;
   }
   #reserve-div {
     margin-top: 50px;

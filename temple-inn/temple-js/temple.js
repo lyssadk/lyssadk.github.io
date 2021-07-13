@@ -36,15 +36,19 @@ function buildTempleCard(temple){
                     <h2>${temple.name}</h2> 
                     <h4>Closures: </h4>`;
     // loop through closures array
+    let closures = document.createElement('div');
     for (let i = 0; i < 4; i++ ){
-      let closures = document.createElement('p');
+      
+      let closure = document.createElement('p')
         if (temple.closures[i].enddate != 'N/A' ){
-          closures.textContent =  temple.closures[i].startdate + ' - ' + temple.closures[i].enddate;}
+          closure.textContent =  temple.closures[i].startdate + ' - ' + temple.closures[i].enddate;}
         else{
-          closures.textContent = temple.closures[i].startdate
+          closure.textContent = temple.closures[i].startdate
         }
+     closures.appendChild(closure)
      card.appendChild(closures)
     } 
+    
     
     // loop through services available
     let service = document.createElement('h4')
