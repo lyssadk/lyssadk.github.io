@@ -1,53 +1,53 @@
 $darkrose : #8B575C;
 $lightrose: #C98986;
+$tdr:#8b575cc4;
+$tlr:#c98986c7;
 
 body{
+    position: relative;
     margin: 0;
     
     h1, h2, h3, h4, h5, h6{
          font-family: 'Oswald', sans-serif;
      }
 }
+footer{
+    background-color: $darkrose;
+    margin: 0;
+    padding: 10px;
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
 header{
-    background-image: url(../images/temple-2.jpg);
+    
      
     margin: 0%;
     max-width: 100%;
-    height: 150px;
-    /* Location of the image */
-    
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    
-    /* Background image doesn’t tile */
-    background-repeat: no-repeat;
-    
-    /* Background image is fixed in the viewport so that it doesn’t move when
-    the content’s height is greater than the image’s height */
-    background-attachment:scroll;
-    
-    /* This is what makes the background image rescale based
-    on the container’s size */
-    background-size: cover;
+    height: 80px;
+
     
     /* Set a background color that will be displayed
     while the background image is loading */
-    background-color: #464646;
+    background-color: $darkrose;
     color:white;
     
 
-    position: relative;
+    position: sticky;
     .ham{
         color: white;
         text-decoration: none;
         font-size: 32px;
         position: absolute;
         right:10px;
-        top:57px;
+        top:22px;
     }
     h1{
         position: absolute;
-        top:40px;
+        top:5px;
         left:10px;
         font-size: 25px;
     }
@@ -94,8 +94,13 @@ nav ul{
 main{
     max-width: 90%;
     margin: 0 auto;
+     p{
+            font-size: 12px;
+            margin: 40px auto;
+        }
     div{
         margin-top: 40px;
+       
      }
      
 }
@@ -103,12 +108,42 @@ main{
 .services{
     margin: 0 auto;
     width: 100%;
+    position: relative;
     img{
         margin: 0 auto;
         width: 100%;
         height: 100px;
         object-fit: cover;
+        
     }
+    h2{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.material-icons-outlined.md-48 { font-size: 30px;
+ }
+
+.amenities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    text-align: center;
+
+    div{
+        width:90px;
+        p{
+            font-size: 12px;
+            margin: 3px auto;
+        }
+        
+    }
+    div:last-of-type{
+            margin-bottom: 40px;
+        }
 }
 
 // TEMPLE PAGE
@@ -138,6 +173,29 @@ main{
 
 // HOME PAGE
 
+#reserve-div{
+    display: grid;
+    grid-template-columns: 1fr ;
+   margin: 10px;
+   p{
+       max-width: 300px;
+       margin: 10px auto;
+   }
+    button{ padding: 15px;
+    border:none;
+    color: white;
+    background-color: $lightrose;
+    border-radius: 30px;
+    font-size: 10px;
+    margin: 0 auto;
+    height:50px;
+    cursor: pointer;
+    }
+    button:hover{
+        background-color: $darkrose;
+    }
+}
+
 #gilbert{
     border-radius: 30px;
     box-shadow: 3px 3px 15px gainsboro;
@@ -166,10 +224,11 @@ main{
         color:white;
         max-width: 99%;
         margin: 20px auto;
-
+        border-radius: 30px;
         img{
-            width: 400px;
+            width: 300px;
             height: 200px;
+            border-radius: 30px;
             object-fit: cover;
             position: relative;
             justify-self: center;
@@ -210,6 +269,56 @@ form{
 }
 
 @media only screen and (min-width:38em){
+
+#contact{
+    width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+    header{
+        background-image: url(../images/temple-2.jpg);
+         
+        margin: 0%;
+        max-width: 100%;
+        height: 150px;
+        /* Location of the image */
+        
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+        
+        /* Background image doesn’t tile */
+        background-repeat: no-repeat;
+        
+        /* Background image is fixed in the viewport so that it doesn’t move when
+        the content’s height is greater than the image’s height */
+        background-attachment:scroll;
+        
+        /* This is what makes the background image rescale based
+        on the container’s size */
+        background-size: cover;
+        
+        /* Set a background color that will be displayed
+        while the background image is loading */
+        background-color: #464646;
+        color:white;
+        
+    
+        position: relative;
+        .ham{
+            color: white;
+            text-decoration: none;
+            font-size: 32px;
+            position: absolute;
+            right:10px;
+            top:57px;
+        }
+        h1{
+            position: absolute;
+            top:40px;
+            left:10px;
+            font-size: 25px;
+        }
+    }
     #navigation{
         grid-template-columns: repeat(4,auto);
         max-width: 800px;
@@ -232,6 +341,19 @@ form{
         margin: 0 auto;
         width:400px;
     }
+}
+
+// SERVICES PAGE
+
+.material-icons-outlined.md-48 { font-size: 35px;
+}
+
+.amenities {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+   div{
+       width:100px;
+   }
 }
    
 }
@@ -332,15 +454,19 @@ nav ul {
     }
 }
 
-footer{
-    background-color: $darkrose;
-    margin: 0;
-    padding: 10px;
+
+
+// SERVICES PAGE
+.material-icons-outlined.md-48 { font-size: 38px;
 }
 
-#contact{
-    padding: 20px;
-    background-color: $lightrose;
+.amenities {
+   grid-template-columns: repeat(8, auto);
+
+   div{
+       width:100px;
+   }
 }
+  
 }
 

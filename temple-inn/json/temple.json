@@ -16,7 +16,8 @@
         },
         "closures":[{
             "startday": "Saturday",
-            "startdate": "October 2nd"
+            "startdate": "October 2nd",
+            "enddate": "N/A"
         },
         {
             "startday" : "Monday",
@@ -38,7 +39,8 @@
         },
         {
             "startday": "Friday",
-            "startdate": "December 31st"
+            "startdate": "December 31st",
+            "enddate": "N/A"
         }]
     },
 
@@ -56,15 +58,18 @@
         },
         "closures":[{
             "startday": "Saturday",
-            "startdate": "July 24th"
+            "startdate": "July 24th",
+            "enddate": "N/A"
         },
         {
             "startday" : "Monday",
-            "startdate": "September 6th"
+            "startdate": "September 6th",
+            "enddate": "N/A"
         },
         {
             "startday": "Saturday",
-            "startdate": "October 2nd"
+            "startdate": "October 2nd",
+            "enddate": "N/A"
         },
         {
             "startday": "Wednesday",
@@ -86,7 +91,8 @@
         },
         {
             "startday": "Friday",
-            "startdate": "December 31st"
+            "startdate": "December 31st",
+            "enddate": "N/A"
         }]
     } ,   
     {
@@ -127,7 +133,8 @@
         },
         {
             "startday": "Friday",
-            "startdate": "December 31st"
+            "startdate": "December 31st",
+            "enddate": "N/A"
         }]
     },
 
@@ -145,7 +152,8 @@
         },
         "closures":[{
             "startday": "Saturday",
-            "startdate": "July 24th"
+            "startdate": "July 24th",
+            "enddate": "N/A"
         },
         {
             "startday" : "Monday",
@@ -155,7 +163,8 @@
         },
         {
             "startday": "Saturday",
-            "startdate": "October 2nd"
+            "startdate": "October 2nd",
+            "enddate": "N/A"
         },
         {
             "startday": "Saturday",
@@ -171,7 +180,8 @@
         },
         {
             "startday": "Friday",
-            "startdate": "December 31st"
+            "startdate": "December 31st",
+            "enddate": "N/A"
         }]
     } 
 ]

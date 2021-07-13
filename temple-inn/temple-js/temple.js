@@ -33,9 +33,34 @@ function buildTempleCard(temple){
   card.classList.add("temple");
   card.innerHTML = `
                     <img src = "${temple.imageurl}" alt="${temple.name}">
-                    <h2>${temple.name}</h2>  
-                    <p>Closures: <b>${temple.closures[0].startdate}</b></p>
-                    <p>Services: <b>${temple.services.available[0]}</b></p>`;
+                    <h2>${temple.name}</h2> 
+                    <h4>Closures: </h4>`;
+    // loop through closures array
+    for (let i = 0; i < 4; i++ ){
+      let closures = document.createElement('p');
+        if (temple.closures[i].enddate != 'N/A' ){
+          closures.textContent =  temple.closures[i].startdate + ' - ' + temple.closures[i].enddate;}
+        else{
+          closures.textContent = temple.closures[i].startdate
+        }
+     card.appendChild(closures)
+    } 
+    
+    // loop through services available
+    let service = document.createElement('h4')
+    service.textContent = 'Services Available: '
+    card.appendChild(service)
+    for (let s = 0; s<temple.services.available.length; s++){
+      let services = document.createElement('p')
+      services.textContent = temple.services.available[s]
+      card.appendChild(services)
+    }
+
   document.querySelector("#temple-card").appendChild(card);
+
+}
+
+function closures(temple){
+ 
 
 }
