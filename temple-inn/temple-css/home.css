@@ -113,17 +113,31 @@ main div {
   padding-bottom: 50px;
 }
 
-.service div {
-  width: 250px;
-  margin: 10px auto;
+.service a, .service a:active {
+  text-decoration: none;
+  color: black;
+  -webkit-box-shadow: 1px 1px 3px gainsboro;
+          box-shadow: 1px 1px 3px gainsboro;
+  border-radius: 30px;
 }
 
-.service div h5 {
+.service a:hover {
+  -webkit-box-shadow: 3px 3px 5px gray;
+          box-shadow: 3px 3px 5px gray;
+}
+
+.service div, .service a {
+  width: 250px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.service div h5, .service a h5 {
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.service div p {
+.service div p, .service a p {
   margin-top: 5px;
   margin-bottom: 10px;
 }
