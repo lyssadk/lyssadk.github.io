@@ -393,9 +393,9 @@ form .item {
     font-size: 25px;
   }
   #navigation {
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
-    max-width: 800px;
+    -ms-grid-columns: (auto)[5];
+        grid-template-columns: repeat(5, auto);
+    max-width: 1000px;
     padding: 0;
   }
   #navigation li {
