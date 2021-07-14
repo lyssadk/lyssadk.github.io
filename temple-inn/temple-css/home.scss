@@ -15,6 +15,9 @@ footer{
     background-color: $darkrose;
     margin: 0;
     padding: 10px;
+    p{
+        text-align: center;
+    }
 }
 
 header{
@@ -481,6 +484,8 @@ header{
         cursor: pointer;
         justify-self: center;
         margin-top: 16px;
+        font-size: 14px;
+        text-transform: uppercase;
     }
 }
 #gilbert{
