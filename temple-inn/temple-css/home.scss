@@ -546,14 +546,38 @@ nav ul {
         h4{
             margin-top: 0;
             margin-bottom: 10px;
+            margin-left: 20px;
         }
         p{
             margin-top: 0;
             margin-bottom: 20px;
+            margin-left: 20px;
         }
     }
     iframe{
         margin-top: 20px;
+    }
+
+    form{
+        grid-column: 1/-1;
+        margin-top: 40px;
+        margin-left: 0;
+        box-shadow: 2px 2px 5px gainsboro;
+        border-radius: 30px;
+        width:1000px;
+        div:last-of-type {
+            margin-bottom: 20px;
+        }
+        div{
+            margin-left: 20px;
+        p{
+            margin-left: 0;
+        }}
+        button{
+            width:100px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
   

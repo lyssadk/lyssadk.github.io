@@ -573,13 +573,38 @@ form .item {
   #contact div h4 {
     margin-top: 0;
     margin-bottom: 10px;
+    margin-left: 20px;
   }
   #contact div p {
     margin-top: 0;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   #contact iframe {
     margin-top: 20px;
+  }
+  #contact form {
+    grid-column: 1/-1;
+    margin-top: 40px;
+    margin-left: 0;
+    -webkit-box-shadow: 2px 2px 5px gainsboro;
+            box-shadow: 2px 2px 5px gainsboro;
+    border-radius: 30px;
+    width: 1000px;
+  }
+  #contact form div:last-of-type {
+    margin-bottom: 20px;
+  }
+  #contact form div {
+    margin-left: 20px;
+  }
+  #contact form div p {
+    margin-left: 0;
+  }
+  #contact form button {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=home.css.map */
