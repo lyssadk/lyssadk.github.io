@@ -17,11 +17,6 @@ footer{
     padding: 10px;
 }
 
-#contact{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-}
 header{
     
      
@@ -316,14 +311,7 @@ form{
 
 @media only screen and (min-width:38em){
 
-#contact{
-    width: 900px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
-    h4{
-        grid-column: 1/-1;
-    }
-}
+
     header{
         background-image: url(../images/temple-2.jpg);
          
