@@ -110,9 +110,9 @@ main div {
   color: black;
 }
 
-.service a:hover {
-  -webkit-box-shadow: 3px 3px 5px gray;
-          box-shadow: 3px 3px 5px gray;
+.service div:hover, .service a:hover {
+  -webkit-box-shadow: 3px 3px 5px #c9c9c9;
+          box-shadow: 3px 3px 5px #c9c9c9;
 }
 
 .service div, .service a {
@@ -346,8 +346,7 @@ form {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  max-width: 500px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 form .item {
@@ -402,14 +401,33 @@ form .item {
     display: block;
   }
   form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  form section {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 1000px;
+    -webkit-box-shadow: 1px 1px 4px gainsboro;
+            box-shadow: 1px 1px 4px gainsboro;
+    border-radius: 30px;
   }
   form .item {
     margin: 0 auto;
     width: 400px;
+  }
+  #res-img {
+    background-image: url("../images/reservation.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 300px;
+    margin: 30px auto;
   }
   .material-icons-outlined.md-48 {
     font-size: 35px;
@@ -430,6 +448,9 @@ form .item {
 @media only screen and (min-width: 53em) {
   main {
     max-width: 1000px;
+  }
+  main p {
+    font-size: 16px;
   }
   #navigation a {
     text-align: center;
@@ -532,6 +553,9 @@ form .item {
   }
   .amenities div {
     width: 100px;
+  }
+  .services p {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=home.css.map */

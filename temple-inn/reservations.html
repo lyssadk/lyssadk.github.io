@@ -23,7 +23,11 @@
     </ul>
     </nav>
     <main>
+        <div id = 'res-img' >
+        <h2 id = 'res-h2'>RESERVATIONS</h2>
+    </div>
         <form>
+            <section id='hotel'>
             <div class="item">
                 <p>LOCATION</p>
                 <select required>
@@ -51,6 +55,8 @@
                     <option value="4">Suite</option>
                 </select>
             </div>
+        </section>
+            <section id='personal'>
             <div class="item">
                 <p>FULL NAME*</p>
                 <input type="text" name="First" placeholder="John Doe" pattern="^[a-zA-Z\s\.\-]{3,}$"required />
@@ -68,7 +74,7 @@
           <div class="item">
               <p>HOME STATE/COUNTRY</p>
               <input type="text">
-          </div>
+          </div></section>
         </form>
     </main>
     <!-- FOOTER & CONTACT -->
