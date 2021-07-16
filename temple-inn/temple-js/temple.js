@@ -60,8 +60,18 @@ function buildTempleCard(temple){
       card.appendChild(services)
     }
 
-  document.querySelector("#temple-card").appendChild(card);
+  let contact = document.createElement('div');
+  contact.innerHTML =`
+  <h4>Contact Information</h4>
+  <p>Phone: ${temple.phone}</p>
+  <p>Address: </>
+  <p>${temple.address1}</p>
+  <p>${temple.city}</p>
+  <p>${temple.state} ${temple.zip}</p>`;
 
+  card.appendChild(contact);
+
+  document.querySelector("#temple-card").appendChild(card);
 }
 
 function closures(temple){
