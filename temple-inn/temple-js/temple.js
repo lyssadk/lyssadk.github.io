@@ -37,6 +37,7 @@ function buildTempleCard(temple){
                     <h4>Closures: </h4>`;
     // loop through closures array
     let closures = document.createElement('div');
+    
     for (let i = 0; i < 4; i++ ){
       
       let closure = document.createElement('p')
@@ -51,23 +52,27 @@ function buildTempleCard(temple){
     
     
     // loop through services available
+    let sdiv = document.createElement('div')
+    sdiv.classList.add("service-div")
     let service = document.createElement('h4')
     service.textContent = 'Services Available: '
-    card.appendChild(service)
+    sdiv.appendChild(service)
     for (let s = 0; s<temple.services.available.length; s++){
       let services = document.createElement('p')
       services.textContent = temple.services.available[s]
-      card.appendChild(services)
+      sdiv.appendChild(services)
+      card.appendChild(sdiv)
     }
 
   let contact = document.createElement('div');
+  contact.classList.add('contact-div')
   contact.innerHTML =`
   <h4>Contact Information</h4>
   <p>Phone: ${temple.phone}</p>
-  <p>Address: </>
-  <p>${temple.address1}</p>
-  <p>${temple.city}</p>
-  <p>${temple.state} ${temple.zip}</p>`;
+  <p>Address: ${temple.address1} </p>
+  
+  <p>     ${temple.city}</p>
+  <p>     ${temple.state} ${temple.zip}</p>`;
 
   card.appendChild(contact);
 
