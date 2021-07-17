@@ -186,6 +186,30 @@ main div {
   margin-bottom: 40px;
 }
 
+#five-day {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  max-width: 500px;
+  -webkit-box-shadow: 3px 3px 15px gainsboro;
+          box-shadow: 3px 3px 15px gainsboro;
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#five-day p {
+  margin-top: 5px;
+}
+
+#five-day:hover {
+  -webkit-box-shadow: 5px 5px 15px grey;
+          box-shadow: 5px 5px 15px grey;
+}
+
 #okey {
   overflow-x: scroll;
 }
@@ -451,10 +475,14 @@ form .item {
     -webkit-box-shadow: 1px 1px 4px gainsboro;
             box-shadow: 1px 1px 4px gainsboro;
     border-radius: 30px;
+    margin-bottom: 40px;
   }
   form .item {
     margin: 0 auto;
     width: 400px;
+  }
+  form .item:last-of-type {
+    margin-bottom: 50px;
   }
   #res-img {
     background-image: url("../images/reservation.jpg");
@@ -464,6 +492,10 @@ form .item {
     width: 1000px;
     height: 300px;
     margin: 30px auto;
+  }
+  #res-img h2 {
+    font-size: 40px;
+    color: white;
   }
   .material-icons-outlined.md-48 {
     font-size: 35px;
@@ -622,6 +654,8 @@ form .item {
     margin-top: 20px;
   }
   #contact form {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
     margin-top: 40px;
     margin-left: 0;
@@ -632,9 +666,18 @@ form .item {
   }
   #contact form div:last-of-type {
     margin-bottom: 20px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
   }
   #contact form div {
     margin-left: 20px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
   #contact form div p {
     margin-left: 0;
@@ -643,6 +686,10 @@ form .item {
     width: 100px;
     margin-left: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
   }
 }
 /*# sourceMappingURL=home.css.map */
