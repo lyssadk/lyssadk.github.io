@@ -22,6 +22,7 @@ window.addEventListener('load', () => {
            Object.entries(jsonObject).forEach(([key,temple])=>{
           //    if (temple.state == 'ID'){
              buildTempleCard(temple);
+            buildWeatherCard(temple);
           // }
           });
       });
@@ -76,12 +77,25 @@ function buildTempleCard(temple){
 
   card.appendChild(contact);
 
-  document.querySelector("#temple-card").appendChild(card);}
+  document.querySelector("#temple-card").appendChild(card);};
 
 
 
- 
-  let requestUTL = 'https://api.openweathermap.org/data/2.5/forecast?zip=85296,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial';
+
+function buildWeatherCard(temple){
+
+ if (temple.name == 'Gilbert Arizona Temple'){
+    var requestUTL = 'https://api.openweathermap.org/data/2.5/forecast?zip=85296,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
+  };
+  if (temple.name == 'Jordan River Utah Temple'){
+    var requestUTL = 'https://api.openweathermap.org/data/2.5/forecast?zip=84095,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
+    };
+  if (temple.name == 'San Diego California Temple'){
+    var requestUTL = 'https://api.openweathermap.org/data/2.5/forecast?zip=92122,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
+    };
+  if (temple.name == 'Mount Timpanogos Utah Temple'){
+    var requestUTL = 'https://api.openweathermap.org/data/2.5/forecast?zip=84043,us&appid=257d32dd0450e7d16d8ba54383f7bbce&units=imperial'
+    };
   fetch(requestUTL)
       .then((response) =>{
           return response.json();
@@ -92,14 +106,18 @@ function buildTempleCard(temple){
 /*five day forecast stuff */
 ////////////////////////////
 // filtering the array for temps at 6:00pm
-okey = weather.list 
-filter = okey.filter(day => day.dt_txt.includes('18:00:00'))
+okey = weather.list ;
+filter = okey.filter(day => day.dt_txt.includes('18:00:00'));
+let card =document.createElement('div');
+card.classList.add('card-weather')
 
       for (let i = 0 ; i < filter.length ; i++){
        
         // creating html elements / adding classes/srcs
-        let card = document.createElement('div'); 
-        card.classList.add('mi')
+        let dayinfo = document.createElement('div')
+        dayinfo.classList.add('mi');
+        
+        
         
         let day = document.createElement('h3');
 
@@ -141,10 +159,11 @@ filter = okey.filter(day => day.dt_txt.includes('18:00:00'))
           // 
 
           // adding stuff to page
-          card.appendChild(day);
-          card.appendChild(icon);
-          card.appendChild(temp);
+          dayinfo.appendChild(day);
+          dayinfo.appendChild(icon);
+          dayinfo.appendChild(temp);
+          card.appendChild(dayinfo)
           document.querySelector('#five-day').appendChild(card);
       }
       ////////////////////
-      });
+      });};

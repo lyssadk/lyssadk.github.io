@@ -191,23 +191,32 @@ main div {
   display: grid;
   -ms-grid-columns: (auto)[5];
       grid-template-columns: repeat(5, auto);
-  max-width: 500px;
-  -webkit-box-shadow: 3px 3px 15px gainsboro;
-          box-shadow: 3px 3px 15px gainsboro;
-  border-radius: 30px;
   margin-left: 50px;
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
 }
 
-#five-day p {
-  margin-top: 5px;
+#five-day .card-weather {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 500px;
+  margin-right: 70px;
+  border-radius: 30px;
+  margin-top: 0;
+  -webkit-box-shadow: 3px 3px 15px gainsboro;
+          box-shadow: 3px 3px 15px gainsboro;
 }
 
-#five-day:hover {
+#five-day .card-weather:hover {
   -webkit-box-shadow: 5px 5px 15px grey;
           box-shadow: 5px 5px 15px grey;
+}
+
+#five-day p {
+  margin-top: 5px;
 }
 
 #okey {

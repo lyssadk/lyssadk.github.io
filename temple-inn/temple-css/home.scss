@@ -176,22 +176,29 @@ main{
 }
 
 // TEMPLE PAGE
-#five-day{
+#five-day {
     display: grid;
     grid-template-columns: repeat(5,auto);
-    max-width: 500px;
-    box-shadow: 3px 3px 15px gainsboro;
-    border-radius: 30px;
     margin-left: 50px;
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
+    .card-weather{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 500px;
+        margin-right: 70px;
+        border-radius: 30px;
+        margin-top: 0;
+        box-shadow: 3px 3px 15px gainsboro;
+    }
+    .card-weather:hover{
+    box-shadow: 5px 5px 15px grey;}
     p{
         margin-top: 5px;
     }
 }
-#five-day:hover{
-    box-shadow: 5px 5px 15px grey;}
+
 #okey{
     overflow-x: scroll;
 }
