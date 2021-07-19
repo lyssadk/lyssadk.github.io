@@ -226,7 +226,7 @@ main div {
   width: auto;
   margin-top: -30px;
   padding: 10px;
-  color: #888;
+  color: white;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -234,6 +234,7 @@ main div {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: #C98986;
 }
 
 .next {
@@ -243,14 +244,13 @@ main div {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #8B575C;
   color: white;
 }
 
 .dot-container {
   text-align: center;
   padding: 20px;
-  background: #ddd;
 }
 
 .dot {
@@ -258,16 +258,15 @@ main div {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #C98986;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #8B575C;
 }
 
 .temple:hover {
@@ -626,6 +625,7 @@ form .item {
   }
   #reserve-div {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr .7fr;
@@ -748,6 +748,71 @@ form .item {
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7/8;
+  }
+  .temple {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr .7fr;
+        grid-template-columns: 1fr .7fr;
+    width: 650px;
+  }
+  .temple p {
+    font-size: 17px;
+  }
+  .temple img {
+    grid-column: 1/-1;
+    height: 250px;
+  }
+  .temple h1, .temple h2 {
+    font-size: 30px;
+    grid-column: 1/-1;
+    color: white;
+    background-color: #8B575C;
+    margin: 0 0 30px 0;
+    padding: 10px;
+  }
+  .temple h3, .temple h4 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .temple div {
+    display: block;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .temple div h4 {
+    grid-column: 1/-1;
+  }
+  .temple .service-div {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .temple .contact-div {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .temple .contact-div p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .temple .contact-div p:nth-of-type(2) {
+    margin-top: 30px;
+  }
+  .next {
+    right: 200px;
+  }
+  .next, .prev {
+    top: 40%;
+  }
+  #five-day .card-weather {
+    width: 650px;
   }
 }
 /*# sourceMappingURL=home.css.map */

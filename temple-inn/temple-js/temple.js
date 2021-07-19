@@ -34,11 +34,12 @@ function buildTempleCard(temple){
   card.classList.add("temple");
   card.innerHTML = `
                     <img src = "${temple.imageurl}" alt="${temple.name}">
-                    <h2>${temple.name}</h2> 
-                    <h4>Closures: </h4>`;
+                    <h2>${temple.name}</h2> `;
     // loop through closures array
     let closures = document.createElement('div');
-    
+    let closureh = document.createElement('h4')
+    closureh.textContent='Closures: '
+    closures.appendChild(closureh)
     for (let i = 0; i < 4; i++ ){
       
       let closure = document.createElement('p')
@@ -64,16 +65,15 @@ function buildTempleCard(temple){
       sdiv.appendChild(services)
       card.appendChild(sdiv)
     }
-
+  
   let contact = document.createElement('div');
   contact.classList.add('contact-div')
   contact.innerHTML =`
   <h4>Contact Information</h4>
   <p>Phone: ${temple.phone}</p>
-  <p>Address: ${temple.address1} </p>
-  
-  <p>     ${temple.city}</p>
-  <p>     ${temple.state} ${temple.zip}</p>`;
+  <p> ${temple.address1} </p>
+  <p> ${temple.city}</p>
+  <p> ${temple.state} ${temple.zip}</p>`;
 
   card.appendChild(contact);
 
@@ -102,6 +102,8 @@ function buildWeatherCard(temple){
       })
       .then((weather) =>{
         console.log(weather)
+        
+        
         /////////////////////////////
 /*five day forecast stuff */
 ////////////////////////////
@@ -185,7 +187,7 @@ card.classList.add('card-weather');
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
           }
-        slides[slideIndex-1].style.display = "block"; 
+        slides[slideIndex-1].style.display = "grid"; 
         
         dots[slideIndex-1].className += " active";
       }

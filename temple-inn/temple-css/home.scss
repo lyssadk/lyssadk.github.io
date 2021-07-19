@@ -175,7 +175,7 @@ main{
         }
 }
 
-// TEMPLE PAGE
+// TEMPLE PAGE /////
 #five-day {
     display: grid;
     grid-template-columns: 1fr;
@@ -206,11 +206,12 @@ main{
     width: auto;
     margin-top: -30px;
     padding: 10px;
-    color: #888;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: $lightrose;
   }
   
  
@@ -222,15 +223,14 @@ main{
   
   
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
+    background-color: $darkrose;
+    color:white;
   }
   
 
   .dot-container {
     text-align: center;
     padding: 20px;
-    background: #ddd;
   }
 
   .dot {
@@ -238,15 +238,14 @@ main{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: $lightrose;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
-  /* Add a background color to the active dot/circle */
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: $darkrose;
   }
   
 
@@ -578,6 +577,7 @@ header{
 }
 #reserve-div{
     margin-top: 50px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr .7fr;
     p{
@@ -696,6 +696,64 @@ nav ul {
         }
     }
 }
+  // temple page
   
+  .temple{
+      display: grid;
+      grid-template-columns: 1fr .7fr;
+      width:650px;
+      p{font-size: 17px;}
+      img{
+          grid-column: 1/-1;
+          height: 250px;
+      }
+      h1, h2{
+          font-size: 30px;
+          grid-column: 1/-1;
+          color: white;
+          background-color: $darkrose;
+          margin: 0 0 30px 0;
+          padding: 10px;
+      }
+      h3, h4{
+          font-size: 22px;
+          margin-top: 0;
+          margin-bottom: 10px;
+      }
+      div{
+          h4{
+              grid-column: 1/-1;
+              
+          }
+          display: block;
+          grid-column: 1/2;
+        }
+      .service-div{
+          grid-column: 2/3;
+      }
+      .contact-div{
+          grid-column: 1/2;
+          margin-top: 30px;
+          margin-bottom: 50px;
+          
+          p{
+            grid-column: 1/2;
+          }
+          p:nth-of-type(2){
+              margin-top: 30px;
+          }
+      }
+  }
+  .next{
+      right:200px;
+  }
+  .next, .prev{
+      top:40%;
+      
+  }
+
+ #five-day{.card-weather{
+      width: 650px;
+  }}
 }
 
