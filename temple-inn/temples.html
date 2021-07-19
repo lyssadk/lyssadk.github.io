@@ -34,6 +34,15 @@
             
             <div id = 'temple-card'></div>
             <div id = 'five-day'></div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
         </div>
         <div id = 'reserve-div'>
             <p>
@@ -47,7 +56,7 @@
     
 
     <footer>
-       <p> © <span id="current-year"></span> | Temple Inns and Suites |</p>
+       <p> © <span id="current-year"></span> | Temple Inns and Suites | Weather Provided by: openweathermap.org</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="temple-js/temple.js"></script>
