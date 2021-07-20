@@ -166,6 +166,23 @@ main{
     }
 }
 
+#sub-nav{
+    background-color: $lightrose;
+   ul{  display: grid;
+        margin: 0 5px;
+        grid-template-columns: 1fr 1fr;
+       width: 300px;
+       list-style: none;
+    text-align: center;
+       
+       li{ width: 150px;
+           a{text-decoration: none;
+            color:white;}
+          
+       }
+   }
+}
+
 .material-icons-outlined.md-48 { font-size: 30px;
     color: $lightrose;
  }

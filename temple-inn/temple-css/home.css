@@ -182,6 +182,30 @@ main div {
   color: white;
 }
 
+#sub-nav {
+  background-color: #C98986;
+}
+
+#sub-nav ul {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 5px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 300px;
+  list-style: none;
+  text-align: center;
+}
+
+#sub-nav ul li {
+  width: 150px;
+}
+
+#sub-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 .material-icons-outlined.md-48 {
   font-size: 30px;
   color: #C98986;
