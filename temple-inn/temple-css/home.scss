@@ -1,7 +1,8 @@
-$darkrose : #8B575C;
+$darkrose : #774b4f;
 $lightrose: #C98986;
 $tdr:#8b575cc4;
 $tlr:#c98986c7;
+$light:#e29d9d;
 
 body{
     position: relative;
@@ -710,6 +711,15 @@ nav ul {
 }
 
 // contact
+.epa{
+background-color: $darkrose;
+border-radius: 30px 0px 0px 30px;
+padding: 10px;
+color: white;
+    h4{
+        color:$light;
+    }
+}
 #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -732,6 +742,8 @@ nav ul {
     }
     iframe{
         margin-top: 20px;
+        border-radius: 0px 30px 30px 0px;
+        box-shadow: 3px 3px 10px gainsboro;
     }
 
     form{

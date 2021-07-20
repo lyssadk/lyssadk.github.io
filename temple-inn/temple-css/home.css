@@ -8,7 +8,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 footer {
-  background-color: #8B575C;
+  background-color: #774b4f;
   margin: 0;
   padding: 10px;
 }
@@ -62,7 +62,7 @@ button a, button a:active {
 }
 
 button:hover {
-  background-color: #8B575C;
+  background-color: #774b4f;
 }
 
 nav ul {
@@ -80,7 +80,7 @@ nav ul {
 #navigation a {
   display: block;
   text-align: left;
-  background-color: #8B575C;
+  background-color: #774b4f;
   text-decoration: none;
   font-weight: 700;
   color: white;
@@ -102,7 +102,7 @@ nav ul {
 }
 
 nav {
-  background-color: #8B575C;
+  background-color: #774b4f;
 }
 
 main {
@@ -262,7 +262,7 @@ main div {
 }
 
 .prev:hover, .next:hover {
-  background-color: #8B575C;
+  background-color: #774b4f;
   color: white;
 }
 
@@ -284,7 +284,7 @@ main div {
 }
 
 .active, .dot:hover {
-  background-color: #8B575C;
+  background-color: #774b4f;
 }
 
 .temple:hover {
@@ -323,7 +323,7 @@ main div {
 }
 
 .temple h2 {
-  background-color: #8B575C;
+  background-color: #774b4f;
   padding: 13px;
   margin: 0;
   color: white;
@@ -404,7 +404,7 @@ main div {
 }
 
 #reserve-div button:hover {
-  background-color: #8B575C;
+  background-color: #774b4f;
 }
 
 #gilbert {
@@ -769,6 +769,15 @@ form .item {
   .services p {
     font-size: 14px;
   }
+  .epa {
+    background-color: #774b4f;
+    border-radius: 30px 0px 0px 30px;
+    padding: 10px;
+    color: white;
+  }
+  .epa h4 {
+    color: #e29d9d;
+  }
   #contact {
     display: -ms-grid;
     display: grid;
@@ -794,6 +803,9 @@ form .item {
   }
   #contact iframe {
     margin-top: 20px;
+    border-radius: 0px 30px 30px 0px;
+    -webkit-box-shadow: 3px 3px 10px gainsboro;
+            box-shadow: 3px 3px 10px gainsboro;
   }
   #contact form {
     -ms-grid-columns: 1fr 1fr;
@@ -855,7 +867,7 @@ form .item {
     font-size: 30px;
     grid-column: 1/-1;
     color: white;
-    background-color: #8B575C;
+    background-color: #774b4f;
     margin: 0 0 30px 0;
     padding: 10px;
   }
