@@ -432,38 +432,18 @@ form{
         width:200px;
     }
 }
-
-@media only screen and (min-width:38em){
-
-
-    header{
-        background-image: url(../images/temple-2.jpg);
-         
+#res-img{
+    background-image: url(../images/reservation.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color: #464646;
+        color:white;
         margin: 0%;
         max-width: 100%;
-        height: 400px;
+        height: 250px;
         padding-top: 20px;
-        /* Location of the image */
-        
-        /* Background image is centered vertically and horizontally at all times */
-        background-position: center center;
-        
-        /* Background image doesn’t tile */
-        background-repeat: no-repeat;
-        
-        /* Background image is fixed in the viewport so that it doesn’t move when
-        the content’s height is greater than the image’s height */
-        background-attachment:scroll;
-        
-        /* This is what makes the background image rescale based
-        on the container’s size */
-        background-size: cover;
-        
-        /* Set a background color that will be displayed
-        while the background image is loading */
-        background-color: #464646;
-        color:white;
-        
         h1{
             font-size: 40px;
             position: relative;
@@ -474,7 +454,67 @@ form{
             margin-left: 30px;
         }
        
+    
+}
+#index-h{
+        background-image: url(../images/temple-2.jpg);
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-color: #464646;
+        color:white;
+        margin: 0%;
+        max-width: 100%;
+        height: 400px;
+        padding-top: 20px;
+       h1{
+            font-size: 40px;
+            position: relative;
+            margin-left: 20px;
+        }
+        p{
+            max-width: 500px;
+            margin-left: 30px;
+        }
+       
+     }
+     #temple-h{
+        background-image: url(../images/temple.jpg);
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-color: #464646;
+        color:white;
+        margin: 0%;
+        max-width: 100%;
+        height: 400px;
+        padding-top: 20px;
+       h1{
+            font-size: 40px;
+            position: relative;
+            margin-left: 20px;
+        }
+        p{  
+            max-width: 500px;
+            margin-left: 30px;
+            a, a:active{
+                color: white;
+            }
+        }
+       
+     }
+@media only screen and (min-width:38em){
+
+    #res-img{
+        height: 400px;
     }
+    
+         
+      
     .ham{
            
             display: none;
@@ -531,20 +571,6 @@ form{
     }
 }
 
-#res-img{
-    background-image: url('../images/reservation.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1000px;
-    height: 300px;
-   
-    margin: 30px auto;
-    h2{
-        font-size: 40px;
-        color: white;
-    }
-}
 
 // SERVICES PAGE
 

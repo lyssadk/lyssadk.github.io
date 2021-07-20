@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   position: relative;
   margin: 0;
@@ -499,37 +498,88 @@ form .item {
   width: 200px;
 }
 
+#res-img {
+  background-image: url(../images/reservation.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #464646;
+  color: white;
+  margin: 0%;
+  max-width: 100%;
+  height: 250px;
+  padding-top: 20px;
+}
+
+#res-img h1 {
+  font-size: 40px;
+  position: relative;
+  margin-left: 20px;
+}
+
+#res-img p {
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+#index-h {
+  background-image: url(../images/temple-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #464646;
+  color: white;
+  margin: 0%;
+  max-width: 100%;
+  height: 400px;
+  padding-top: 20px;
+}
+
+#index-h h1 {
+  font-size: 40px;
+  position: relative;
+  margin-left: 20px;
+}
+
+#index-h p {
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+#temple-h {
+  background-image: url(../images/temple.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #464646;
+  color: white;
+  margin: 0%;
+  max-width: 100%;
+  height: 400px;
+  padding-top: 20px;
+}
+
+#temple-h h1 {
+  font-size: 40px;
+  position: relative;
+  margin-left: 20px;
+}
+
+#temple-h p {
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+#temple-h p a, #temple-h p a:active {
+  color: white;
+}
+
 @media only screen and (min-width: 38em) {
-  header {
-    background-image: url(../images/temple-2.jpg);
-    margin: 0%;
-    max-width: 100%;
+  #res-img {
     height: 400px;
-    padding-top: 20px;
-    /* Location of the image */
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    /* Background image doesn’t tile */
-    background-repeat: no-repeat;
-    /* Background image is fixed in the viewport so that it doesn’t move when
-        the content’s height is greater than the image’s height */
-    background-attachment: scroll;
-    /* This is what makes the background image rescale based
-        on the container’s size */
-    background-size: cover;
-    /* Set a background color that will be displayed
-        while the background image is loading */
-    background-color: #464646;
-    color: white;
-  }
-  header h1 {
-    font-size: 40px;
-    position: relative;
-    margin-left: 20px;
-  }
-  header p {
-    max-width: 500px;
-    margin-left: 30px;
   }
   .ham {
     display: none;
@@ -588,19 +638,6 @@ form .item {
   }
   form .item:last-of-type {
     margin-bottom: 50px;
-  }
-  #res-img {
-    background-image: url("../images/reservation.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1000px;
-    height: 300px;
-    margin: 30px auto;
-  }
-  #res-img h2 {
-    font-size: 40px;
-    color: white;
   }
   .material-icons-outlined.md-48 {
     font-size: 35px;
