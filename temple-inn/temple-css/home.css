@@ -515,12 +515,14 @@ form .item {
 #res-img h1 {
   font-size: 40px;
   position: relative;
-  margin-left: 20px;
 }
 
 #res-img p {
   max-width: 500px;
-  margin-left: 30px;
+}
+
+#res-img h1, #res-img p, #res-img button {
+  margin-left: 10%;
 }
 
 #index-h {
@@ -540,12 +542,14 @@ form .item {
 #index-h h1 {
   font-size: 40px;
   position: relative;
-  margin-left: 20px;
 }
 
 #index-h p {
   max-width: 500px;
-  margin-left: 30px;
+}
+
+#index-h h1, #index-h p, #index-h button {
+  margin-left: 10%;
 }
 
 #temple-h {
@@ -565,21 +569,31 @@ form .item {
 #temple-h h1 {
   font-size: 40px;
   position: relative;
-  margin-left: 20px;
 }
 
 #temple-h p {
   max-width: 500px;
-  margin-left: 30px;
 }
 
 #temple-h p a, #temple-h p a:active {
   color: white;
 }
 
+#temple-h h1, #temple-h p, #temple-h button {
+  margin-left: 10%;
+}
+
 @media only screen and (min-width: 38em) {
   #res-img {
     height: 400px;
+  }
+  .next {
+    right: 6%;
+  }
+  .next, .prev {
+    top: 40%;
+    font-size: 25px;
+    padding: 14px;
   }
   .ham {
     display: none;
@@ -621,6 +635,20 @@ form .item {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  form h2 {
+    margin-bottom: -20px;
+    background-color: #774b4f;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+  }
+  form h2:first-of-type {
+    width: 100px;
+  }
+  form h2:last-of-type {
+    width: 260px;
+  }
   form section {
     display: -ms-grid;
     display: grid;
@@ -636,8 +664,29 @@ form .item {
     margin: 0 auto;
     width: 400px;
   }
+  form input:hover, form select:hover, form textarea:hover {
+    -webkit-box-shadow: 2px 2px 5px gainsboro;
+            box-shadow: 2px 2px 5px gainsboro;
+  }
+  form input, form select {
+    margin: 0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #C98986;
+  }
+  form p {
+    margin: 35px auto 10px auto;
+    font-family: 'Oswald', sans-serif;
+  }
   form .item:last-of-type {
     margin-bottom: 50px;
+  }
+  form textarea {
+    border-radius: 6px;
+    border: 1px solid #C98986;
+    width: 842px;
+    height: 100px;
   }
   .material-icons-outlined.md-48 {
     font-size: 35px;
@@ -905,14 +954,6 @@ form .item {
   }
   .temple .contact-div p:nth-of-type(2) {
     margin-top: 30px;
-  }
-  .next {
-    right: 200px;
-  }
-  .next, .prev {
-    top: 40%;
-    font-size: 25px;
-    padding: 14px;
   }
   #five-day .card-weather {
     width: 650px;

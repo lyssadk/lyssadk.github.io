@@ -448,11 +448,14 @@ form{
         h1{
             font-size: 40px;
             position: relative;
-            margin-left: 20px;
+           
         }
         p{
             max-width: 500px;
-            margin-left: 30px;
+           
+        }
+        h1, p, button{
+            margin-left: 10%;
         }
        
     
@@ -473,11 +476,12 @@ form{
        h1{
             font-size: 40px;
             position: relative;
-            margin-left: 20px;
         }
         p{
-            max-width: 500px;
-            margin-left: 30px;
+            max-width: 500px;  
+        }
+        h1, p, button{
+            margin-left: 10%;
         }
        
      }
@@ -497,15 +501,19 @@ form{
        h1{
             font-size: 40px;
             position: relative;
-            margin-left: 20px;
+        
         }
         p{  
             max-width: 500px;
-            margin-left: 30px;
+           
             a, a:active{
                 color: white;
             }
         }
+        h1, p, button{
+            margin-left: 10%;
+        }
+       
        
      }
 @media only screen and (min-width:38em){
@@ -513,7 +521,16 @@ form{
     #res-img{
         height: 400px;
     }
-    
+    .next{
+        right:6%;
+       
+    }
+    .next, .prev{
+        top:40%; 
+        font-size: 25px;
+        padding: 14px;
+        
+    }
          
       
     .ham{
@@ -553,7 +570,20 @@ form{
 form{
     display: grid;
     grid-template-columns: 1fr;
-    
+    h2{
+        margin-bottom: -20px;
+        background-color: $darkrose;
+        color: white;
+        border-radius: 30px;
+        text-align: center;
+        padding: 5px;
+    }
+    h2:first-of-type{
+        width:100px
+    }
+    h2:last-of-type{
+        width:260px;
+    }
     section{
         display: grid;
     grid-template-columns: 1fr 1fr;
@@ -567,8 +597,28 @@ form{
         margin: 0 auto;
         width:400px;
     }
+    input:hover, select:hover, textarea:hover{
+        box-shadow: 2px 2px 5px gainsboro;
+    }
+    input, select{
+        margin: 0;
+        padding:10px;
+        width:80%;
+        border-radius: 6px;
+        border: 1px solid $lightrose;
+    }
+    p{
+        margin:35px auto 10px auto;
+        font-family: 'Oswald', sans-serif;
+    }
     .item:last-of-type{
         margin-bottom: 50px;
+    }
+    textarea{
+        border-radius: 6px;
+        border: 1px solid $lightrose;
+        width:842px;
+        height: 100px;
     }
 }
 
@@ -827,16 +877,7 @@ color: white;
           }
       }
   }
-  .next{
-      right:200px;
-     
-  }
-  .next, .prev{
-      top:40%; 
-      font-size: 25px;
-      padding: 14px;
-      
-  }
+  
 
  #five-day{.card-weather{
       width: 650px;

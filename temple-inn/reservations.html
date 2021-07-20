@@ -10,7 +10,7 @@
      <!-- HEADER AND NAVIGATION -->
     <nav>
         <a href='index.html'> <img src="images/logo.png" alt="temple logo"></a>
-        <h1>TEMPLE INNS AND SUITES</h1>
+        <h1>TEMPLE STAYS</h1>
         <a class='ham' id='top-ham' href="#">&#9776;</a>
     <ul id='navigation'>
         <li><a  href="index.html">HOME</a></li>
@@ -23,7 +23,6 @@
      <header id = 'res-img' >
           <h1 id = 'res-h2'>RESERVATIONS</h1>
           <p>Make sure to fill out all the fields with * as these are required before you can check out.
-              If you have a discount code, don't forget that either! First time guests get 10% off their cost; code is FIRST10.
           </p>
           <p>We also acknowledge that those with wheelchairs, infants, or any other special circumstances might need
               extra help, be sure to let us know in the special accommodations field below.</p>
@@ -33,18 +32,19 @@
     <main>
         
         <form>
+            <h2>LOCATION</h2>
             <section id='hotel'>
             
             <div class="item">
-                <p>START DATE</p>
-                <input type="date">
+                <p>START DATE*</p>
+                <input type="date" required>
                 <p>END DATE</p>
                 <input type="date">
             </div>
             <div class = 'item'>
-                <p># OF ROOMS</p>
-                <input type="number">
-                <p>TYPE OF ROOMS</p>
+                <p># OF ROOMS*</p>
+                <input type="number" required>
+                <p>TYPE OF ROOMS*</p>
                 <select required>
                     <option value="1">Queen</option>
                     <option value="2">King</option>
@@ -53,17 +53,19 @@
                 </select>
             </div>
             <div class="item">
-                <p>LOCATION</p>
+                <p>LOCATION*</p>
                 <select required>
                     <option selected value="" disabled>Temple</option>
-                    <option value="1">Draper, UT</option>
+                    <option value="1">Gilbert, AZ</option>
                     <option value="2">Mt. Timpanagos, UT</option>
                     <option value="3">San Diego, CA</option>
-                    <option value="4">Redlands, CA</option>
+                    <option value="4">Jordan River, UT</option>
                 </select>
             </div>
         </section>
+        <h2>PERSONAL INFORMATION</h2>
             <section id='personal'>
+                
             <div class="item">
                 <p>FULL NAME*</p>
                 <input type="text" name="First" placeholder="John Doe" pattern="^[a-zA-Z\s\.\-]{3,}$"required />
@@ -71,8 +73,8 @@
         
             </div>
             <div class="item">
-                <p>EMAIL</p>
-                <input type="email" name="email" placeholder="example@gmail.com"/>
+                <p>EMAIL*</p>
+                <input type="email" name="email" placeholder="example@gmail.com" required/>
             </div>
             <div class="item">
                 <p>PHONE*</p>
@@ -84,8 +86,9 @@
           </div>
           <div class="item">
             <p>SPECIAL ACCOMMODATIONS</p>
-            <input type="text">
+            <textarea></textarea>
         </div></section>
+        <button type="submit">SUBMIT</button>
         </form>
     </main>
     <!-- FOOTER & CONTACT -->
