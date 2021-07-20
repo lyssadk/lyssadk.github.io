@@ -716,7 +716,7 @@ form button {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    width: 900px;
+    width: 600px;
     -webkit-box-shadow: 1px 1px 4px gainsboro;
             box-shadow: 1px 1px 4px gainsboro;
     border-radius: 30px;
@@ -724,7 +724,8 @@ form button {
   }
   form .item {
     margin: 0 auto;
-    width: 400px;
+    width: 90%;
+    padding-left: 10px;
   }
   form input:hover, form select:hover, form textarea:hover {
     -webkit-box-shadow: 2px 2px 5px gainsboro;
@@ -744,10 +745,13 @@ form button {
   form .item:last-of-type {
     margin-bottom: 50px;
   }
+  form #personal .item:last-of-type {
+    grid-column: 1/-1;
+  }
   form textarea {
     border-radius: 6px;
     border: 1px solid #C98986;
-    width: 842px;
+    width: 90%;
     height: 100px;
   }
   .material-icons-outlined.md-48 {
@@ -1019,6 +1023,13 @@ form button {
   }
   #five-day .card-weather {
     width: 650px;
+  }
+  form section {
+    width: 900px;
+  }
+  form #personal .item:last-of-type {
+    margin-left: 20px;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=home.css.map */

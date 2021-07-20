@@ -642,7 +642,7 @@ form{
     section{
         display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 900px;
+    width: 600px;
     box-shadow: 1px 1px 4px gainsboro;
     border-radius: 30px;
     margin: 0 auto 40px auto;
@@ -650,7 +650,8 @@ form{
 
     .item{
         margin: 0 auto;
-        width:400px;
+        width:90%;
+        padding-left: 10px;
     }
     input:hover, select:hover, textarea:hover{
         box-shadow: 2px 2px 5px gainsboro;
@@ -669,11 +670,15 @@ form{
     .item:last-of-type{
         margin-bottom: 50px;
     }
+    #personal .item:last-of-type{
+        grid-column: 1/-1;
+    }
     textarea{
         border-radius: 6px;
         border: 1px solid $lightrose;
-        width:842px;
+        width:90%;
         height: 100px;
+        
     }
 }
 
@@ -934,8 +939,21 @@ color: white;
   }
   
 
- #five-day{.card-weather{
+ #five-day{
+     .card-weather{
       width: 650px;
   }}
+
+
+  // RESERVATIONS
+  form{
+      section{
+          width:900px;
+      }
+      #personal .item:last-of-type{
+          margin-left: 20px;
+          width:95%;
+      }
+  }
 }
 
