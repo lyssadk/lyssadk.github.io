@@ -172,12 +172,13 @@ main div {
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 50px;
 }
 
 .services h2 {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 20px;
   color: white;
 }
 
