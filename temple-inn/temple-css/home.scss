@@ -174,6 +174,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     text-align: center;
+    justify-items: center;
 
     div{
         width:90px;
@@ -506,6 +507,36 @@ form{
        
     
 }
+#service-h{
+    background-image: url(../images/reservation.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color: #464646;
+        color:white;
+        margin: 0%;
+        max-width: 100%;
+        height: 250px;
+        padding-top: 20px;
+        h1{
+            font-size: 35px;
+            position: relative;
+           
+        }
+        p{
+            max-width: 300px;
+            font-size: 14px;
+            margin: 10px auto;
+            line-height: 15px;
+           
+        }
+        h1, p, button{
+            margin-left: 10%;
+        }
+       
+    
+}
 #index-h{
         background-image: url(../images/temple-2.jpg);
 
@@ -568,8 +599,19 @@ form{
        
        
      }
-@media only screen and (min-width:38em){
 
+     @media only screen and (min-width:34em){
+         .service{
+             grid-template-columns: 1fr;
+             div, a{
+                 width:400px;
+             }
+            
+         }
+        
+     }
+@media only screen and (min-width:45em){
+    
     #res-img{
         height: 400px;
     }
@@ -689,7 +731,13 @@ form{
 }
 
 .service{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    div, a{
+        width:300px;
+        p{
+            line-height: 17px;
+        }
+    }
 }
 
 .amenities {
@@ -819,6 +867,7 @@ nav ul {
         font-size: 14px;
     }
 }
+
 
 // contact
 .epa{
@@ -956,4 +1005,9 @@ color: white;
       }
   }
 }
+
+@media only screen and (min-width:60em){
+    .service{
+        grid-template-columns: 1fr 1fr 1fr;
+    }}
 
