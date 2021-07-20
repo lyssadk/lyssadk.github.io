@@ -3,8 +3,12 @@ body {
   margin: 0;
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6 {
+body h1, body h2, body h3, body h4, body h5, body h6, body nav li {
   font-family: 'Oswald', sans-serif;
+}
+
+body p, body li {
+  font-family: 'Open-sans', sans-serif;
 }
 
 footer {
@@ -240,19 +244,23 @@ main div {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 62%;
+  top: 50%;
   width: auto;
   margin-top: -30px;
-  padding: 5px;
+  padding: 8px;
   color: white;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: #C98986;
+}
+
+.prev {
+  left: 5px;
 }
 
 .next {
@@ -493,9 +501,52 @@ form {
   margin: 50px auto;
 }
 
+form section {
+  width: 90%;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px 10px gainsboro;
+          box-shadow: 3px 3px 10px gainsboro;
+  margin: 0 auto 40px auto;
+  padding-bottom: 40px;
+}
+
+form h2 {
+  background-color: #774b4f;
+  color: white;
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  text-align: center;
+  z-index: 1;
+}
+
+form h2:last-of-type {
+  width: 250px;
+}
+
 form .item {
   margin: 0 auto;
   width: 200px;
+}
+
+form input, form select, form textarea {
+  padding: 10px;
+  width: 80%;
+  margin: 0;
+}
+
+form p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  margin: 40px auto 0px auto;
+}
+
+form button {
+  width: 160px;
+  margin: 0 auto;
 }
 
 #res-img {
@@ -513,12 +564,15 @@ form .item {
 }
 
 #res-img h1 {
-  font-size: 40px;
+  font-size: 35px;
   position: relative;
 }
 
 #res-img p {
-  max-width: 500px;
+  max-width: 300px;
+  font-size: 14px;
+  margin: 10px auto;
+  line-height: 15px;
 }
 
 #res-img h1, #res-img p, #res-img button {
@@ -535,17 +589,20 @@ form .item {
   color: white;
   margin: 0%;
   max-width: 100%;
-  height: 400px;
+  height: 300px;
   padding-top: 20px;
 }
 
 #index-h h1 {
-  font-size: 40px;
+  font-size: 35px;
   position: relative;
 }
 
 #index-h p {
-  max-width: 500px;
+  max-width: 300px;
+  font-size: 14px;
+  margin: 10px auto;
+  line-height: 15px;
 }
 
 #index-h h1, #index-h p, #index-h button {
@@ -562,17 +619,20 @@ form .item {
   color: white;
   margin: 0%;
   max-width: 100%;
-  height: 400px;
+  height: 300px;
   padding-top: 20px;
 }
 
 #temple-h h1 {
-  font-size: 40px;
+  font-size: 35px;
   position: relative;
 }
 
 #temple-h p {
-  max-width: 500px;
+  max-width: 300px;
+  font-size: 14px;
+  margin: 10px auto;
+  line-height: 15px;
 }
 
 #temple-h p a, #temple-h p a:active {

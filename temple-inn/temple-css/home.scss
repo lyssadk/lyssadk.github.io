@@ -8,8 +8,11 @@ body{
     position: relative;
     margin: 0;
     
-    h1, h2, h3, h4, h5, h6{
+    h1, h2, h3, h4, h5, h6, nav li{
          font-family: 'Oswald', sans-serif;
+     }
+     p, li{
+         font-family: 'Open-sans', sans-serif;
      }
 }
 footer{
@@ -212,19 +215,21 @@ main{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 62%;
+    top: 50%;
     width: auto;
     margin-top: -30px;
-    padding: 5px;
+    padding: 8px;
     color: white;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: $lightrose;
   }
   
- 
+ .prev{
+     left:5px;
+ }
   .next {
     position: absolute;
     right: 5px;
@@ -362,7 +367,7 @@ main{
         background-color: $darkrose;
     }
 }
-
+// gilbert temple card on home page
 #gilbert{
     border-radius: 30px;
     box-shadow: 3px 3px 15px gainsboro;
@@ -382,6 +387,7 @@ main{
         object-fit: cover;
         object-position: center;
 }}
+// services and amenities img + info
 #two-img{
     display: grid;
     grid-template-columns: 1fr;
@@ -427,12 +433,49 @@ form{
     display: grid;
     grid-template-columns: 1fr;
     margin: 50px auto;
+    section{
+        width: 90%;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px gainsboro;
+        margin: 0 auto 40px auto;
+        padding-bottom: 40px;
+    }
+    h2{
+        background-color: $darkrose;
+        color: white;
+        padding:5px;
+        border-radius: 30px;
+        margin-bottom: -20px;
+        margin-left: auto;
+        margin-right: auto;
+        width:150px;
+        text-align: center;
+        z-index: 1;
+    }
+    h2:last-of-type{
+        width:250px;
 
+    }
     .item{
         margin: 0 auto;
         width:200px;
     }
+    input, select, textarea{
+        padding:10px;
+        width:80%;
+        margin: 0;
+    }
+   
+    p{font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    margin: 40px auto 0px auto;}
+    button{
+        width:160px;
+        margin: 0 auto;
+    }
 }
+
+// HEADERS //
 #res-img{
     background-image: url(../images/reservation.jpg);
     background-size: cover;
@@ -446,12 +489,15 @@ form{
         height: 250px;
         padding-top: 20px;
         h1{
-            font-size: 40px;
+            font-size: 35px;
             position: relative;
            
         }
         p{
-            max-width: 500px;
+            max-width: 300px;
+            font-size: 14px;
+            margin: 10px auto;
+            line-height: 15px;
            
         }
         h1, p, button{
@@ -471,14 +517,17 @@ form{
         color:white;
         margin: 0%;
         max-width: 100%;
-        height: 400px;
+        height: 300px;
         padding-top: 20px;
        h1{
-            font-size: 40px;
+            font-size: 35px;
             position: relative;
         }
         p{
-            max-width: 500px;  
+            max-width: 300px;
+            font-size: 14px;
+            margin: 10px auto;
+            line-height: 15px; 
         }
         h1, p, button{
             margin-left: 10%;
@@ -496,15 +545,18 @@ form{
         color:white;
         margin: 0%;
         max-width: 100%;
-        height: 400px;
+        height: 300px;
         padding-top: 20px;
        h1{
-            font-size: 40px;
+            font-size: 35px;
             position: relative;
         
         }
         p{  
-            max-width: 500px;
+            max-width: 300px;
+            font-size: 14px;
+            margin: 10px auto;
+            line-height: 15px;
            
             a, a:active{
                 color: white;
