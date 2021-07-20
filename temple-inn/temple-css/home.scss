@@ -572,14 +572,17 @@ form{
     grid-template-columns: 1fr;
     h2{
         margin-bottom: -20px;
+        margin-left: 80px;
         background-color: $darkrose;
         color: white;
         border-radius: 30px;
         text-align: center;
         padding: 5px;
+        z-index:1;
     }
     h2:first-of-type{
-        width:100px
+        width:120px;
+       
     }
     h2:last-of-type{
         width:260px;
@@ -587,10 +590,10 @@ form{
     section{
         display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1000px;
+    width: 900px;
     box-shadow: 1px 1px 4px gainsboro;
     border-radius: 30px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
     }
 
     .item{
