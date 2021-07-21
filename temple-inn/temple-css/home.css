@@ -800,7 +800,7 @@ form button {
 
 @media only screen and (min-width: 34em) {
   .ham {
-    margin-left: 230px;
+    margin-left: 200px;
   }
   .service {
     -ms-grid-columns: 1fr;
