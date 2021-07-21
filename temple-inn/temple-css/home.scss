@@ -446,6 +446,7 @@ main{
    
 }
 
+
 // RESERVATIONS PAGE
 
 form{
@@ -527,6 +528,96 @@ form{
 }
 #service-h{
     background-image: url(../images/reservation.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color: #464646;
+        color:white;
+        margin: 0%;
+        max-width: 100%;
+        height: 250px;
+        padding-top: 20px;
+        h1{
+            font-size: 35px;
+            position: relative;
+           
+        }
+        p{
+            max-width: 300px;
+            font-size: 14px;
+            margin: 10px auto;
+            line-height: 15px;
+           
+        }
+        h1, p, button{
+            margin-left: 10%;
+        }
+       
+    
+}
+#wedding-h{
+    background-image: url(../images/wedding.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color: #464646;
+        color:white;
+        margin: 0%;
+        max-width: 100%;
+        height: 250px;
+        padding-top: 20px;
+        h1{
+            font-size: 35px;
+            position: relative;
+           
+        }
+        p{
+            max-width: 300px;
+            font-size: 14px;
+            margin: 10px auto;
+            line-height: 15px;
+           
+        }
+        h1, p, button{
+            margin-left: 10%;
+        }
+       
+    
+}
+
+.re {
+    margin-top: 0;
+    h2{
+        background-color: $darkrose;
+        color: white;
+        padding: 10px 10px 10px 20px;
+        border-radius: 30px;
+    }
+    }
+.reception{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    img{
+        width:95%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+    div{
+        width:95%;
+        margin: 0 auto;
+        p{
+            margin-top: 0;
+        }
+    }
+   
+}
+#missionary-h{
+    background-image: url(../images/mission.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -678,6 +769,7 @@ form{
     }
 
     // RESERVATIONS PAGE
+   
 
 form{
     display: grid;
@@ -885,6 +977,34 @@ nav ul {
         font-size: 14px;
     }
 }
+.re {
+    margin-top: 0;
+    h2{
+        background-color: $darkrose;
+        color: white;
+        padding: 10px 10px 10px 20px;
+        border-radius: 30px;
+    }
+    }
+.reception{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img{
+        width:500px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    div{
+        width:400px;
+        margin: 0 auto;
+        p{
+            margin-top: 0;
+        }
+    }
+   
+}
 
 
 // contact
@@ -1027,5 +1147,11 @@ color: white;
 @media only screen and (min-width:60em){
     .service{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .serve{
+        grid-template-columns: 1fr 1fr;
+        div{
+            width:450px;
+        }
     }}
 
