@@ -81,7 +81,7 @@ nav ul{
         text-decoration: none;
         font-weight: 700;
         color: white;
-        padding: 10px 20px;
+        padding: 10px;
     }
     
     #navigation a:hover, #navigation a.active:hover{
@@ -168,20 +168,27 @@ main{
 
 #sub-nav{
     background-color: $lightrose;
-   ul{  display: grid;
-        margin: 0 5px;
+  
+    padding:20px;
+    ul{  display: grid;
         grid-template-columns: 1fr 1fr;
-       width: 300px;
-       list-style: none;
-    text-align: center;
-       
-       li{ width: 150px;
+      position: absolute;
+      right:10%;
+      top:85px;
+      list-style: none;
+      text-decoration: none;
+        li{ width: 150px;
            a{text-decoration: none;
-            color:white;}
+            color:white;
+        max-width: 140px;}
           
-       }
+       } 
+       
+    }
+
+      
    }
-}
+
 
 .material-icons-outlined.md-48 { font-size: 30px;
     color: $lightrose;
@@ -710,6 +717,9 @@ form{
      }
 
      @media only screen and (min-width:34em){
+         main{
+             background-color:burlywood;
+         }
          .service{
              grid-template-columns: 1fr;
              div, a{
@@ -717,9 +727,19 @@ form{
              }
             
          }
-        
+       
      }
 @media only screen and (min-width:45em){
+  
+    #sub-nav{
+        ul{  
+         
+          right:60px;
+          top:62px;
+             
+           
+        }
+    }
     
     #res-img{
         height: 400px;
@@ -862,7 +882,8 @@ form{
 @media only screen and (min-width:53em){
 main{
     max-width: 1000px;
-    p{font-size: 16px;}
+    p{font-size: 16px;
+    background-color: #fff;}
 }
  #navigation a {
         text-align: center;
@@ -1005,7 +1026,17 @@ nav ul {
     }
    
 }
-
+#sub-nav{
+  
+    padding:20px;
+    ul{  
+      position: absolute;
+      right:60px;
+      top:53px;
+         
+       
+    }
+}
 
 // contact
 .epa{

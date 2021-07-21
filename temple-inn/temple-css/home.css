@@ -88,7 +88,7 @@ nav ul {
   text-decoration: none;
   font-weight: 700;
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 #navigation a:hover, #navigation a.active:hover {
@@ -184,17 +184,19 @@ main div {
 
 #sub-nav {
   background-color: #C98986;
+  padding: 20px;
 }
 
 #sub-nav ul {
   display: -ms-grid;
   display: grid;
-  margin: 0 5px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  width: 300px;
+  position: absolute;
+  right: 10%;
+  top: 85px;
   list-style: none;
-  text-align: center;
+  text-decoration: none;
 }
 
 #sub-nav ul li {
@@ -204,6 +206,7 @@ main div {
 #sub-nav ul li a {
   text-decoration: none;
   color: white;
+  max-width: 140px;
 }
 
 .material-icons-outlined.md-48 {
@@ -796,6 +799,9 @@ form button {
 }
 
 @media only screen and (min-width: 34em) {
+  main {
+    background-color: burlywood;
+  }
   .service {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -806,6 +812,10 @@ form button {
 }
 
 @media only screen and (min-width: 45em) {
+  #sub-nav ul {
+    right: 60px;
+    top: 62px;
+  }
   #res-img {
     height: 400px;
   }
@@ -944,6 +954,7 @@ form button {
   }
   main p {
     font-size: 16px;
+    background-color: #fff;
   }
   #navigation a {
     text-align: center;
@@ -1080,6 +1091,14 @@ form button {
   }
   .reception div p {
     margin-top: 0;
+  }
+  #sub-nav {
+    padding: 20px;
+  }
+  #sub-nav ul {
+    position: absolute;
+    right: 60px;
+    top: 53px;
   }
   .epa {
     background-color: #774b4f;
