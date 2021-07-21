@@ -604,7 +604,7 @@ form button {
   color: white;
   margin: 0%;
   max-width: 100%;
-  height: 250px;
+  height: 270px;
   padding-top: 20px;
 }
 
@@ -831,9 +831,6 @@ form button {
   #sub-nav ul {
     right: 60px;
     top: 62px;
-  }
-  #res-img {
-    height: 400px;
   }
   .next {
     right: 10%;
