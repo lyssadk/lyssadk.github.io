@@ -799,9 +799,6 @@ form button {
 }
 
 @media only screen and (min-width: 34em) {
-  main {
-    background-color: burlywood;
-  }
   .service {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
