@@ -394,8 +394,9 @@ main{
     grid-template-columns: 1fr ;
    margin: 10px;
    p{
-       max-width: 300px;
+       max-width: 350px;
        margin: 10px auto;
+       line-height: 20px;
    }
     button{ padding: 15px;
     border:none;
@@ -421,6 +422,7 @@ main{
         margin:20px
     }
     p{
+        line-height: 20px;
         margin: 20px;
         padding-bottom: 20px;
     }
@@ -763,8 +765,11 @@ form{
         height: 400px;
     }
     .next{
-        right:6%;
+        right:10%;
        
+    }
+    .prev{
+        left: 12%;
     }
     .next, .prev{
         top:40%; 
@@ -956,6 +961,7 @@ header{
     grid-template-columns: 1fr .7fr;
     p{
         margin-left: 70px;
+
     }
     button{
         width: 200px;

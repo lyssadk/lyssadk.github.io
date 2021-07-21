@@ -438,8 +438,9 @@ main div {
 }
 
 #reserve-div p {
-  max-width: 300px;
+  max-width: 350px;
   margin: 10px auto;
+  line-height: 20px;
 }
 
 #reserve-div button {
@@ -471,6 +472,7 @@ main div {
 }
 
 #gilbert p {
+  line-height: 20px;
   margin: 20px;
   padding-bottom: 20px;
 }
@@ -834,7 +836,10 @@ form button {
     height: 400px;
   }
   .next {
-    right: 6%;
+    right: 10%;
+  }
+  .prev {
+    left: 12%;
   }
   .next, .prev {
     top: 40%;
