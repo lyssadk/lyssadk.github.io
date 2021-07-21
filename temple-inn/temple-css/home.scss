@@ -7,7 +7,9 @@ $lightrose: #C98986;
 $tdr:#8b575cc4;
 $tlr:#c98986c7;
 $light:#e29d9d;
-
+#contact{
+    
+}
 body{
     position: relative;
     margin: 0;
@@ -23,6 +25,7 @@ footer{
     background-color: $darkrose;
     margin: 0;
     padding: 10px;
+    color: white;
     p{
         text-align: center;
     }
